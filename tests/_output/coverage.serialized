@@ -1,0 +1,431 @@
+<?php
+$coverage = new PHP_CodeCoverage;
+$coverage->setData(array (
+  '/var/www/html/login-and-db/src/User.php' => 
+  array (
+    22 => 
+    array (
+      0 => 'Codeception\\TestCase\\Cest::testUserClass',
+      1 => 'Codeception\\TestCase\\Cest::testNotLoggedIn',
+      2 => 'Codeception\\TestCase\\Cest::testFindingUserMethod',
+      3 => 'Codeception\\TestCase\\Cest::testLoginFromClassInstance',
+      4 => 'Codeception\\TestCase\\Cest::testCreatingNewUser',
+      5 => 'Codeception\\TestCase\\Cest::testLoginUserMethodFromExistingData',
+      6 => 'Codeception\\TestCase\\Cest::testLoginUserMethodWithPass',
+      7 => 'Codeception\\TestCase\\Cest::testLoginException',
+      8 => 'Codeception\\TestCase\\Cest::testLogoutMethod',
+      9 => 'Codeception\\TestCase\\Cest::testUpdateMethodLoggedInUser',
+      10 => 'Codeception\\TestCase\\Cest::testUpdateMethodWithId',
+      11 => 'Codeception\\TestCase\\Cest::testUpdateMethodException',
+      12 => 'Codeception\\TestCase\\Cest::testGetDbInstanceMethod',
+    ),
+    24 => 
+    array (
+      0 => 'Codeception\\TestCase\\Cest::testUserClass',
+      1 => 'Codeception\\TestCase\\Cest::testNotLoggedIn',
+      2 => 'Codeception\\TestCase\\Cest::testFindingUserMethod',
+      3 => 'Codeception\\TestCase\\Cest::testLoginFromClassInstance',
+      4 => 'Codeception\\TestCase\\Cest::testCreatingNewUser',
+      5 => 'Codeception\\TestCase\\Cest::testLoginUserMethodFromExistingData',
+      6 => 'Codeception\\TestCase\\Cest::testLoginUserMethodWithPass',
+      7 => 'Codeception\\TestCase\\Cest::testLoginException',
+      8 => 'Codeception\\TestCase\\Cest::testLogoutMethod',
+      9 => 'Codeception\\TestCase\\Cest::testUpdateMethodLoggedInUser',
+      10 => 'Codeception\\TestCase\\Cest::testUpdateMethodWithId',
+      11 => 'Codeception\\TestCase\\Cest::testUpdateMethodException',
+      12 => 'Codeception\\TestCase\\Cest::testGetDbInstanceMethod',
+    ),
+    27 => 
+    array (
+      0 => 'Codeception\\TestCase\\Cest::testUserClass',
+      1 => 'Codeception\\TestCase\\Cest::testNotLoggedIn',
+      2 => 'Codeception\\TestCase\\Cest::testFindingUserMethod',
+      3 => 'Codeception\\TestCase\\Cest::testLoginFromClassInstance',
+      4 => 'Codeception\\TestCase\\Cest::testCreatingNewUser',
+      5 => 'Codeception\\TestCase\\Cest::testLoginUserMethodFromExistingData',
+      6 => 'Codeception\\TestCase\\Cest::testLoginUserMethodWithPass',
+      7 => 'Codeception\\TestCase\\Cest::testLoginException',
+      8 => 'Codeception\\TestCase\\Cest::testLogoutMethod',
+      9 => 'Codeception\\TestCase\\Cest::testUpdateMethodLoggedInUser',
+      10 => 'Codeception\\TestCase\\Cest::testUpdateMethodWithId',
+      11 => 'Codeception\\TestCase\\Cest::testUpdateMethodException',
+      12 => 'Codeception\\TestCase\\Cest::testGetDbInstanceMethod',
+    ),
+    28 => 
+    array (
+      0 => 'Codeception\\TestCase\\Cest::testLoginFromClassInstance',
+    ),
+    30 => 
+    array (
+      0 => 'Codeception\\TestCase\\Cest::testLoginFromClassInstance',
+    ),
+    31 => 
+    array (
+      0 => 'Codeception\\TestCase\\Cest::testLoginFromClassInstance',
+    ),
+    32 => 
+    array (
+      0 => 'Codeception\\TestCase\\Cest::testLoginFromClassInstance',
+    ),
+    33 => 
+    array (
+      0 => 'Codeception\\TestCase\\Cest::testLoginFromClassInstance',
+    ),
+    35 => 
+    array (
+      0 => 'Codeception\\TestCase\\Cest::testLoginFromClassInstance',
+    ),
+    36 => 
+    array (
+      0 => 'Codeception\\TestCase\\Cest::testUserClass',
+      1 => 'Codeception\\TestCase\\Cest::testNotLoggedIn',
+      2 => 'Codeception\\TestCase\\Cest::testFindingUserMethod',
+      3 => 'Codeception\\TestCase\\Cest::testLoginFromClassInstance',
+      4 => 'Codeception\\TestCase\\Cest::testCreatingNewUser',
+      5 => 'Codeception\\TestCase\\Cest::testLoginUserMethodFromExistingData',
+      6 => 'Codeception\\TestCase\\Cest::testLoginUserMethodWithPass',
+      7 => 'Codeception\\TestCase\\Cest::testLoginException',
+      8 => 'Codeception\\TestCase\\Cest::testLogoutMethod',
+      9 => 'Codeception\\TestCase\\Cest::testUpdateMethodLoggedInUser',
+      10 => 'Codeception\\TestCase\\Cest::testUpdateMethodWithId',
+      11 => 'Codeception\\TestCase\\Cest::testUpdateMethodException',
+      12 => 'Codeception\\TestCase\\Cest::testGetDbInstanceMethod',
+    ),
+    37 => 
+    array (
+      0 => 'Codeception\\TestCase\\Cest::testLoginFromClassInstance',
+    ),
+    39 => 
+    array (
+      0 => 'Codeception\\TestCase\\Cest::testUserClass',
+      1 => 'Codeception\\TestCase\\Cest::testNotLoggedIn',
+      2 => 'Codeception\\TestCase\\Cest::testFindingUserMethod',
+      3 => 'Codeception\\TestCase\\Cest::testLoginFromClassInstance',
+      4 => 'Codeception\\TestCase\\Cest::testCreatingNewUser',
+      5 => 'Codeception\\TestCase\\Cest::testLoginUserMethodFromExistingData',
+      6 => 'Codeception\\TestCase\\Cest::testLoginUserMethodWithPass',
+      7 => 'Codeception\\TestCase\\Cest::testLoginException',
+      8 => 'Codeception\\TestCase\\Cest::testLogoutMethod',
+      9 => 'Codeception\\TestCase\\Cest::testUpdateMethodLoggedInUser',
+      10 => 'Codeception\\TestCase\\Cest::testUpdateMethodWithId',
+      11 => 'Codeception\\TestCase\\Cest::testUpdateMethodException',
+      12 => 'Codeception\\TestCase\\Cest::testGetDbInstanceMethod',
+    ),
+    48 => 
+    array (
+      0 => 'Codeception\\TestCase\\Cest::testFindingUserMethod',
+      1 => 'Codeception\\TestCase\\Cest::testLoginFromClassInstance',
+      2 => 'Codeception\\TestCase\\Cest::testLoginUserMethodFromExistingData',
+      3 => 'Codeception\\TestCase\\Cest::testLoginUserMethodWithPass',
+      4 => 'Codeception\\TestCase\\Cest::testLogoutMethod',
+      5 => 'Codeception\\TestCase\\Cest::testUpdateMethodLoggedInUser',
+    ),
+    49 => 
+    array (
+      0 => 'Codeception\\TestCase\\Cest::testFindingUserMethod',
+      1 => 'Codeception\\TestCase\\Cest::testLoginFromClassInstance',
+      2 => 'Codeception\\TestCase\\Cest::testLoginUserMethodFromExistingData',
+      3 => 'Codeception\\TestCase\\Cest::testLoginUserMethodWithPass',
+      4 => 'Codeception\\TestCase\\Cest::testLogoutMethod',
+      5 => 'Codeception\\TestCase\\Cest::testUpdateMethodLoggedInUser',
+    ),
+    51 => 
+    array (
+      0 => 'Codeception\\TestCase\\Cest::testFindingUserMethod',
+      1 => 'Codeception\\TestCase\\Cest::testLoginFromClassInstance',
+      2 => 'Codeception\\TestCase\\Cest::testLoginUserMethodFromExistingData',
+      3 => 'Codeception\\TestCase\\Cest::testLoginUserMethodWithPass',
+      4 => 'Codeception\\TestCase\\Cest::testLogoutMethod',
+      5 => 'Codeception\\TestCase\\Cest::testUpdateMethodLoggedInUser',
+    ),
+    53 => 
+    array (
+      0 => 'Codeception\\TestCase\\Cest::testFindingUserMethod',
+      1 => 'Codeception\\TestCase\\Cest::testLoginFromClassInstance',
+      2 => 'Codeception\\TestCase\\Cest::testLoginUserMethodFromExistingData',
+      3 => 'Codeception\\TestCase\\Cest::testLoginUserMethodWithPass',
+      4 => 'Codeception\\TestCase\\Cest::testLogoutMethod',
+      5 => 'Codeception\\TestCase\\Cest::testUpdateMethodLoggedInUser',
+    ),
+    54 => 
+    array (
+      0 => 'Codeception\\TestCase\\Cest::testFindingUserMethod',
+      1 => 'Codeception\\TestCase\\Cest::testLoginFromClassInstance',
+      2 => 'Codeception\\TestCase\\Cest::testLoginUserMethodFromExistingData',
+      3 => 'Codeception\\TestCase\\Cest::testLoginUserMethodWithPass',
+      4 => 'Codeception\\TestCase\\Cest::testLogoutMethod',
+      5 => 'Codeception\\TestCase\\Cest::testUpdateMethodLoggedInUser',
+    ),
+    55 => 
+    array (
+      0 => 'Codeception\\TestCase\\Cest::testFindingUserMethod',
+      1 => 'Codeception\\TestCase\\Cest::testLoginFromClassInstance',
+      2 => 'Codeception\\TestCase\\Cest::testLoginUserMethodFromExistingData',
+      3 => 'Codeception\\TestCase\\Cest::testLoginUserMethodWithPass',
+      4 => 'Codeception\\TestCase\\Cest::testLogoutMethod',
+      5 => 'Codeception\\TestCase\\Cest::testUpdateMethodLoggedInUser',
+    ),
+    56 => NULL,
+    57 => 
+    array (
+      0 => 'Codeception\\TestCase\\Cest::testFindingUserMethod',
+      1 => 'Codeception\\TestCase\\Cest::testLoginFromClassInstance',
+      2 => 'Codeception\\TestCase\\Cest::testLoginUserMethodWithPass',
+    ),
+    59 => NULL,
+    70 => 
+    array (
+      0 => 'Codeception\\TestCase\\Cest::testCreatingNewUser',
+      1 => 'Codeception\\TestCase\\Cest::testUpdateMethodLoggedInUser',
+      2 => 'Codeception\\TestCase\\Cest::testUpdateMethodWithId',
+    ),
+    71 => 
+    array (
+      0 => 'Codeception\\TestCase\\Cest::testCreatingNewUser',
+      1 => 'Codeception\\TestCase\\Cest::testUpdateMethodLoggedInUser',
+      2 => 'Codeception\\TestCase\\Cest::testUpdateMethodWithId',
+    ),
+    72 => 
+    array (
+      0 => 'Codeception\\TestCase\\Cest::testCreatingNewUser',
+      1 => 'Codeception\\TestCase\\Cest::testUpdateMethodLoggedInUser',
+      2 => 'Codeception\\TestCase\\Cest::testUpdateMethodWithId',
+    ),
+    87 => 
+    array (
+      0 => 'Codeception\\TestCase\\Cest::testLoginUserMethodFromExistingData',
+      1 => 'Codeception\\TestCase\\Cest::testLoginUserMethodWithPass',
+      2 => 'Codeception\\TestCase\\Cest::testLoginException',
+      3 => 'Codeception\\TestCase\\Cest::testLogoutMethod',
+      4 => 'Codeception\\TestCase\\Cest::testUpdateMethodLoggedInUser',
+    ),
+    89 => 
+    array (
+      0 => 'Codeception\\TestCase\\Cest::testLoginUserMethodFromExistingData',
+    ),
+    90 => 
+    array (
+      0 => 'Codeception\\TestCase\\Cest::testLoginUserMethodFromExistingData',
+    ),
+    92 => 
+    array (
+      0 => 'Codeception\\TestCase\\Cest::testLoginUserMethodFromExistingData',
+    ),
+    93 => 
+    array (
+      0 => 'Codeception\\TestCase\\Cest::testLoginUserMethodFromExistingData',
+    ),
+    94 => 
+    array (
+      0 => 'Codeception\\TestCase\\Cest::testLoginUserMethodFromExistingData',
+    ),
+    96 => NULL,
+    97 => 
+    array (
+      0 => 'Codeception\\TestCase\\Cest::testLoginUserMethodWithPass',
+      1 => 'Codeception\\TestCase\\Cest::testLoginException',
+      2 => 'Codeception\\TestCase\\Cest::testLogoutMethod',
+      3 => 'Codeception\\TestCase\\Cest::testUpdateMethodLoggedInUser',
+    ),
+    99 => 
+    array (
+      0 => 'Codeception\\TestCase\\Cest::testLoginUserMethodWithPass',
+      1 => 'Codeception\\TestCase\\Cest::testLogoutMethod',
+      2 => 'Codeception\\TestCase\\Cest::testUpdateMethodLoggedInUser',
+    ),
+    101 => 
+    array (
+      0 => 'Codeception\\TestCase\\Cest::testLoginUserMethodWithPass',
+      1 => 'Codeception\\TestCase\\Cest::testLogoutMethod',
+      2 => 'Codeception\\TestCase\\Cest::testUpdateMethodLoggedInUser',
+    ),
+    103 => 
+    array (
+      0 => 'Codeception\\TestCase\\Cest::testLoginUserMethodWithPass',
+      1 => 'Codeception\\TestCase\\Cest::testLogoutMethod',
+      2 => 'Codeception\\TestCase\\Cest::testUpdateMethodLoggedInUser',
+    ),
+    104 => 
+    array (
+      0 => 'Codeception\\TestCase\\Cest::testLoginUserMethodWithPass',
+      1 => 'Codeception\\TestCase\\Cest::testLogoutMethod',
+      2 => 'Codeception\\TestCase\\Cest::testUpdateMethodLoggedInUser',
+    ),
+    106 => 
+    array (
+      0 => 'Codeception\\TestCase\\Cest::testLoginUserMethodWithPass',
+      1 => 'Codeception\\TestCase\\Cest::testLogoutMethod',
+      2 => 'Codeception\\TestCase\\Cest::testUpdateMethodLoggedInUser',
+    ),
+    108 => 
+    array (
+      0 => 'Codeception\\TestCase\\Cest::testLoginUserMethodWithPass',
+      1 => 'Codeception\\TestCase\\Cest::testLogoutMethod',
+      2 => 'Codeception\\TestCase\\Cest::testUpdateMethodLoggedInUser',
+    ),
+    109 => 
+    array (
+      0 => 'Codeception\\TestCase\\Cest::testLoginUserMethodWithPass',
+      1 => 'Codeception\\TestCase\\Cest::testLogoutMethod',
+      2 => 'Codeception\\TestCase\\Cest::testUpdateMethodLoggedInUser',
+    ),
+    110 => 
+    array (
+      0 => 'Codeception\\TestCase\\Cest::testLoginUserMethodWithPass',
+      1 => 'Codeception\\TestCase\\Cest::testLogoutMethod',
+      2 => 'Codeception\\TestCase\\Cest::testUpdateMethodLoggedInUser',
+    ),
+    111 => 
+    array (
+      0 => 'Codeception\\TestCase\\Cest::testLoginUserMethodWithPass',
+      1 => 'Codeception\\TestCase\\Cest::testLogoutMethod',
+      2 => 'Codeception\\TestCase\\Cest::testUpdateMethodLoggedInUser',
+    ),
+    112 => NULL,
+    114 => 
+    array (
+      0 => 'Codeception\\TestCase\\Cest::testLoginUserMethodWithPass',
+    ),
+    115 => 
+    array (
+      0 => 'Codeception\\TestCase\\Cest::testLoginUserMethodWithPass',
+    ),
+    117 => NULL,
+    119 => 
+    array (
+      0 => 'Codeception\\TestCase\\Cest::testLoginUserMethodWithPass',
+    ),
+    121 => NULL,
+    123 => 
+    array (
+      0 => 'Codeception\\TestCase\\Cest::testLoginException',
+    ),
+    125 => NULL,
+    132 => 
+    array (
+      0 => 'Codeception\\TestCase\\Cest::testLoginUserMethodFromExistingData',
+      1 => 'Codeception\\TestCase\\Cest::testLogoutMethod',
+    ),
+    133 => NULL,
+    140 => 
+    array (
+      0 => 'Codeception\\TestCase\\Cest::testLoginFromClassInstance',
+      1 => 'Codeception\\TestCase\\Cest::testLoginUserMethodFromExistingData',
+      2 => 'Codeception\\TestCase\\Cest::testLoginUserMethodWithPass',
+      3 => 'Codeception\\TestCase\\Cest::testLogoutMethod',
+    ),
+    141 => 
+    array (
+      0 => 'Codeception\\TestCase\\Cest::testLoginFromClassInstance',
+      1 => 'Codeception\\TestCase\\Cest::testLoginUserMethodFromExistingData',
+      2 => 'Codeception\\TestCase\\Cest::testLoginUserMethodWithPass',
+      3 => 'Codeception\\TestCase\\Cest::testLogoutMethod',
+    ),
+    142 => 
+    array (
+      0 => 'Codeception\\TestCase\\Cest::testLoginFromClassInstance',
+      1 => 'Codeception\\TestCase\\Cest::testLoginUserMethodFromExistingData',
+      2 => 'Codeception\\TestCase\\Cest::testLoginUserMethodWithPass',
+      3 => 'Codeception\\TestCase\\Cest::testLogoutMethod',
+    ),
+    143 => 
+    array (
+      0 => 'Codeception\\TestCase\\Cest::testLoginFromClassInstance',
+      1 => 'Codeception\\TestCase\\Cest::testLoginUserMethodFromExistingData',
+      2 => 'Codeception\\TestCase\\Cest::testLoginUserMethodWithPass',
+      3 => 'Codeception\\TestCase\\Cest::testLogoutMethod',
+    ),
+    153 => 
+    array (
+      0 => 'Codeception\\TestCase\\Cest::testUpdateMethodLoggedInUser',
+      1 => 'Codeception\\TestCase\\Cest::testUpdateMethodWithId',
+      2 => 'Codeception\\TestCase\\Cest::testUpdateMethodException',
+    ),
+    154 => 
+    array (
+      0 => 'Codeception\\TestCase\\Cest::testUpdateMethodLoggedInUser',
+    ),
+    155 => 
+    array (
+      0 => 'Codeception\\TestCase\\Cest::testUpdateMethodLoggedInUser',
+    ),
+    156 => 
+    array (
+      0 => 'Codeception\\TestCase\\Cest::testUpdateMethodWithId',
+      1 => 'Codeception\\TestCase\\Cest::testUpdateMethodException',
+    ),
+    157 => 
+    array (
+      0 => 'Codeception\\TestCase\\Cest::testUpdateMethodException',
+    ),
+    158 => NULL,
+    160 => 
+    array (
+      0 => 'Codeception\\TestCase\\Cest::testUpdateMethodLoggedInUser',
+      1 => 'Codeception\\TestCase\\Cest::testUpdateMethodWithId',
+    ),
+    161 => 
+    array (
+      0 => 'Codeception\\TestCase\\Cest::testUpdateMethodLoggedInUser',
+      1 => 'Codeception\\TestCase\\Cest::testUpdateMethodWithId',
+    ),
+    162 => 
+    array (
+      0 => 'Codeception\\TestCase\\Cest::testUpdateMethodLoggedInUser',
+      1 => 'Codeception\\TestCase\\Cest::testUpdateMethodWithId',
+    ),
+    169 => 
+    array (
+      0 => 'Codeception\\TestCase\\Cest::testFindingUserMethod',
+      1 => 'Codeception\\TestCase\\Cest::testLoginFromClassInstance',
+      2 => 'Codeception\\TestCase\\Cest::testLoginUserMethodFromExistingData',
+      3 => 'Codeception\\TestCase\\Cest::testLoginUserMethodWithPass',
+      4 => 'Codeception\\TestCase\\Cest::testLogoutMethod',
+      5 => 'Codeception\\TestCase\\Cest::testUpdateMethodLoggedInUser',
+      6 => 'Codeception\\TestCase\\Cest::testUpdateMethodException',
+    ),
+    170 => NULL,
+    177 => 
+    array (
+      0 => 'Codeception\\TestCase\\Cest::testNotLoggedIn',
+      1 => 'Codeception\\TestCase\\Cest::testLoginFromClassInstance',
+      2 => 'Codeception\\TestCase\\Cest::testCreatingNewUser',
+      3 => 'Codeception\\TestCase\\Cest::testLoginUserMethodFromExistingData',
+      4 => 'Codeception\\TestCase\\Cest::testLoginUserMethodWithPass',
+      5 => 'Codeception\\TestCase\\Cest::testLogoutMethod',
+      6 => 'Codeception\\TestCase\\Cest::testUpdateMethodLoggedInUser',
+      7 => 'Codeception\\TestCase\\Cest::testUpdateMethodWithId',
+      8 => 'Codeception\\TestCase\\Cest::testUpdateMethodException',
+    ),
+    178 => NULL,
+    185 => 
+    array (
+      0 => 'Codeception\\TestCase\\Cest::testGetDbInstanceMethod',
+    ),
+    186 => NULL,
+  ),
+));
+$coverage->setTests(array (
+  'Codeception\\TestCase\\Cest::testUserClass' => 0,
+  'Codeception\\TestCase\\Cest::testNotLoggedIn' => 0,
+  'Codeception\\TestCase\\Cest::testFindingUserMethod' => 0,
+  'Codeception\\TestCase\\Cest::testLoginFromClassInstance' => 0,
+  'Codeception\\TestCase\\Cest::testCreatingNewUser' => 0,
+  'Codeception\\TestCase\\Cest::testLoginUserMethodFromExistingData' => 0,
+  'Codeception\\TestCase\\Cest::testLoginUserMethodWithPass' => 0,
+  'Codeception\\TestCase\\Cest::testLoginException' => 0,
+  'Codeception\\TestCase\\Cest::testLogoutMethod' => 0,
+  'Codeception\\TestCase\\Cest::testUpdateMethodLoggedInUser' => 0,
+  'Codeception\\TestCase\\Cest::testUpdateMethodWithId' => 0,
+  'Codeception\\TestCase\\Cest::testUpdateMethodException' => 0,
+  'Codeception\\TestCase\\Cest::testGetDbInstanceMethod' => 0,
+));
+
+$filter = $coverage->filter();
+$filter->setBlacklistedFiles(array (
+));
+$filter->setWhitelistedFiles(array (
+  '/var/www/html/login-and-db/src/User.php' => true,
+));
+
+return $coverage;

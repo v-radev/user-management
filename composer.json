@@ -1,0 +1,13 @@
+{
+    "name": "steven/login-and-db",
+    "require-dev": {
+        "codeception/codeception": "2.0.8"
+    },
+    "authors": [
+        {
+            "name": "v.radev",
+            "email": "mail@radev.info"
+        }
+    ],
+    "require": {}
+}
