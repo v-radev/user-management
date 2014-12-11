@@ -217,7 +217,7 @@ class DB {
      */
     public function getFirst( ){
         $data = $this->getResults();
-        return $data[0];
+        return isset($data[0]) ? $data[0] : '';
     }
 
 
