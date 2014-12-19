@@ -2,11 +2,14 @@
 
 
 class DB {
+    
+    /** @var int Last inserted id */
+    public $lastId = 0;
 
     /** @var DB */
     protected static $_instance = NULL;
 
-    /** @var DB */
+    /** @var PDO */
     protected $_pdo;
 
     protected $_count = 0;
@@ -167,6 +170,8 @@ class DB {
             $sql = "INSERT INTO {$table} (`". implode('`,`', $keys) ."`) VALUES ({$values})";
 
             $query = $this->query($sql, $fields);
+            
+            $this->lastId = $this->_pdo->lastInsertId();
 
             return $query->getError();
 
