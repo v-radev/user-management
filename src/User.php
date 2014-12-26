@@ -157,7 +157,7 @@ class User {
             throw new ErrorException('You can not update user without active login or without providing an id.');
         }
 
-        if ( !$this->_db->update('users', $id, $fields) )
+        if ( !$this->_db->update($this->_tableName, $id, $fields) )
             throw new ErrorException('There was a problem updating user data.');
     }
 
