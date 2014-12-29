@@ -3,14 +3,17 @@
 
 class Hash {
 
+    public static $saltLength = 20;
+
     public static function make( $string, $salt = '' )
     {
         return hash('sha256', $string . $salt);
     }
 
-    public static function salt( $length )
+    public static function salt()
     {
-        return mcrypt_create_iv( $length );
+        $salt = md5(uniqid(rand(), TRUE));
+        return substr($salt, 0, static::$saltLength);
     }
 
     public static function unique()
