@@ -1,4 +1,11 @@
 
+- User:
+    - remember me
+    - login attempts on username
+    - user groups
+    - user privileges
+
 - Make Error class
+- Test action() with IN in $where
 
 - Export sql to file

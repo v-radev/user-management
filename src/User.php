@@ -19,9 +19,8 @@ class User {
      */
     public function __construct( $user = NULL )
     {
-        $this->_db = DB::getInstance();
+        $this->_db = DB::instance();
 
-        //TODO this into meth
         if ( !$user ){
 
             //If there is user in the session
@@ -50,8 +49,8 @@ class User {
 
         $data = $this->_db->get($this->_tableName, [$field, '=', $user]);
 
-        if ( $data->getCount() ){
-            $this->_data = $data->getFirst();
+        if ( $data->passes() && $data->count() ){
+            $this->_data = $data->first();
             return TRUE;
         }
         return FALSE;
@@ -60,16 +59,20 @@ class User {
 
     /**
      * @param string $fields
+     *
      * @example
      *  $this->create('users', ['username' => $name, 'password' => $pass])
      *
      * @throws Exception
+     * @return int Last inserted ID
      */
     public function create( $fields )
     {
-        //TODO this exception is not cool
-        if ( $this->_db->insert($this->_tableName, $fields) )
-            throw new Exception('Error creating a new user.');
+        $create = $this->_db->insert($this->_tableName, $fields);
+
+        if ( $create === FALSE ) throw new Exception('Error creating a new user.');
+
+        return $create;
     }
 
 
@@ -160,9 +163,9 @@ class User {
             throw new ErrorException('You can not update user without active login or without providing an id.');
         }
 
-        //TODO this is not cool
+
         if ( !$this->_db->update($this->_tableName, $id, $fields) )
-            throw new ErrorException('There was a problem updating user data.');
+            throw new ErrorException('There was a problem updating the user data.');
     }
 
     /**
