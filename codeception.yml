@@ -19,4 +19,5 @@ coverage:
     enabled: true
     include:
         - src/User.php
-    c3_url: 'http://localhost/login-and-db/c3.php'
+        - src/DB.php
+    c3_url: 'http://localhost/user-management/c3.php'

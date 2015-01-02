@@ -55,11 +55,19 @@ class DB {
         $this->_query = $this->_pdo->prepare($query);
         
         if ( $this->_query ){
-            if ( !empty($params) ){
+            if ( is_array($params) && !empty($params) ){
                 $x = 1;
                 foreach ( $params as $param ) {
-                    $this->_query->bindValue($x, $param);
-                    $x++;
+                    if ( is_array($param) && !empty($param) ){
+                        foreach ( $param as $p ) {
+                            $this->_query->bindValue($x, $p);
+                            $x++;
+                        }
+                    }
+                    else{
+                        $this->_query->bindValue($x, $param);
+                        $x++;
+                    }
                 }
             }
 
@@ -101,12 +109,20 @@ class DB {
         if ( !in_array($operator, $operators) )
             throw new InvalidArgumentException('Error constructing query! Invalid comparing operator in where clause.');
 
-        $sql = "{$action} FROM {$table} WHERE {$field} {$operator} ?";
+        if ( $operator == 'IN' && (!is_array($value) || empty($value)) )
+            throw new InvalidArgumentException('Error constructing query! Operator "IN" expects values to be in array.');
+
+        if ( $operator == 'IN' ){
+            $inOperator = 'IN(?' . str_repeat(", ?", count($value) - 1) . ')';
+            $sql = "{$action} FROM {$table} WHERE {$field} {$inOperator}";
+        }
+        else {
+            $sql = "{$action} FROM {$table} WHERE {$field} {$operator} ?";
+        }
 
         $this->query($sql, [$value]);
 
         return $this;
-
     }//END action()
 
     /**
@@ -154,7 +170,7 @@ class DB {
      * @return bool|int Last inserted ID
      * @throws ErrorException
      */
-    public function insert( $table, $fields )
+    public function insert( $table, array $fields )
     {
         if ( empty($fields) )
             throw new InvalidArgumentException('Error inserting query. Expected some fields.');
@@ -246,11 +262,11 @@ class DB {
         elseif ( isset($data[0]) ){
             $data = $data[0];
         }
-        else {
+        elseif ( is_array($data) ) {
             $data = array_shift($data);
         }
 
-        return $data ;
+        return $data;
     }//END first()
 
     /**
