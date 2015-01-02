@@ -5,7 +5,7 @@ require_once "src/init.php";
 
 $user = new User();
 
-if ( !$user->getIsLoggedIn() ){
+if ( !$user->isLoggedIn() ){
     redirectHome();
 }
 

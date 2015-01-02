@@ -6,7 +6,8 @@ require_once $_SERVER['PWD'] ."/src/init.php";
 class UserCest
 {
 
-    protected $_sessionName = 'sesUserLogin';
+    protected $_sessionName = Config::USERS_SESSION_NAME;
+    protected $_isLoggedInMethod = 'isLoggedIn';
 
     public function _before(UnitTester $I)
     {
@@ -26,7 +27,7 @@ class UserCest
     public function testNotLoggedIn(UnitTester $I)
     {
         $u = new User();
-        $I->assertFalse($u->getIsLoggedIn());
+        $I->assertFalse($u->{$this->_isLoggedInMethod}());
         $I->assertFalse( Session::exists( $this->_sessionName ) );
     }
 
@@ -67,7 +68,7 @@ class UserCest
         $data = $u->getData();
         $I->assertEquals(6, $data->id);
         $I->assertEquals('koko', $data->username);
-        $I->assertFalse( $u->getIsLoggedIn() );
+        $I->assertFalse( $u->{$this->_isLoggedInMethod}() );
         $I->assertFalse( Session::exists( $this->_sessionName ) );
 
         //By username //Not logged in
@@ -75,13 +76,13 @@ class UserCest
         $data = $two->getData();
         $I->assertEquals(5, $data->id);
         $I->assertEquals('steven', $data->username);
-        $I->assertFalse( $two->getIsLoggedIn() );
+        $I->assertFalse( $two->{$this->_isLoggedInMethod}() );
         $I->assertFalse( Session::exists( $this->_sessionName ) );
 
         //Success login from session
         Session::put( $this->_sessionName, 6 );
         $to = new User();
-        $I->assertTrue( $to->getIsLoggedIn(), 'User should be logged in because of session.' );
+        $I->assertTrue( $to->{$this->_isLoggedInMethod}(), 'User should be logged in because of session.' );
         $data = $to->getData();
         $I->assertEquals(6, $data->id);
         $I->assertEquals('koko', $data->username);
@@ -102,7 +103,7 @@ class UserCest
 
         $u = new User();
 
-        $I->assertFalse( $u->getIsLoggedIn() );
+        $I->assertFalse( $u->{$this->_isLoggedInMethod}() );
         $I->assertFalse( Session::exists( $this->_sessionName ) );
 
         $u->create([
@@ -119,7 +120,7 @@ class UserCest
         //Existing data from find(), successful login
         $u = new User();
 
-        $I->assertFalse( $u->getIsLoggedIn() );
+        $I->assertFalse( $u->{$this->_isLoggedInMethod}() );
         $I->assertFalse( Session::exists( $this->_sessionName ) );
 
         $find = $u->find(5);
@@ -128,7 +129,7 @@ class UserCest
         $login = $u->login();
 
         $I->assertTrue($login, 'User should be logged in.');
-        $I->assertTrue($u->getIsLoggedIn(), '$_isLoggedIn should be true.');
+        $I->assertTrue($u->{$this->_isLoggedInMethod}(), '$_isLoggedIn should be true.');
         $I->assertTrue( Session::exists( $this->_sessionName ) );
         $I->assertNotNull( $u->getData() );
         $u->logout();
@@ -139,12 +140,12 @@ class UserCest
         //No data, failed login
         $two = new User();
         $I->assertNull( $two->getData() );
-        $I->assertFalse( $two->getIsLoggedIn() );
+        $I->assertFalse( $two->{$this->_isLoggedInMethod}() );
 
         $login = $two->login();
         $I->assertFalse($login);
         $I->assertNull( $two->getData() );
-        $I->assertFalse( $two->getIsLoggedIn() );
+        $I->assertFalse( $two->{$this->_isLoggedInMethod}() );
     }
 
     public function testLoginUserMethodWithPass(UnitTester $I)
@@ -155,7 +156,7 @@ class UserCest
         $u = new User();
         $login = $u->login('steven', '223344');
         $I->assertTrue($login);
-        $I->assertTrue( $u->getIsLoggedIn() );
+        $I->assertTrue( $u->{$this->_isLoggedInMethod}() );
         $I->assertNotNull( $u->getData() );
         $u->logout();
 
@@ -165,7 +166,7 @@ class UserCest
         $two = new User();
         $login = $two->login('steven', 'hacked');
         $I->assertFalse($login);
-        $I->assertFalse( $two->getIsLoggedIn() );
+        $I->assertFalse( $two->{$this->_isLoggedInMethod}() );
         $I->assertNull( $two->getData(), 'User failed to login, no data should exist.' );
 
         $I->assertFalse( Session::exists( $this->_sessionName ) );
@@ -174,7 +175,7 @@ class UserCest
         $to = new User();
         $login = $to->login('hitler', 'GermanY');
         $I->assertFalse($login);
-        $I->assertFalse( $to->getIsLoggedIn() );
+        $I->assertFalse( $to->{$this->_isLoggedInMethod}() );
         $I->assertNull( $to->getData() );
 
         $I->assertFalse( Session::exists( $this->_sessionName ) );
@@ -197,12 +198,12 @@ class UserCest
         $u = new User();
         $login = $u->login('steven', '223344');
         $I->assertTrue($login);
-        $I->assertTrue( $u->getIsLoggedIn() );
+        $I->assertTrue( $u->{$this->_isLoggedInMethod}() );
         $I->assertNotNull( $u->getData() );
         $u->logout();
 
         $I->assertFalse( Session::exists( $this->_sessionName ) );
-        $I->assertFalse( $u->getIsLoggedIn() );
+        $I->assertFalse( $u->{$this->_isLoggedInMethod}() );
         $I->assertFalse( $u->exists() );
         $I->assertNull( $u->getData() );
     }
@@ -214,7 +215,7 @@ class UserCest
 
         $u = new User();
 
-        $I->assertFalse( $u->getIsLoggedIn() );
+        $I->assertFalse( $u->{$this->_isLoggedInMethod}() );
         $I->assertFalse( Session::exists( $this->_sessionName ) );
 
         $u->create([
@@ -229,7 +230,7 @@ class UserCest
         $roku = new User();
         $login = $roku->login('roku', 'NoStringsOnMe');
         $I->assertTrue($login);
-        $I->assertTrue( $roku->getIsLoggedIn() );
+        $I->assertTrue( $roku->{$this->_isLoggedInMethod}() );
         $I->assertNotNull( $roku->getData() );
 
         $roku->update([
@@ -246,7 +247,7 @@ class UserCest
 
         $u = new User();
 
-        $I->assertFalse( $u->getIsLoggedIn() );
+        $I->assertFalse( $u->{$this->_isLoggedInMethod}() );
         $I->assertFalse( Session::exists( $this->_sessionName ) );
 
         $u->create([
@@ -269,7 +270,7 @@ class UserCest
     {
         $u = new User();
 
-        $I->assertFalse( $u->getIsLoggedIn() );
+        $I->assertFalse( $u->{$this->_isLoggedInMethod}() );
         $I->assertNull( $u->getData() );
         $I->assertFalse( Session::exists( $this->_sessionName ) );
 

@@ -9,18 +9,19 @@ class User {
     /** @var DB */
     protected $_data = NULL;
 
-    protected $_sessionName = 'sesUserLogin';
     protected $_isLoggedIn = FALSE;
-    protected $_tableName = 'users';
+    protected $_sessionName = Config::USERS_SESSION_NAME;
+    protected $_tableName = Config::USERS_TABLE;
 
     /**
      * If username or id is passed wil check in DB and will set the data
      * @param null $user Can be id or username string
      */
-    function __construct( $user = NULL )
+    public function __construct( $user = NULL )
     {
         $this->_db = DB::getInstance();
 
+        //TODO this into meth
         if ( !$user ){
 
             //If there is user in the session
@@ -40,7 +41,6 @@ class User {
 
     /**
      * @param string $user
-     *
      * @return bool
      */
     public function find( $user )
@@ -67,6 +67,7 @@ class User {
      */
     public function create( $fields )
     {
+        //TODO this exception is not cool
         if ( $this->_db->insert($this->_tableName, $fields) )
             throw new Exception('Error creating a new user.');
     }
@@ -80,13 +81,14 @@ class User {
      */
     public function login( $username = NULL, $password = NULL )
     {
-        sleep(3);
+        //TODO
+        //sleep(3);
 
-        //If no data passed bu I already found a user
+        //If no data passed but I already have a user
         if ( !$username && !$password ){
 
-            if ( !$this->exists() )
-                return FALSE;
+            //No data
+            if ( !$this->exists() ) return FALSE;
 
             $this->_isLoggedIn = TRUE;
             Session::put( $this->_sessionName, $this->_data->id );
@@ -103,6 +105,7 @@ class User {
                 $dbPass = $this->_data->password;
                 $inputPass = Hash::make($password, $this->_data->salt);
 
+                //Compare encrypted passwords
                 if ( $dbPass === $inputPass ){
 
                     $this->_isLoggedIn = TRUE;
@@ -150,13 +153,14 @@ class User {
      */
     public function update( $fields, $id = NULL )
     {
-        if ( !$id && $this->getIsLoggedIn() ){
+        if ( !$id && $this->isLoggedIn() ){
             $id = $this->_data->id;
         }
-        elseif ( !$id && !$this->getIsLoggedIn() ){
+        elseif ( !$id && !$this->isLoggedIn() ){
             throw new ErrorException('You can not update user without active login or without providing an id.');
         }
 
+        //TODO this is not cool
         if ( !$this->_db->update($this->_tableName, $id, $fields) )
             throw new ErrorException('There was a problem updating user data.');
     }
@@ -172,7 +176,7 @@ class User {
     /**
      * @return boolean
      */
-    public function getIsLoggedIn()
+    public function isLoggedIn()
     {
         return $this->_isLoggedIn;
     }

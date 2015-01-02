@@ -18,10 +18,10 @@ class DB {
     protected $_query;
     protected $_result;
 
-    protected $_mysqlHost = 'localhost';
-    protected $_dbName = 'login-and-db';
-    protected $_dbUser = 'root';
-    protected $_dbPass = 'password123';
+    protected $_mysqlHost = Config::DB_HOST;
+    protected $_dbName = Config::DB_NAME;
+    protected $_dbUser = Config::DB_USER;
+    protected $_dbPass = Config::DB_PASS;
 
     protected function __construct(){
         try {

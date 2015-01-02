@@ -25,7 +25,7 @@ class Token {
 
     public static function check( $token )
     {
-        $name = Config::$SESSION_TOKEN_NAME;
+        $name = Config::SESSION_TOKEN_NAME;
         $sessionToken = Session::get( $name );
 
         if ( $sessionToken === $token && static::isRecent() ){
@@ -38,8 +38,8 @@ class Token {
 
     public static function saveInSession( $token )
     {
-        Session::put(Config::$SESSION_TOKEN_NAME, $token);
-        Session::put(Config::$SESSION_TOKEN_TIME, time());
+        Session::put(Config::SESSION_TOKEN_NAME, $token);
+        Session::put(Config::SESSION_TOKEN_TIME, time());
     }
 
     /**
@@ -49,7 +49,7 @@ class Token {
      */
     public static function isRecent()
     {
-        $time = Config::$SESSION_TOKEN_TIME;
+        $time = Config::SESSION_TOKEN_TIME;
 
         if( Session::exists( $time ) ) {
             $stored_time = Session::get( $time );
@@ -61,8 +61,8 @@ class Token {
     }
 
     public static function destroy() {
-        Session::delete( Config::$SESSION_TOKEN_NAME );
-        Session::delete( Config::$SESSION_TOKEN_TIME );
+        Session::delete( Config::SESSION_TOKEN_NAME );
+        Session::delete( Config::SESSION_TOKEN_TIME );
     }
 
 } 

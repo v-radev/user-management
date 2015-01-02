@@ -8,7 +8,7 @@ if ( Session::exists('home') ){
 
 $user = new User();
 
-if ( $user->getIsLoggedIn() ){
+if ( $user->isLoggedIn() ){
     $u = $user->getData();
 ?>
 
