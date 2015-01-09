@@ -10,8 +10,12 @@ class User {
     protected $_data = NULL;
 
     protected $_isLoggedIn = FALSE;
+
     protected $_sessionName = Config::USERS_SESSION_NAME;
+    protected $_cookieName = Config::COOKIE_SESSION_NAME;
+
     protected $_tableName = Config::USERS_TABLE;
+    protected $_sessionsTable = Config::SESSIONS_TABLE;
 
     /**
      * If username or id is passed wil check in DB and will set the data
@@ -79,14 +83,12 @@ class User {
     /**
      * @param string $username
      * @param string $password
+     * @param bool   $remember
      *
      * @return bool
      */
-    public function login( $username = NULL, $password = NULL )
+    public function login( $username = NULL, $password = NULL, $remember = FALSE )
     {
-        //TODO
-        //sleep(3);
-
         //If no data passed but I already have a user
         if ( !$username && !$password ){
 
@@ -114,9 +116,12 @@ class User {
                     $this->_isLoggedIn = TRUE;
                     Session::put( $this->_sessionName, $this->_data->id );
                     session_regenerate_id();
+                    $this->rememberUserInDb( $remember );
                     return TRUE;
                 }
                 else {//Pass does not match
+                    //TODO
+                    //sleep(4);//Slow brute force
                     $this->_data = NULL;
                     return FALSE;
                 }
@@ -143,6 +148,8 @@ class User {
      */
     public function logout()
     {
+        $this->_db->delete($this->_sessionsTable, ['user_id', '=', $this->_data->id]);
+
         $this->_isLoggedIn = FALSE;
         $this->_data = NULL;
         Session::delete( $this->_sessionName );
@@ -191,4 +198,67 @@ class User {
     {
         return $this->_db;
     }
+
+    /**
+     * @param bool $remember
+     */
+    protected function rememberUserInDb( $remember )
+    {
+        if ( $remember ){
+
+            $hashCheck = $this->_db->get($this->_sessionsTable, ['user_id', '=', $this->_data->id]);
+            //Query fails
+            if ( $hashCheck->fails() ) return;
+
+            //No record in db
+            if ( !$hashCheck->count() ){
+
+                $hash = Hash::unique();
+                $this->_db->insert( $this->_sessionsTable, [
+                    'user_id'    => $this->_data->id,
+                    'hash'       => $hash,
+                    'user_agent' => $_SERVER['HTTP_USER_AGENT']
+                ]);
+
+            } else {
+                $hash = $hashCheck->first()->hash;
+            }
+
+            $cookieLifeDays = 7;
+            Cookie::put($this->_cookieName, $hash, $cookieLifeDays);
+        }
+    }//END rememberUserInDb()
+
+    /**
+     * @return bool
+     */
+    public function recallUser()
+    {
+        //User has remember cookie and is not logged in
+        if ( Cookie::exists( $this->_cookieName ) && !Session::exists( $this->_sessionName ) ){
+
+            $rememberHash = Cookie::get( $this->_cookieName );
+
+            $hashCheck = $this->_db->get(Config::SESSIONS_TABLE, ['hash', '=', $rememberHash]);
+            //Query fails
+            if ( $hashCheck->fails() ) return FALSE;
+
+            if ( $hashCheck->count() ){
+
+                $hashData = $hashCheck->first();
+
+                //Different user agent
+                if ( $hashData->user_agent != $_SERVER['HTTP_USER_AGENT'] ) {
+                    $this->_db->delete($this->_sessionsTable, ['user_id', '=', $hashData->user_id]);
+                    Cookie::delete( $this->_cookieName );
+                    return FALSE;
+                }
+
+                $rememberUser = new User( $hashData->user_id );
+                $rememberUser->login();
+                return TRUE;
+            }
+        }
+        return FALSE;
+    }//END recallUser()
 } 

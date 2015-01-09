@@ -4,8 +4,10 @@
 class Config {
 
     const USERS_TABLE = 'users';
+    const SESSIONS_TABLE = 'user_sessions';
 
     const USERS_SESSION_NAME = 'sesUserLogin';
+    const COOKIE_SESSION_NAME = 'jarUserLogin';
 
 
     const DB_HOST = 'localhost';

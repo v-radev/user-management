@@ -2,6 +2,10 @@
 
 require_once "src/init.php";
 
+$user = new User();
+if ( $user->isLoggedIn() ){
+    redirectHome();
+}
 
 if ( $_SERVER['REQUEST_METHOD'] === 'POST' ){
 
@@ -11,9 +15,10 @@ if ( $_SERVER['REQUEST_METHOD'] === 'POST' ){
     if ( empty($_POST['username']) || empty($_POST['password']) )
         dieEmptyFields();
 
+    $remember = getInput('remember') === 'on';
 
     $user = new User();
-    $login = $user->login(getInput('username'), getInput('password'));
+    $login = $user->login(getInput('username'), getInput('password'), $remember);
 
     if ( $login ){
         redirectHome();//success
@@ -30,6 +35,10 @@ if ( $_SERVER['REQUEST_METHOD'] === 'POST' ){
 
     <label for="password">Password</label>
     <input type="password" name="password" id="password"/>
+
+    <label for="remember">
+        <input type="checkbox" name="remember" id="remember"/> Remember me
+    </label>
 
     <input type="hidden" name="token" value="<?= Token::generate(TRUE); ?>"/>
     <input type="submit" value="Log In"/>

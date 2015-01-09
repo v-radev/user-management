@@ -13,3 +13,6 @@ spl_autoload_register(function($name) use ($path){
 
 require_once "functions.php";
 require_once "c3.php";
+
+//Try to login user from cookie
+(new User())->recallUser();
