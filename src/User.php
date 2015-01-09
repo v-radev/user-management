@@ -15,11 +15,16 @@ class User {
 
     protected $_isLoggedIn = FALSE;
 
+    protected $_maxLoginAttempts = Config::LOGIN_ATTEMPTS;
+    protected $_loginAttemptsTime = Config::LOGIN_ATTEMPTS_TIME;//minutes
+    protected $_loginTimeFormat = 'Y-m-d H:i:s';
+
     protected $_sessionName = Config::USERS_SESSION_NAME;
     protected $_cookieName = Config::COOKIE_SESSION_NAME;
 
     protected $_tableName = Config::USERS_TABLE;
     protected $_sessionsTable = Config::SESSIONS_TABLE;
+    protected $_attemptsTable = Config::ATTEMPTS_TABLE;
 
     /**
      * If username or id is passed wil check in DB and will set the data
@@ -93,16 +98,21 @@ class User {
      */
     public function login( $username = NULL, $password = NULL, $remember = FALSE )
     {
+        $success = FALSE;
+        $reason = '';
+
         //If no data passed but I already have a user
         if ( !$username && !$password ){
 
             //No data
-            if ( !$this->exists() ) return FALSE;
+            if ( !$this->exists() ) {
+                $success = FALSE; goto returnStatement;
+            }
 
             $this->_isLoggedIn = TRUE;
             Session::put( $this->_sessionName, $this->_data->id );
             session_regenerate_id();
-            return TRUE;
+            $success = TRUE; goto returnStatement;
 
         }
         elseif( $username && $password ) {
@@ -111,31 +121,62 @@ class User {
 
             if ( $user ){
 
+                //Check login attempts
+                $attemptsCheck = $this->_db->get($this->_attemptsTable, ['user_id', '=', $this->_data->id]);
+                //I have a row in DB
+                if ( $attemptsCheck->count() ){
+                    $attemptData = $attemptsCheck->first();
+
+                    //Max attempts reached
+                    if ( $attemptData->num_attempts >= $this->_maxLoginAttempts ){
+
+                        $aTime = DateTime::createFromFormat($this->_loginTimeFormat, $attemptData->last_attempt);
+                        $aTime->add( new DateInterval('PT'. $this->_loginAttemptsTime .'M') );
+                        $nowTime = new DateTime('now');
+                        //If X minutes haven't passed since the last attempt
+                        if ( $nowTime < $aTime ){
+                            $success = FALSE; $reason = 'login_attempts'; goto returnStatement;
+                        }
+                    }//END max
+                }//END result from db
+
                 $dbPass = $this->_data->password;
                 $inputPass = Hash::make($password, $this->_data->salt);
 
                 //Compare encrypted passwords
                 if ( $dbPass === $inputPass ){
 
+                    //Delete login attempts
+                    $this->_db->delete($this->_attemptsTable, ['user_id', '=', $this->_data->id]);
+
                     $this->_isLoggedIn = TRUE;
                     Session::put( $this->_sessionName, $this->_data->id );
                     session_regenerate_id();
                     $this->rememberUserInDb( $remember );
-                    return TRUE;
+                    $success = TRUE; goto returnStatement;
                 }
                 else {//Pass does not match
+                    $attemptsQuery = 'INSERT INTO '. $this->_attemptsTable .'
+                            (user_id)
+                            VALUES(?)
+                            ON DUPLICATE KEY UPDATE num_attempts = num_attempts + 1';
+                    $this->_db->query($attemptsQuery, [$this->_data->id]);
+
                     //TODO
                     //sleep(4);//Slow brute force
                     $this->_data = NULL;
-                    return FALSE;
+                    $success = FALSE; goto returnStatement;
                 }
             }
             else {//No user found()
-                return FALSE;
+                $success = FALSE; goto returnStatement;
             }
         }//END if username && password
 
         throw new InvalidArgumentException("Argument username or password is empty.");
+
+        returnStatement:
+        return [ 'status' => $success, 'reason' => $reason ];
 
     }//END login()
 

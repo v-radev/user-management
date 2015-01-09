@@ -5,10 +5,14 @@ class Config {
 
     const USERS_TABLE = 'users';
     const SESSIONS_TABLE = 'user_sessions';
+    const ATTEMPTS_TABLE = 'login_attempts';
 
     const USERS_SESSION_NAME = 'sesUserLogin';
     const COOKIE_SESSION_NAME = 'jarUserLogin';
 
+
+    const LOGIN_ATTEMPTS = 4;
+    const LOGIN_ATTEMPTS_TIME = 2;//minutes
 
     const DB_HOST = 'localhost';
     const DB_NAME = 'login-and-db';

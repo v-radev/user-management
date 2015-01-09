@@ -20,9 +20,12 @@ if ( $_SERVER['REQUEST_METHOD'] === 'POST' ){
     $user = new User();
     $login = $user->login(getInput('username'), getInput('password'), $remember);
 
-    if ( $login ){
+    if ( $login['status'] ){
         redirectHome();//success
     } else {
+        if ( isset($login['reason']) && $login['reason'] == 'login_attempts' ){
+            die("Login attempts reached, please try again after ". Config::LOGIN_ATTEMPTS_TIME ." minutes.");
+        }
         die("No success.");
     }
 

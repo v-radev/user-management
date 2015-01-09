@@ -1,9 +1,6 @@
 
 - User:
-    - login attempts on username
     - user groups
     - user privileges
-
-- Add @author
 
 - Export sql to file

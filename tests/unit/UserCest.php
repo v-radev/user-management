@@ -128,7 +128,7 @@ class UserCest
         $I->assertTrue($find, 'User should be found.');
         $login = $u->login();
 
-        $I->assertTrue($login, 'User should be logged in.');
+        $I->assertTrue($login['status'], 'User should be logged in.');
         $I->assertTrue($u->{$this->_isLoggedInMethod}(), '$_isLoggedIn should be true.');
         $I->assertTrue( Session::exists( $this->_sessionName ) );
         $I->assertNotNull( $u->getData() );
@@ -143,7 +143,7 @@ class UserCest
         $I->assertFalse( $two->{$this->_isLoggedInMethod}() );
 
         $login = $two->login();
-        $I->assertFalse($login);
+        $I->assertFalse($login['status']);
         $I->assertNull( $two->getData() );
         $I->assertFalse( $two->{$this->_isLoggedInMethod}() );
     }
@@ -155,7 +155,7 @@ class UserCest
         //Success login
         $u = new User();
         $login = $u->login('steven', '223344');
-        $I->assertTrue($login);
+        $I->assertTrue($login['status']);
         $I->assertTrue( $u->{$this->_isLoggedInMethod}() );
         $I->assertNotNull( $u->getData() );
         $u->logout();
@@ -165,7 +165,7 @@ class UserCest
         //Fail password
         $two = new User();
         $login = $two->login('steven', 'hacked');
-        $I->assertFalse($login);
+        $I->assertFalse($login['status']);
         $I->assertFalse( $two->{$this->_isLoggedInMethod}() );
         $I->assertNull( $two->getData(), 'User failed to login, no data should exist.' );
 
@@ -174,7 +174,7 @@ class UserCest
         //Fail username
         $to = new User();
         $login = $to->login('hitler', 'GermanY');
-        $I->assertFalse($login);
+        $I->assertFalse($login['status']);
         $I->assertFalse( $to->{$this->_isLoggedInMethod}() );
         $I->assertNull( $to->getData() );
 
@@ -197,7 +197,7 @@ class UserCest
         //Success login
         $u = new User();
         $login = $u->login('steven', '223344');
-        $I->assertTrue($login);
+        $I->assertTrue($login['status']);
         $I->assertTrue( $u->{$this->_isLoggedInMethod}() );
         $I->assertNotNull( $u->getData() );
         $u->logout();
@@ -229,7 +229,7 @@ class UserCest
         //Login new user
         $roku = new User();
         $login = $roku->login('roku', 'NoStringsOnMe');
-        $I->assertTrue($login);
+        $I->assertTrue($login['status']);
         $I->assertTrue( $roku->{$this->_isLoggedInMethod}() );
         $I->assertNotNull( $roku->getData() );
 
