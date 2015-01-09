@@ -1,6 +1,10 @@
 <?php
 
 
+/**
+ * Class DB
+ * @author V.Radev <mail@radev.info>
+ */
 class DB {
 
     /** @var DB */

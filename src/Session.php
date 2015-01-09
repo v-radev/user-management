@@ -2,6 +2,7 @@
 
 /**
  * Class Session
+ * @author V.Radev <mail@radev.info>
  */
 class Session {
 

@@ -1,6 +1,10 @@
 <?php
 
 
+/**
+ * Class Token
+ * @author V.Radev <mail@radev.info>
+ */
 class Token {
 
     private function __construct() {}
