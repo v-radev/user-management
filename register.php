@@ -20,9 +20,10 @@ if ( $_SERVER['REQUEST_METHOD'] === 'POST' ){
     try {
         $userName = getInput( 'username' );
         $user->create([
-            'username' => strtolower($userName),
-            'password' => Hash::make(getInput( 'password' ), $salt),
-            'salt'     => $salt
+            'username'     => strtolower($userName),
+            'password'     => Hash::make(getInput( 'password' ), $salt),
+            'salt'         => $salt,
+            'group_id'     => User::DEFAULT_GROUP_ID
         ]);
 
     } catch( Exception $e ) {

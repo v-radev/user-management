@@ -9,6 +9,9 @@ if ( !$user->isLoggedIn() ){
     redirectHome();
 }
 
+//Check if user is allowed to edit profile
+if ( !$user->isAllowedTo(User::ACTION_EDIT_OWN_PROFILE) ) die('Not allowed to edit profile.');
+
 if ( $_SERVER['REQUEST_METHOD'] === 'POST' ){
 
     if ( !Token::check(getInput('token')) )

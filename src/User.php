@@ -7,6 +7,25 @@
  */
 class User {
 
+    /** Allowed actions */
+    const ACTION_EDIT_OWN_PROFILE     = 'editOwnProfile';
+    const ACTION_EDIT_FOREIGN_PROFILE = 'editForeignProfile';
+    const ACTION_CREATE_USER          = 'createUser';
+    const ACTION_DELETE_USER          = 'deleteUser';
+    const ACTION_MANAGE_GROUPS        = 'manageGroups';
+
+    const ADMIN_GROUP = 'Administrator';
+
+    const DEFAULT_GROUP_ID = 2;
+
+    protected $_allowedActions = [
+        self::ACTION_EDIT_OWN_PROFILE,
+        self::ACTION_EDIT_FOREIGN_PROFILE,
+        self::ACTION_CREATE_USER,
+        self::ACTION_DELETE_USER,
+        self::ACTION_MANAGE_GROUPS
+    ];
+
     /** @var DB */
     protected $_db = NULL;
 
@@ -306,4 +325,58 @@ class User {
         }
         return FALSE;
     }//END recallUser()
+
+    /**
+     * @param string $action
+     * @return bool
+     */
+    public function isAllowedTo( $action )
+    {
+        if ( !$this->isLoggedIn() || !$this->getData() )
+            throw new BadMethodCallException('User is not logged in.');
+
+        if ( !in_array($action, $this->_allowedActions) )
+            throw new BadMethodCallException('Action does not exist.');
+
+        $groupId = $this->_data->group_id;
+
+        //Get action id
+        $actionData = $this->_db->get(Config::PERMISSIONS_TABLE, ['name', '=', $action]);
+
+        if ( $actionData->fails() || !$actionData->count() )
+            throw new InvalidArgumentException('This action does not exist in the DB');
+
+        $actionData = $actionData->first();
+        $permId = $actionData->id;
+
+        $allowedQuery = $this->_db->getCustom(Config::GROUP_PERM_TABLE, 'group_id = ? AND perm_id = ?', [$groupId, $permId] );
+
+        if ( !$allowedQuery ) return FALSE;
+
+        return $this->_db->count() == 1;
+
+    }//END isAllowedTo()
+
+    public function isInGroup( $group )
+    {
+        if ( !$this->isLoggedIn() || !$this->getData() ){
+            throw new BadMethodCallException('User is not logged in.');
+        }
+
+        if ( is_numeric($group) ){
+            return $this->_data->group_id == $group;
+        }
+
+        //Get group id
+        $groupData = $this->_db->get(Config::GROUPS_TABLE, ['name', '=', $group]);
+
+        if ( $groupData->fails() || !$groupData->count() )
+            throw new InvalidArgumentException('This group does not exist in the DB');
+
+        $groupData = $groupData->first();
+        $groupId = $groupData->id;
+
+        return $this->_data->group_id == $groupId;
+
+    }//END isInGroup()
 } 

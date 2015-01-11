@@ -6,6 +6,9 @@ class Config {
     const USERS_TABLE = 'users';
     const SESSIONS_TABLE = 'user_sessions';
     const ATTEMPTS_TABLE = 'login_attempts';
+    const GROUPS_TABLE = 'groups';
+    const PERMISSIONS_TABLE = 'permissions';
+    const GROUP_PERM_TABLE = 'group_permissions';
 
     const USERS_SESSION_NAME = 'sesUserLogin';
     const COOKIE_SESSION_NAME = 'jarUserLogin';
