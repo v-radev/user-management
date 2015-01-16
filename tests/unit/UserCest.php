@@ -9,6 +9,18 @@ class UserCest
     protected $_sessionName = Config::USERS_SESSION_NAME;
     protected $_isLoggedInMethod = 'isLoggedIn';
 
+    protected $_nextDbUserId = 9;
+
+    protected $_firstDbUserId = 7;
+    protected $_secondDbUserId = 8;
+
+    protected $_firstDbUsername = 'roku';
+    protected $_firstDbPass = '1234';
+    protected $_secondDbUsername = 'zeke';
+
+    protected $_nonExistingDbUsername = 'equivalent';
+
+
     public function _before(UnitTester $I)
     {
     }
@@ -33,15 +45,17 @@ class UserCest
 
     public function testFindingUserMethod(UnitTester $I)
     {
-        $I->seeInDatabase('users', ['id' => 5, 'username' => 'steven']);
+        $id = $this->_firstDbUserId;
+        $name = $this->_firstDbUsername;
+        $I->seeInDatabase('users', ['id' => $id, 'username' => $name]);
         $I->dontSeeInDatabase('users', ['id' => 65, 'username' => 'HitleR']);
 
         //Find by id
         $u = new User();
-        $I->assertTrue($u->find(5));
+        $I->assertTrue($u->find($id));
         $data = $u->getData();
-        $I->assertEquals(5, $data->id);
-        $I->assertEquals('steven', $data->username);
+        $I->assertEquals($id, $data->id);
+        $I->assertEquals($name, $data->username);
         $I->assertFalse( Session::exists( $this->_sessionName ) );
 
         //Don't find
@@ -51,41 +65,46 @@ class UserCest
 
         //Find by username
         $to = new User();
-        $I->assertTrue($to->find('steven'));
+        $I->assertTrue($to->find($name));
         $data = $to->getData();
-        $I->assertEquals(5, $data->id);
-        $I->assertEquals('steven', $data->username);
+        $I->assertEquals($id, $data->id);
+        $I->assertEquals($name, $data->username);
     }
 
 
     public function testLoginFromClassInstance(UnitTester $I)
     {
-        $I->seeInDatabase('users', ['id' => 6, 'username' => 'koko']);
-        $I->seeInDatabase('users', ['id' => 5, 'username' => 'steven']);
+        $idOne = $this->_firstDbUserId;
+        $idTwo = $this->_secondDbUserId;
+        $nameOne = $this->_firstDbUsername;
+        $nameTwo = $this->_secondDbUsername;
+
+        $I->seeInDatabase('users', ['id' => $idOne, 'username' => $nameOne]);
+        $I->seeInDatabase('users', ['id' => $idTwo, 'username' => $nameTwo]);
 
         //By id //Not logged in
-        $u = new User(6);
+        $u = new User($idTwo);
         $data = $u->getData();
-        $I->assertEquals(6, $data->id);
-        $I->assertEquals('koko', $data->username);
+        $I->assertEquals($idTwo, $data->id);
+        $I->assertEquals($nameTwo, $data->username);
         $I->assertFalse( $u->{$this->_isLoggedInMethod}() );
         $I->assertFalse( Session::exists( $this->_sessionName ) );
 
         //By username //Not logged in
-        $two = new User('steven');
+        $two = new User($nameOne);
         $data = $two->getData();
-        $I->assertEquals(5, $data->id);
-        $I->assertEquals('steven', $data->username);
+        $I->assertEquals($idOne, $data->id);
+        $I->assertEquals($nameOne, $data->username);
         $I->assertFalse( $two->{$this->_isLoggedInMethod}() );
         $I->assertFalse( Session::exists( $this->_sessionName ) );
 
         //Success login from session
-        Session::put( $this->_sessionName, 6 );
+        Session::put( $this->_sessionName, $idTwo );
         $to = new User();
         $I->assertTrue( $to->{$this->_isLoggedInMethod}(), 'User should be logged in because of session.' );
         $data = $to->getData();
-        $I->assertEquals(6, $data->id);
-        $I->assertEquals('koko', $data->username);
+        $I->assertEquals($idTwo, $data->id);
+        $I->assertEquals($nameTwo, $data->username);
         $to->logout();
 
         //Fail login from session
@@ -98,8 +117,8 @@ class UserCest
 
     public function testCreatingNewUser(UnitTester $I)
     {
-
-        $I->dontSeeInDatabase('users', ['username' => 'roku']);
+        $name = $this->_nonExistingDbUsername;
+        $I->dontSeeInDatabase('users', ['username' => $name]);
 
         $u = new User();
 
@@ -107,12 +126,12 @@ class UserCest
         $I->assertFalse( Session::exists( $this->_sessionName ) );
 
         $u->create([
-            'username' => 'roku',
+            'username' => $name,
             'password' => 'NoStringsOnMe',
             'salt'     => 'pepper'
         ]);
 
-        $I->seeInDatabase('users', ['username' => 'roku', 'password' => 'NoStringsOnMe']);
+        $I->seeInDatabase('users', ['username' => $name, 'password' => 'NoStringsOnMe']);
     }
 
     public function testLoginUserMethodFromExistingData(UnitTester $I)
@@ -123,7 +142,7 @@ class UserCest
         $I->assertFalse( $u->{$this->_isLoggedInMethod}() );
         $I->assertFalse( Session::exists( $this->_sessionName ) );
 
-        $find = $u->find(5);
+        $find = $u->find($this->_firstDbUserId);
 
         $I->assertTrue($find, 'User should be found.');
         $login = $u->login();
@@ -150,11 +169,11 @@ class UserCest
 
     public function testLoginUserMethodWithPass(UnitTester $I)
     {
-        $I->dontSeeInDatabase('users', ['username' => 'hitler']);
+        $I->dontSeeInDatabase('users', ['username' => $this->_nonExistingDbUsername]);
 
         //Success login
         $u = new User();
-        $login = $u->login('steven', '223344');
+        $login = $u->login($this->_firstDbUsername, $this->_firstDbPass);
         $I->assertTrue($login['status']);
         $I->assertTrue( $u->{$this->_isLoggedInMethod}() );
         $I->assertNotNull( $u->getData() );
@@ -164,7 +183,7 @@ class UserCest
 
         //Fail password
         $two = new User();
-        $login = $two->login('steven', 'hacked');
+        $login = $two->login($this->_firstDbUsername, 'hacked');
         $I->assertFalse($login['status']);
         $I->assertFalse( $two->{$this->_isLoggedInMethod}() );
         $I->assertNull( $two->getData(), 'User failed to login, no data should exist.' );
@@ -173,7 +192,7 @@ class UserCest
 
         //Fail username
         $to = new User();
-        $login = $to->login('hitler', 'GermanY');
+        $login = $to->login($this->_nonExistingDbUsername, 'GermanY');
         $I->assertFalse($login['status']);
         $I->assertFalse( $to->{$this->_isLoggedInMethod}() );
         $I->assertNull( $to->getData() );
@@ -186,7 +205,7 @@ class UserCest
         $u = new User();
 
         try {
-            $login = $u->login('steven');
+            $login = $u->login($this->_firstDbUsername);
         } catch( InvalidArgumentException $e ) {
             $I->assertEquals("Argument username or password is empty.", $e->getMessage());
         }
@@ -196,7 +215,7 @@ class UserCest
     {
         //Success login
         $u = new User();
-        $login = $u->login('steven', '223344');
+        $login = $u->login($this->_firstDbUsername, $this->_firstDbPass);
         $I->assertTrue($login['status']);
         $I->assertTrue( $u->{$this->_isLoggedInMethod}() );
         $I->assertNotNull( $u->getData() );
@@ -211,7 +230,8 @@ class UserCest
 
     public function testUpdateMethodLoggedInUser(UnitTester $I)
     {
-        $I->dontSeeInDatabase('users', ['username' => 'roku']);
+        $name = $this->_nonExistingDbUsername;
+        $I->dontSeeInDatabase('users', ['username' => $name]);
 
         $u = new User();
 
@@ -219,16 +239,16 @@ class UserCest
         $I->assertFalse( Session::exists( $this->_sessionName ) );
 
         $u->create([
-            'username' => 'roku',
+            'username' => $name,
             'password' => Hash::make('NoStringsOnMe', 'pepper'),
             'salt'     => 'pepper'
         ]);
 
-        $I->seeInDatabase('users', ['username' => 'roku', 'salt' => 'pepper']);
+        $I->seeInDatabase('users', ['username' => $name, 'salt' => 'pepper']);
 
         //Login new user
         $roku = new User();
-        $login = $roku->login('roku', 'NoStringsOnMe');
+        $login = $roku->login($name, 'NoStringsOnMe');
         $I->assertTrue($login['status']);
         $I->assertTrue( $roku->{$this->_isLoggedInMethod}() );
         $I->assertNotNull( $roku->getData() );
@@ -238,12 +258,13 @@ class UserCest
             'salt'     => 'tlas'
         ]);
 
-        $I->seeInDatabase('users', ['username' => 'roku', 'password' => 'NoOrdersFromYou', 'salt' => 'tlas']);
+        $I->seeInDatabase('users', ['username' => $name, 'password' => 'NoOrdersFromYou', 'salt' => 'tlas']);
     }
 
     public function testUpdateMethodWithId(UnitTester $I)
     {
-        $I->dontSeeInDatabase('users', ['username' => 'roku']);
+        $name = $this->_nonExistingDbUsername;
+        $I->dontSeeInDatabase('users', ['username' => $name]);
 
         $u = new User();
 
@@ -251,19 +272,19 @@ class UserCest
         $I->assertFalse( Session::exists( $this->_sessionName ) );
 
         $u->create([
-            'username' => 'roku',
+            'username' => $name,
             'password' => Hash::make('NoStringsOnMe', 'pepper'),
             'salt'     => 'pepper'
         ]);
 
-        $I->seeInDatabase('users', ['username' => 'roku', 'salt' => 'pepper']);
+        $I->seeInDatabase('users', ['username' => $name, 'salt' => 'pepper']);
 
         $u->update([
             'password' => 'NoOrdersFromYou',
             'salt'     => 'tlas'
-        ], 8);
+        ], $this->_nextDbUserId);
 
-        $I->seeInDatabase('users', ['username' => 'roku', 'password' => 'NoOrdersFromYou', 'salt' => 'tlas']);
+        $I->seeInDatabase('users', ['username' => $name, 'password' => 'NoOrdersFromYou', 'salt' => 'tlas']);
     }
 
     public function testUpdateMethodException(UnitTester $I)

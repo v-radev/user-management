@@ -11,14 +11,14 @@ class DatabaseCest
 
     protected $_usersTable = Config::USERS_TABLE;
 
-    protected $_nextDbUserId = 7;
+    protected $_nextDbUserId = 9;
 
-    protected $_firstDbUserId = 5;
-    protected $_firstDbUsername = 'steven';
+    protected $_firstDbUserId = 7;
+    protected $_firstDbUsername = 'roku';
 
     protected $_newUsername = 'equivalent';
     protected $_newPassword = '123456';
-    protected $_newSalt = 'LongLiveSacredGermany';
+    protected $_newSalt = 'AnotherOneBitesTheDust';
 
     protected $_validUserData = [];
 
@@ -268,10 +268,11 @@ class DatabaseCest
     public function testUpdateMethodSuccess(UnitTester $I)
     {
         $db = $this->db;
+        $username = 'Inevitable';
 
-        $db->update($this->_usersTable, $this->_firstDbUserId, ['username' => 'Zeke', 'password' => 'Sacr3DG3rmanY']);
+        $db->update($this->_usersTable, $this->_firstDbUserId, ['username' => $username, 'password' => 'Sacr3DG3rmanY']);
 
-        $I->seeInDatabase($this->_usersTable, ['username' => 'Zeke', 'password' => 'Sacr3DG3rmanY']);
+        $I->seeInDatabase($this->_usersTable, ['username' => $username, 'password' => 'Sacr3DG3rmanY']);
     }
 
 

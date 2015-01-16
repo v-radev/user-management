@@ -3,69 +3,17 @@ $coverage = new PHP_CodeCoverage;
 $coverage->setData(array (
   '/var/www/html/user-management/src/DB.php' => 
   array (
-    26 => 
-    array (
-      0 => 'Codeception\\TestCase\\Cest::testDbClassInstance',
-    ),
-    27 => 
-    array (
-      0 => 'Codeception\\TestCase\\Cest::testDbClassInstance',
-    ),
-    28 => 
-    array (
-    ),
     30 => 
     array (
-      0 => 'Codeception\\TestCase\\Cest::testDbClassInstance',
     ),
-    37 => 
+    31 => 
     array (
-      0 => 'Codeception\\TestCase\\Cest::testDbClassInstance',
-      1 => 'Codeception\\TestCase\\Cest::testGetMethodWhereCountException',
-      2 => 'Codeception\\TestCase\\Cest::testGetMethodWhereOperatorException',
-      3 => 'Codeception\\TestCase\\Cest::testGetMethodWhereOperatorInValueException',
-      4 => 'Codeception\\TestCase\\Cest::testGetMethodFieldsArgument',
-      5 => 'Codeception\\TestCase\\Cest::testGetMethodWhereOperatorEquals',
-      6 => 'Codeception\\TestCase\\Cest::testGetMethodWhereOperatorLess',
-      7 => 'Codeception\\TestCase\\Cest::testGetMethodWhereOperatorGreater',
-      8 => 'Codeception\\TestCase\\Cest::testGetMethodWhereOperatorGTE',
-      9 => 'Codeception\\TestCase\\Cest::testGetMethodWhereOperatorLTE',
-      10 => 'Codeception\\TestCase\\Cest::testGetMethodWhereOperatorIn',
-      11 => 'Codeception\\TestCase\\Cest::testDeleteMethodWhereOperatorEquals',
-      12 => 'Codeception\\TestCase\\Cest::testDeleteMethodWhereOperatorIn',
-      13 => 'Codeception\\TestCase\\Cest::testDeleteMethodWhereOperatorLess',
-      14 => 'Codeception\\TestCase\\Cest::testDeleteMethodWhereOperatorLTE',
-      15 => 'Codeception\\TestCase\\Cest::testDeleteMethodWhereOperatorGreater',
-      16 => 'Codeception\\TestCase\\Cest::testDeleteMethodWhereOperatorGTE',
-      17 => 'Codeception\\TestCase\\Cest::testInsertMethodSuccess',
-      18 => 'Codeception\\TestCase\\Cest::testInsertMethodFailQuery',
-      19 => 'Codeception\\TestCase\\Cest::testInsertMethodFailFields',
-      20 => 'Codeception\\TestCase\\Cest::testUpdateMethodSuccess',
-      21 => 'Codeception\\TestCase\\Cest::testGetCustomMethodSimple',
-      22 => 'Codeception\\TestCase\\Cest::testGetCustomMethodFields',
-      23 => 'Codeception\\TestCase\\Cest::testGetCustomMethodOrder',
-      24 => 'Codeception\\TestCase\\Cest::testFirstMethodNoResults',
-      25 => 'Codeception\\TestCase\\Cest::testUserClass',
-      26 => 'Codeception\\TestCase\\Cest::testNotLoggedIn',
-      27 => 'Codeception\\TestCase\\Cest::testFindingUserMethod',
-      28 => 'Codeception\\TestCase\\Cest::testLoginFromClassInstance',
-      29 => 'Codeception\\TestCase\\Cest::testCreatingNewUser',
-      30 => 'Codeception\\TestCase\\Cest::testLoginUserMethodFromExistingData',
-      31 => 'Codeception\\TestCase\\Cest::testLoginUserMethodWithPass',
-      32 => 'Codeception\\TestCase\\Cest::testLoginException',
-      33 => 'Codeception\\TestCase\\Cest::testLogoutMethod',
-      34 => 'Codeception\\TestCase\\Cest::testUpdateMethodLoggedInUser',
-      35 => 'Codeception\\TestCase\\Cest::testUpdateMethodWithId',
-      36 => 'Codeception\\TestCase\\Cest::testUpdateMethodException',
-      37 => 'Codeception\\TestCase\\Cest::testGetDbInstanceMethod',
     ),
-    38 => 
+    32 => 
     array (
-      0 => 'Codeception\\TestCase\\Cest::testDbClassInstance',
     ),
-    39 => 
+    34 => 
     array (
-      0 => 'Codeception\\TestCase\\Cest::testDbClassInstance',
     ),
     41 => 
     array (
@@ -108,70 +56,55 @@ $coverage->setData(array (
       36 => 'Codeception\\TestCase\\Cest::testUpdateMethodException',
       37 => 'Codeception\\TestCase\\Cest::testGetDbInstanceMethod',
     ),
-    42 => NULL,
-    52 => 
+    42 => 
     array (
-      0 => 'Codeception\\TestCase\\Cest::testGetMethodFieldsArgument',
-      1 => 'Codeception\\TestCase\\Cest::testGetMethodWhereOperatorEquals',
-      2 => 'Codeception\\TestCase\\Cest::testGetMethodWhereOperatorLess',
-      3 => 'Codeception\\TestCase\\Cest::testGetMethodWhereOperatorGreater',
-      4 => 'Codeception\\TestCase\\Cest::testGetMethodWhereOperatorGTE',
-      5 => 'Codeception\\TestCase\\Cest::testGetMethodWhereOperatorLTE',
-      6 => 'Codeception\\TestCase\\Cest::testGetMethodWhereOperatorIn',
-      7 => 'Codeception\\TestCase\\Cest::testDeleteMethodWhereOperatorEquals',
-      8 => 'Codeception\\TestCase\\Cest::testDeleteMethodWhereOperatorIn',
-      9 => 'Codeception\\TestCase\\Cest::testDeleteMethodWhereOperatorLess',
-      10 => 'Codeception\\TestCase\\Cest::testDeleteMethodWhereOperatorLTE',
-      11 => 'Codeception\\TestCase\\Cest::testDeleteMethodWhereOperatorGreater',
-      12 => 'Codeception\\TestCase\\Cest::testDeleteMethodWhereOperatorGTE',
-      13 => 'Codeception\\TestCase\\Cest::testInsertMethodSuccess',
-      14 => 'Codeception\\TestCase\\Cest::testInsertMethodFailQuery',
-      15 => 'Codeception\\TestCase\\Cest::testUpdateMethodSuccess',
-      16 => 'Codeception\\TestCase\\Cest::testGetCustomMethodSimple',
-      17 => 'Codeception\\TestCase\\Cest::testGetCustomMethodFields',
-      18 => 'Codeception\\TestCase\\Cest::testGetCustomMethodOrder',
-      19 => 'Codeception\\TestCase\\Cest::testFirstMethodNoResults',
-      20 => 'Codeception\\TestCase\\Cest::testFindingUserMethod',
-      21 => 'Codeception\\TestCase\\Cest::testLoginFromClassInstance',
-      22 => 'Codeception\\TestCase\\Cest::testCreatingNewUser',
-      23 => 'Codeception\\TestCase\\Cest::testLoginUserMethodFromExistingData',
-      24 => 'Codeception\\TestCase\\Cest::testLoginUserMethodWithPass',
-      25 => 'Codeception\\TestCase\\Cest::testLogoutMethod',
-      26 => 'Codeception\\TestCase\\Cest::testUpdateMethodLoggedInUser',
-      27 => 'Codeception\\TestCase\\Cest::testUpdateMethodWithId',
     ),
-    53 => 
+    43 => 
     array (
-      0 => 'Codeception\\TestCase\\Cest::testGetMethodFieldsArgument',
-      1 => 'Codeception\\TestCase\\Cest::testGetMethodWhereOperatorEquals',
-      2 => 'Codeception\\TestCase\\Cest::testGetMethodWhereOperatorLess',
-      3 => 'Codeception\\TestCase\\Cest::testGetMethodWhereOperatorGreater',
-      4 => 'Codeception\\TestCase\\Cest::testGetMethodWhereOperatorGTE',
-      5 => 'Codeception\\TestCase\\Cest::testGetMethodWhereOperatorLTE',
-      6 => 'Codeception\\TestCase\\Cest::testGetMethodWhereOperatorIn',
-      7 => 'Codeception\\TestCase\\Cest::testDeleteMethodWhereOperatorEquals',
-      8 => 'Codeception\\TestCase\\Cest::testDeleteMethodWhereOperatorIn',
-      9 => 'Codeception\\TestCase\\Cest::testDeleteMethodWhereOperatorLess',
-      10 => 'Codeception\\TestCase\\Cest::testDeleteMethodWhereOperatorLTE',
-      11 => 'Codeception\\TestCase\\Cest::testDeleteMethodWhereOperatorGreater',
-      12 => 'Codeception\\TestCase\\Cest::testDeleteMethodWhereOperatorGTE',
-      13 => 'Codeception\\TestCase\\Cest::testInsertMethodSuccess',
-      14 => 'Codeception\\TestCase\\Cest::testInsertMethodFailQuery',
-      15 => 'Codeception\\TestCase\\Cest::testUpdateMethodSuccess',
-      16 => 'Codeception\\TestCase\\Cest::testGetCustomMethodSimple',
-      17 => 'Codeception\\TestCase\\Cest::testGetCustomMethodFields',
-      18 => 'Codeception\\TestCase\\Cest::testGetCustomMethodOrder',
-      19 => 'Codeception\\TestCase\\Cest::testFirstMethodNoResults',
-      20 => 'Codeception\\TestCase\\Cest::testFindingUserMethod',
-      21 => 'Codeception\\TestCase\\Cest::testLoginFromClassInstance',
-      22 => 'Codeception\\TestCase\\Cest::testCreatingNewUser',
-      23 => 'Codeception\\TestCase\\Cest::testLoginUserMethodFromExistingData',
-      24 => 'Codeception\\TestCase\\Cest::testLoginUserMethodWithPass',
-      25 => 'Codeception\\TestCase\\Cest::testLogoutMethod',
-      26 => 'Codeception\\TestCase\\Cest::testUpdateMethodLoggedInUser',
-      27 => 'Codeception\\TestCase\\Cest::testUpdateMethodWithId',
     ),
-    55 => 
+    45 => 
+    array (
+      0 => 'Codeception\\TestCase\\Cest::testDbClassInstance',
+      1 => 'Codeception\\TestCase\\Cest::testGetMethodWhereCountException',
+      2 => 'Codeception\\TestCase\\Cest::testGetMethodWhereOperatorException',
+      3 => 'Codeception\\TestCase\\Cest::testGetMethodWhereOperatorInValueException',
+      4 => 'Codeception\\TestCase\\Cest::testGetMethodFieldsArgument',
+      5 => 'Codeception\\TestCase\\Cest::testGetMethodWhereOperatorEquals',
+      6 => 'Codeception\\TestCase\\Cest::testGetMethodWhereOperatorLess',
+      7 => 'Codeception\\TestCase\\Cest::testGetMethodWhereOperatorGreater',
+      8 => 'Codeception\\TestCase\\Cest::testGetMethodWhereOperatorGTE',
+      9 => 'Codeception\\TestCase\\Cest::testGetMethodWhereOperatorLTE',
+      10 => 'Codeception\\TestCase\\Cest::testGetMethodWhereOperatorIn',
+      11 => 'Codeception\\TestCase\\Cest::testDeleteMethodWhereOperatorEquals',
+      12 => 'Codeception\\TestCase\\Cest::testDeleteMethodWhereOperatorIn',
+      13 => 'Codeception\\TestCase\\Cest::testDeleteMethodWhereOperatorLess',
+      14 => 'Codeception\\TestCase\\Cest::testDeleteMethodWhereOperatorLTE',
+      15 => 'Codeception\\TestCase\\Cest::testDeleteMethodWhereOperatorGreater',
+      16 => 'Codeception\\TestCase\\Cest::testDeleteMethodWhereOperatorGTE',
+      17 => 'Codeception\\TestCase\\Cest::testInsertMethodSuccess',
+      18 => 'Codeception\\TestCase\\Cest::testInsertMethodFailQuery',
+      19 => 'Codeception\\TestCase\\Cest::testInsertMethodFailFields',
+      20 => 'Codeception\\TestCase\\Cest::testUpdateMethodSuccess',
+      21 => 'Codeception\\TestCase\\Cest::testGetCustomMethodSimple',
+      22 => 'Codeception\\TestCase\\Cest::testGetCustomMethodFields',
+      23 => 'Codeception\\TestCase\\Cest::testGetCustomMethodOrder',
+      24 => 'Codeception\\TestCase\\Cest::testFirstMethodNoResults',
+      25 => 'Codeception\\TestCase\\Cest::testUserClass',
+      26 => 'Codeception\\TestCase\\Cest::testNotLoggedIn',
+      27 => 'Codeception\\TestCase\\Cest::testFindingUserMethod',
+      28 => 'Codeception\\TestCase\\Cest::testLoginFromClassInstance',
+      29 => 'Codeception\\TestCase\\Cest::testCreatingNewUser',
+      30 => 'Codeception\\TestCase\\Cest::testLoginUserMethodFromExistingData',
+      31 => 'Codeception\\TestCase\\Cest::testLoginUserMethodWithPass',
+      32 => 'Codeception\\TestCase\\Cest::testLoginException',
+      33 => 'Codeception\\TestCase\\Cest::testLogoutMethod',
+      34 => 'Codeception\\TestCase\\Cest::testUpdateMethodLoggedInUser',
+      35 => 'Codeception\\TestCase\\Cest::testUpdateMethodWithId',
+      36 => 'Codeception\\TestCase\\Cest::testUpdateMethodException',
+      37 => 'Codeception\\TestCase\\Cest::testGetDbInstanceMethod',
+    ),
+    46 => NULL,
+    56 => 
     array (
       0 => 'Codeception\\TestCase\\Cest::testGetMethodFieldsArgument',
       1 => 'Codeception\\TestCase\\Cest::testGetMethodWhereOperatorEquals',
@@ -233,69 +166,7 @@ $coverage->setData(array (
       26 => 'Codeception\\TestCase\\Cest::testUpdateMethodLoggedInUser',
       27 => 'Codeception\\TestCase\\Cest::testUpdateMethodWithId',
     ),
-    58 => 
-    array (
-      0 => 'Codeception\\TestCase\\Cest::testGetMethodFieldsArgument',
-      1 => 'Codeception\\TestCase\\Cest::testGetMethodWhereOperatorEquals',
-      2 => 'Codeception\\TestCase\\Cest::testGetMethodWhereOperatorLess',
-      3 => 'Codeception\\TestCase\\Cest::testGetMethodWhereOperatorGreater',
-      4 => 'Codeception\\TestCase\\Cest::testGetMethodWhereOperatorGTE',
-      5 => 'Codeception\\TestCase\\Cest::testGetMethodWhereOperatorLTE',
-      6 => 'Codeception\\TestCase\\Cest::testGetMethodWhereOperatorIn',
-      7 => 'Codeception\\TestCase\\Cest::testDeleteMethodWhereOperatorEquals',
-      8 => 'Codeception\\TestCase\\Cest::testDeleteMethodWhereOperatorIn',
-      9 => 'Codeception\\TestCase\\Cest::testDeleteMethodWhereOperatorLess',
-      10 => 'Codeception\\TestCase\\Cest::testDeleteMethodWhereOperatorLTE',
-      11 => 'Codeception\\TestCase\\Cest::testDeleteMethodWhereOperatorGreater',
-      12 => 'Codeception\\TestCase\\Cest::testDeleteMethodWhereOperatorGTE',
-      13 => 'Codeception\\TestCase\\Cest::testInsertMethodSuccess',
-      14 => 'Codeception\\TestCase\\Cest::testInsertMethodFailQuery',
-      15 => 'Codeception\\TestCase\\Cest::testUpdateMethodSuccess',
-      16 => 'Codeception\\TestCase\\Cest::testGetCustomMethodSimple',
-      17 => 'Codeception\\TestCase\\Cest::testGetCustomMethodFields',
-      18 => 'Codeception\\TestCase\\Cest::testGetCustomMethodOrder',
-      19 => 'Codeception\\TestCase\\Cest::testFirstMethodNoResults',
-      20 => 'Codeception\\TestCase\\Cest::testFindingUserMethod',
-      21 => 'Codeception\\TestCase\\Cest::testLoginFromClassInstance',
-      22 => 'Codeception\\TestCase\\Cest::testCreatingNewUser',
-      23 => 'Codeception\\TestCase\\Cest::testLoginUserMethodFromExistingData',
-      24 => 'Codeception\\TestCase\\Cest::testLoginUserMethodWithPass',
-      25 => 'Codeception\\TestCase\\Cest::testLogoutMethod',
-      26 => 'Codeception\\TestCase\\Cest::testUpdateMethodLoggedInUser',
-      27 => 'Codeception\\TestCase\\Cest::testUpdateMethodWithId',
-    ),
     59 => 
-    array (
-      0 => 'Codeception\\TestCase\\Cest::testGetMethodFieldsArgument',
-      1 => 'Codeception\\TestCase\\Cest::testGetMethodWhereOperatorEquals',
-      2 => 'Codeception\\TestCase\\Cest::testGetMethodWhereOperatorLess',
-      3 => 'Codeception\\TestCase\\Cest::testGetMethodWhereOperatorGreater',
-      4 => 'Codeception\\TestCase\\Cest::testGetMethodWhereOperatorGTE',
-      5 => 'Codeception\\TestCase\\Cest::testGetMethodWhereOperatorLTE',
-      6 => 'Codeception\\TestCase\\Cest::testGetMethodWhereOperatorIn',
-      7 => 'Codeception\\TestCase\\Cest::testDeleteMethodWhereOperatorEquals',
-      8 => 'Codeception\\TestCase\\Cest::testDeleteMethodWhereOperatorIn',
-      9 => 'Codeception\\TestCase\\Cest::testDeleteMethodWhereOperatorLess',
-      10 => 'Codeception\\TestCase\\Cest::testDeleteMethodWhereOperatorLTE',
-      11 => 'Codeception\\TestCase\\Cest::testDeleteMethodWhereOperatorGreater',
-      12 => 'Codeception\\TestCase\\Cest::testDeleteMethodWhereOperatorGTE',
-      13 => 'Codeception\\TestCase\\Cest::testInsertMethodSuccess',
-      14 => 'Codeception\\TestCase\\Cest::testInsertMethodFailQuery',
-      15 => 'Codeception\\TestCase\\Cest::testUpdateMethodSuccess',
-      16 => 'Codeception\\TestCase\\Cest::testGetCustomMethodSimple',
-      17 => 'Codeception\\TestCase\\Cest::testGetCustomMethodFields',
-      18 => 'Codeception\\TestCase\\Cest::testGetCustomMethodOrder',
-      19 => 'Codeception\\TestCase\\Cest::testFirstMethodNoResults',
-      20 => 'Codeception\\TestCase\\Cest::testFindingUserMethod',
-      21 => 'Codeception\\TestCase\\Cest::testLoginFromClassInstance',
-      22 => 'Codeception\\TestCase\\Cest::testCreatingNewUser',
-      23 => 'Codeception\\TestCase\\Cest::testLoginUserMethodFromExistingData',
-      24 => 'Codeception\\TestCase\\Cest::testLoginUserMethodWithPass',
-      25 => 'Codeception\\TestCase\\Cest::testLogoutMethod',
-      26 => 'Codeception\\TestCase\\Cest::testUpdateMethodLoggedInUser',
-      27 => 'Codeception\\TestCase\\Cest::testUpdateMethodWithId',
-    ),
-    60 => 
     array (
       0 => 'Codeception\\TestCase\\Cest::testGetMethodFieldsArgument',
       1 => 'Codeception\\TestCase\\Cest::testGetMethodWhereOperatorEquals',
@@ -359,88 +230,36 @@ $coverage->setData(array (
     ),
     62 => 
     array (
-      0 => 'Codeception\\TestCase\\Cest::testGetMethodWhereOperatorIn',
-      1 => 'Codeception\\TestCase\\Cest::testDeleteMethodWhereOperatorIn',
+      0 => 'Codeception\\TestCase\\Cest::testGetMethodFieldsArgument',
+      1 => 'Codeception\\TestCase\\Cest::testGetMethodWhereOperatorEquals',
+      2 => 'Codeception\\TestCase\\Cest::testGetMethodWhereOperatorLess',
+      3 => 'Codeception\\TestCase\\Cest::testGetMethodWhereOperatorGreater',
+      4 => 'Codeception\\TestCase\\Cest::testGetMethodWhereOperatorGTE',
+      5 => 'Codeception\\TestCase\\Cest::testGetMethodWhereOperatorLTE',
+      6 => 'Codeception\\TestCase\\Cest::testGetMethodWhereOperatorIn',
+      7 => 'Codeception\\TestCase\\Cest::testDeleteMethodWhereOperatorEquals',
+      8 => 'Codeception\\TestCase\\Cest::testDeleteMethodWhereOperatorIn',
+      9 => 'Codeception\\TestCase\\Cest::testDeleteMethodWhereOperatorLess',
+      10 => 'Codeception\\TestCase\\Cest::testDeleteMethodWhereOperatorLTE',
+      11 => 'Codeception\\TestCase\\Cest::testDeleteMethodWhereOperatorGreater',
+      12 => 'Codeception\\TestCase\\Cest::testDeleteMethodWhereOperatorGTE',
+      13 => 'Codeception\\TestCase\\Cest::testInsertMethodSuccess',
+      14 => 'Codeception\\TestCase\\Cest::testInsertMethodFailQuery',
+      15 => 'Codeception\\TestCase\\Cest::testUpdateMethodSuccess',
+      16 => 'Codeception\\TestCase\\Cest::testGetCustomMethodSimple',
+      17 => 'Codeception\\TestCase\\Cest::testGetCustomMethodFields',
+      18 => 'Codeception\\TestCase\\Cest::testGetCustomMethodOrder',
+      19 => 'Codeception\\TestCase\\Cest::testFirstMethodNoResults',
+      20 => 'Codeception\\TestCase\\Cest::testFindingUserMethod',
+      21 => 'Codeception\\TestCase\\Cest::testLoginFromClassInstance',
+      22 => 'Codeception\\TestCase\\Cest::testCreatingNewUser',
+      23 => 'Codeception\\TestCase\\Cest::testLoginUserMethodFromExistingData',
+      24 => 'Codeception\\TestCase\\Cest::testLoginUserMethodWithPass',
+      25 => 'Codeception\\TestCase\\Cest::testLogoutMethod',
+      26 => 'Codeception\\TestCase\\Cest::testUpdateMethodLoggedInUser',
+      27 => 'Codeception\\TestCase\\Cest::testUpdateMethodWithId',
     ),
     63 => 
-    array (
-      0 => 'Codeception\\TestCase\\Cest::testGetMethodWhereOperatorIn',
-      1 => 'Codeception\\TestCase\\Cest::testDeleteMethodWhereOperatorIn',
-    ),
-    64 => 
-    array (
-      0 => 'Codeception\\TestCase\\Cest::testGetMethodWhereOperatorIn',
-      1 => 'Codeception\\TestCase\\Cest::testDeleteMethodWhereOperatorIn',
-    ),
-    65 => 
-    array (
-      0 => 'Codeception\\TestCase\\Cest::testGetMethodWhereOperatorIn',
-      1 => 'Codeception\\TestCase\\Cest::testDeleteMethodWhereOperatorIn',
-    ),
-    66 => 
-    array (
-      0 => 'Codeception\\TestCase\\Cest::testGetMethodWhereOperatorIn',
-      1 => 'Codeception\\TestCase\\Cest::testDeleteMethodWhereOperatorIn',
-    ),
-    68 => 
-    array (
-      0 => 'Codeception\\TestCase\\Cest::testGetMethodFieldsArgument',
-      1 => 'Codeception\\TestCase\\Cest::testGetMethodWhereOperatorEquals',
-      2 => 'Codeception\\TestCase\\Cest::testGetMethodWhereOperatorLess',
-      3 => 'Codeception\\TestCase\\Cest::testGetMethodWhereOperatorGreater',
-      4 => 'Codeception\\TestCase\\Cest::testGetMethodWhereOperatorGTE',
-      5 => 'Codeception\\TestCase\\Cest::testGetMethodWhereOperatorLTE',
-      6 => 'Codeception\\TestCase\\Cest::testDeleteMethodWhereOperatorEquals',
-      7 => 'Codeception\\TestCase\\Cest::testDeleteMethodWhereOperatorLess',
-      8 => 'Codeception\\TestCase\\Cest::testDeleteMethodWhereOperatorLTE',
-      9 => 'Codeception\\TestCase\\Cest::testDeleteMethodWhereOperatorGreater',
-      10 => 'Codeception\\TestCase\\Cest::testDeleteMethodWhereOperatorGTE',
-      11 => 'Codeception\\TestCase\\Cest::testInsertMethodSuccess',
-      12 => 'Codeception\\TestCase\\Cest::testInsertMethodFailQuery',
-      13 => 'Codeception\\TestCase\\Cest::testUpdateMethodSuccess',
-      14 => 'Codeception\\TestCase\\Cest::testGetCustomMethodSimple',
-      15 => 'Codeception\\TestCase\\Cest::testGetCustomMethodFields',
-      16 => 'Codeception\\TestCase\\Cest::testGetCustomMethodOrder',
-      17 => 'Codeception\\TestCase\\Cest::testFirstMethodNoResults',
-      18 => 'Codeception\\TestCase\\Cest::testFindingUserMethod',
-      19 => 'Codeception\\TestCase\\Cest::testLoginFromClassInstance',
-      20 => 'Codeception\\TestCase\\Cest::testCreatingNewUser',
-      21 => 'Codeception\\TestCase\\Cest::testLoginUserMethodFromExistingData',
-      22 => 'Codeception\\TestCase\\Cest::testLoginUserMethodWithPass',
-      23 => 'Codeception\\TestCase\\Cest::testLogoutMethod',
-      24 => 'Codeception\\TestCase\\Cest::testUpdateMethodLoggedInUser',
-      25 => 'Codeception\\TestCase\\Cest::testUpdateMethodWithId',
-    ),
-    69 => 
-    array (
-      0 => 'Codeception\\TestCase\\Cest::testGetMethodFieldsArgument',
-      1 => 'Codeception\\TestCase\\Cest::testGetMethodWhereOperatorEquals',
-      2 => 'Codeception\\TestCase\\Cest::testGetMethodWhereOperatorLess',
-      3 => 'Codeception\\TestCase\\Cest::testGetMethodWhereOperatorGreater',
-      4 => 'Codeception\\TestCase\\Cest::testGetMethodWhereOperatorGTE',
-      5 => 'Codeception\\TestCase\\Cest::testGetMethodWhereOperatorLTE',
-      6 => 'Codeception\\TestCase\\Cest::testDeleteMethodWhereOperatorEquals',
-      7 => 'Codeception\\TestCase\\Cest::testDeleteMethodWhereOperatorLess',
-      8 => 'Codeception\\TestCase\\Cest::testDeleteMethodWhereOperatorLTE',
-      9 => 'Codeception\\TestCase\\Cest::testDeleteMethodWhereOperatorGreater',
-      10 => 'Codeception\\TestCase\\Cest::testDeleteMethodWhereOperatorGTE',
-      11 => 'Codeception\\TestCase\\Cest::testInsertMethodSuccess',
-      12 => 'Codeception\\TestCase\\Cest::testInsertMethodFailQuery',
-      13 => 'Codeception\\TestCase\\Cest::testUpdateMethodSuccess',
-      14 => 'Codeception\\TestCase\\Cest::testGetCustomMethodSimple',
-      15 => 'Codeception\\TestCase\\Cest::testGetCustomMethodFields',
-      16 => 'Codeception\\TestCase\\Cest::testGetCustomMethodOrder',
-      17 => 'Codeception\\TestCase\\Cest::testFirstMethodNoResults',
-      18 => 'Codeception\\TestCase\\Cest::testFindingUserMethod',
-      19 => 'Codeception\\TestCase\\Cest::testLoginFromClassInstance',
-      20 => 'Codeception\\TestCase\\Cest::testCreatingNewUser',
-      21 => 'Codeception\\TestCase\\Cest::testLoginUserMethodFromExistingData',
-      22 => 'Codeception\\TestCase\\Cest::testLoginUserMethodWithPass',
-      23 => 'Codeception\\TestCase\\Cest::testLogoutMethod',
-      24 => 'Codeception\\TestCase\\Cest::testUpdateMethodLoggedInUser',
-      25 => 'Codeception\\TestCase\\Cest::testUpdateMethodWithId',
-    ),
-    71 => 
     array (
       0 => 'Codeception\\TestCase\\Cest::testGetMethodFieldsArgument',
       1 => 'Codeception\\TestCase\\Cest::testGetMethodWhereOperatorEquals',
@@ -470,6 +289,93 @@ $coverage->setData(array (
       25 => 'Codeception\\TestCase\\Cest::testLogoutMethod',
       26 => 'Codeception\\TestCase\\Cest::testUpdateMethodLoggedInUser',
       27 => 'Codeception\\TestCase\\Cest::testUpdateMethodWithId',
+    ),
+    64 => 
+    array (
+      0 => 'Codeception\\TestCase\\Cest::testGetMethodFieldsArgument',
+      1 => 'Codeception\\TestCase\\Cest::testGetMethodWhereOperatorEquals',
+      2 => 'Codeception\\TestCase\\Cest::testGetMethodWhereOperatorLess',
+      3 => 'Codeception\\TestCase\\Cest::testGetMethodWhereOperatorGreater',
+      4 => 'Codeception\\TestCase\\Cest::testGetMethodWhereOperatorGTE',
+      5 => 'Codeception\\TestCase\\Cest::testGetMethodWhereOperatorLTE',
+      6 => 'Codeception\\TestCase\\Cest::testGetMethodWhereOperatorIn',
+      7 => 'Codeception\\TestCase\\Cest::testDeleteMethodWhereOperatorEquals',
+      8 => 'Codeception\\TestCase\\Cest::testDeleteMethodWhereOperatorIn',
+      9 => 'Codeception\\TestCase\\Cest::testDeleteMethodWhereOperatorLess',
+      10 => 'Codeception\\TestCase\\Cest::testDeleteMethodWhereOperatorLTE',
+      11 => 'Codeception\\TestCase\\Cest::testDeleteMethodWhereOperatorGreater',
+      12 => 'Codeception\\TestCase\\Cest::testDeleteMethodWhereOperatorGTE',
+      13 => 'Codeception\\TestCase\\Cest::testInsertMethodSuccess',
+      14 => 'Codeception\\TestCase\\Cest::testInsertMethodFailQuery',
+      15 => 'Codeception\\TestCase\\Cest::testUpdateMethodSuccess',
+      16 => 'Codeception\\TestCase\\Cest::testGetCustomMethodSimple',
+      17 => 'Codeception\\TestCase\\Cest::testGetCustomMethodFields',
+      18 => 'Codeception\\TestCase\\Cest::testGetCustomMethodOrder',
+      19 => 'Codeception\\TestCase\\Cest::testFirstMethodNoResults',
+      20 => 'Codeception\\TestCase\\Cest::testFindingUserMethod',
+      21 => 'Codeception\\TestCase\\Cest::testLoginFromClassInstance',
+      22 => 'Codeception\\TestCase\\Cest::testCreatingNewUser',
+      23 => 'Codeception\\TestCase\\Cest::testLoginUserMethodFromExistingData',
+      24 => 'Codeception\\TestCase\\Cest::testLoginUserMethodWithPass',
+      25 => 'Codeception\\TestCase\\Cest::testLogoutMethod',
+      26 => 'Codeception\\TestCase\\Cest::testUpdateMethodLoggedInUser',
+      27 => 'Codeception\\TestCase\\Cest::testUpdateMethodWithId',
+    ),
+    65 => 
+    array (
+      0 => 'Codeception\\TestCase\\Cest::testGetMethodFieldsArgument',
+      1 => 'Codeception\\TestCase\\Cest::testGetMethodWhereOperatorEquals',
+      2 => 'Codeception\\TestCase\\Cest::testGetMethodWhereOperatorLess',
+      3 => 'Codeception\\TestCase\\Cest::testGetMethodWhereOperatorGreater',
+      4 => 'Codeception\\TestCase\\Cest::testGetMethodWhereOperatorGTE',
+      5 => 'Codeception\\TestCase\\Cest::testGetMethodWhereOperatorLTE',
+      6 => 'Codeception\\TestCase\\Cest::testGetMethodWhereOperatorIn',
+      7 => 'Codeception\\TestCase\\Cest::testDeleteMethodWhereOperatorEquals',
+      8 => 'Codeception\\TestCase\\Cest::testDeleteMethodWhereOperatorIn',
+      9 => 'Codeception\\TestCase\\Cest::testDeleteMethodWhereOperatorLess',
+      10 => 'Codeception\\TestCase\\Cest::testDeleteMethodWhereOperatorLTE',
+      11 => 'Codeception\\TestCase\\Cest::testDeleteMethodWhereOperatorGreater',
+      12 => 'Codeception\\TestCase\\Cest::testDeleteMethodWhereOperatorGTE',
+      13 => 'Codeception\\TestCase\\Cest::testInsertMethodSuccess',
+      14 => 'Codeception\\TestCase\\Cest::testInsertMethodFailQuery',
+      15 => 'Codeception\\TestCase\\Cest::testUpdateMethodSuccess',
+      16 => 'Codeception\\TestCase\\Cest::testGetCustomMethodSimple',
+      17 => 'Codeception\\TestCase\\Cest::testGetCustomMethodFields',
+      18 => 'Codeception\\TestCase\\Cest::testGetCustomMethodOrder',
+      19 => 'Codeception\\TestCase\\Cest::testFirstMethodNoResults',
+      20 => 'Codeception\\TestCase\\Cest::testFindingUserMethod',
+      21 => 'Codeception\\TestCase\\Cest::testLoginFromClassInstance',
+      22 => 'Codeception\\TestCase\\Cest::testCreatingNewUser',
+      23 => 'Codeception\\TestCase\\Cest::testLoginUserMethodFromExistingData',
+      24 => 'Codeception\\TestCase\\Cest::testLoginUserMethodWithPass',
+      25 => 'Codeception\\TestCase\\Cest::testLogoutMethod',
+      26 => 'Codeception\\TestCase\\Cest::testUpdateMethodLoggedInUser',
+      27 => 'Codeception\\TestCase\\Cest::testUpdateMethodWithId',
+    ),
+    66 => 
+    array (
+      0 => 'Codeception\\TestCase\\Cest::testGetMethodWhereOperatorIn',
+      1 => 'Codeception\\TestCase\\Cest::testDeleteMethodWhereOperatorIn',
+    ),
+    67 => 
+    array (
+      0 => 'Codeception\\TestCase\\Cest::testGetMethodWhereOperatorIn',
+      1 => 'Codeception\\TestCase\\Cest::testDeleteMethodWhereOperatorIn',
+    ),
+    68 => 
+    array (
+      0 => 'Codeception\\TestCase\\Cest::testGetMethodWhereOperatorIn',
+      1 => 'Codeception\\TestCase\\Cest::testDeleteMethodWhereOperatorIn',
+    ),
+    69 => 
+    array (
+      0 => 'Codeception\\TestCase\\Cest::testGetMethodWhereOperatorIn',
+      1 => 'Codeception\\TestCase\\Cest::testDeleteMethodWhereOperatorIn',
+    ),
+    70 => 
+    array (
+      0 => 'Codeception\\TestCase\\Cest::testGetMethodWhereOperatorIn',
+      1 => 'Codeception\\TestCase\\Cest::testDeleteMethodWhereOperatorIn',
     ),
     72 => 
     array (
@@ -479,30 +385,28 @@ $coverage->setData(array (
       3 => 'Codeception\\TestCase\\Cest::testGetMethodWhereOperatorGreater',
       4 => 'Codeception\\TestCase\\Cest::testGetMethodWhereOperatorGTE',
       5 => 'Codeception\\TestCase\\Cest::testGetMethodWhereOperatorLTE',
-      6 => 'Codeception\\TestCase\\Cest::testGetMethodWhereOperatorIn',
-      7 => 'Codeception\\TestCase\\Cest::testDeleteMethodWhereOperatorEquals',
-      8 => 'Codeception\\TestCase\\Cest::testDeleteMethodWhereOperatorIn',
-      9 => 'Codeception\\TestCase\\Cest::testDeleteMethodWhereOperatorLess',
-      10 => 'Codeception\\TestCase\\Cest::testDeleteMethodWhereOperatorLTE',
-      11 => 'Codeception\\TestCase\\Cest::testDeleteMethodWhereOperatorGreater',
-      12 => 'Codeception\\TestCase\\Cest::testDeleteMethodWhereOperatorGTE',
-      13 => 'Codeception\\TestCase\\Cest::testInsertMethodSuccess',
-      14 => 'Codeception\\TestCase\\Cest::testInsertMethodFailQuery',
-      15 => 'Codeception\\TestCase\\Cest::testUpdateMethodSuccess',
-      16 => 'Codeception\\TestCase\\Cest::testGetCustomMethodSimple',
-      17 => 'Codeception\\TestCase\\Cest::testGetCustomMethodFields',
-      18 => 'Codeception\\TestCase\\Cest::testGetCustomMethodOrder',
-      19 => 'Codeception\\TestCase\\Cest::testFirstMethodNoResults',
-      20 => 'Codeception\\TestCase\\Cest::testFindingUserMethod',
-      21 => 'Codeception\\TestCase\\Cest::testLoginFromClassInstance',
-      22 => 'Codeception\\TestCase\\Cest::testCreatingNewUser',
-      23 => 'Codeception\\TestCase\\Cest::testLoginUserMethodFromExistingData',
-      24 => 'Codeception\\TestCase\\Cest::testLoginUserMethodWithPass',
-      25 => 'Codeception\\TestCase\\Cest::testLogoutMethod',
-      26 => 'Codeception\\TestCase\\Cest::testUpdateMethodLoggedInUser',
-      27 => 'Codeception\\TestCase\\Cest::testUpdateMethodWithId',
+      6 => 'Codeception\\TestCase\\Cest::testDeleteMethodWhereOperatorEquals',
+      7 => 'Codeception\\TestCase\\Cest::testDeleteMethodWhereOperatorLess',
+      8 => 'Codeception\\TestCase\\Cest::testDeleteMethodWhereOperatorLTE',
+      9 => 'Codeception\\TestCase\\Cest::testDeleteMethodWhereOperatorGreater',
+      10 => 'Codeception\\TestCase\\Cest::testDeleteMethodWhereOperatorGTE',
+      11 => 'Codeception\\TestCase\\Cest::testInsertMethodSuccess',
+      12 => 'Codeception\\TestCase\\Cest::testInsertMethodFailQuery',
+      13 => 'Codeception\\TestCase\\Cest::testUpdateMethodSuccess',
+      14 => 'Codeception\\TestCase\\Cest::testGetCustomMethodSimple',
+      15 => 'Codeception\\TestCase\\Cest::testGetCustomMethodFields',
+      16 => 'Codeception\\TestCase\\Cest::testGetCustomMethodOrder',
+      17 => 'Codeception\\TestCase\\Cest::testFirstMethodNoResults',
+      18 => 'Codeception\\TestCase\\Cest::testFindingUserMethod',
+      19 => 'Codeception\\TestCase\\Cest::testLoginFromClassInstance',
+      20 => 'Codeception\\TestCase\\Cest::testCreatingNewUser',
+      21 => 'Codeception\\TestCase\\Cest::testLoginUserMethodFromExistingData',
+      22 => 'Codeception\\TestCase\\Cest::testLoginUserMethodWithPass',
+      23 => 'Codeception\\TestCase\\Cest::testLogoutMethod',
+      24 => 'Codeception\\TestCase\\Cest::testUpdateMethodLoggedInUser',
+      25 => 'Codeception\\TestCase\\Cest::testUpdateMethodWithId',
     ),
-    74 => 
+    73 => 
     array (
       0 => 'Codeception\\TestCase\\Cest::testGetMethodFieldsArgument',
       1 => 'Codeception\\TestCase\\Cest::testGetMethodWhereOperatorEquals',
@@ -510,28 +414,26 @@ $coverage->setData(array (
       3 => 'Codeception\\TestCase\\Cest::testGetMethodWhereOperatorGreater',
       4 => 'Codeception\\TestCase\\Cest::testGetMethodWhereOperatorGTE',
       5 => 'Codeception\\TestCase\\Cest::testGetMethodWhereOperatorLTE',
-      6 => 'Codeception\\TestCase\\Cest::testGetMethodWhereOperatorIn',
-      7 => 'Codeception\\TestCase\\Cest::testDeleteMethodWhereOperatorEquals',
-      8 => 'Codeception\\TestCase\\Cest::testDeleteMethodWhereOperatorIn',
-      9 => 'Codeception\\TestCase\\Cest::testDeleteMethodWhereOperatorLess',
-      10 => 'Codeception\\TestCase\\Cest::testDeleteMethodWhereOperatorLTE',
-      11 => 'Codeception\\TestCase\\Cest::testDeleteMethodWhereOperatorGreater',
-      12 => 'Codeception\\TestCase\\Cest::testDeleteMethodWhereOperatorGTE',
-      13 => 'Codeception\\TestCase\\Cest::testInsertMethodSuccess',
-      14 => 'Codeception\\TestCase\\Cest::testInsertMethodFailQuery',
-      15 => 'Codeception\\TestCase\\Cest::testUpdateMethodSuccess',
-      16 => 'Codeception\\TestCase\\Cest::testGetCustomMethodSimple',
-      17 => 'Codeception\\TestCase\\Cest::testGetCustomMethodFields',
-      18 => 'Codeception\\TestCase\\Cest::testGetCustomMethodOrder',
-      19 => 'Codeception\\TestCase\\Cest::testFirstMethodNoResults',
-      20 => 'Codeception\\TestCase\\Cest::testFindingUserMethod',
-      21 => 'Codeception\\TestCase\\Cest::testLoginFromClassInstance',
-      22 => 'Codeception\\TestCase\\Cest::testCreatingNewUser',
-      23 => 'Codeception\\TestCase\\Cest::testLoginUserMethodFromExistingData',
-      24 => 'Codeception\\TestCase\\Cest::testLoginUserMethodWithPass',
-      25 => 'Codeception\\TestCase\\Cest::testLogoutMethod',
-      26 => 'Codeception\\TestCase\\Cest::testUpdateMethodLoggedInUser',
-      27 => 'Codeception\\TestCase\\Cest::testUpdateMethodWithId',
+      6 => 'Codeception\\TestCase\\Cest::testDeleteMethodWhereOperatorEquals',
+      7 => 'Codeception\\TestCase\\Cest::testDeleteMethodWhereOperatorLess',
+      8 => 'Codeception\\TestCase\\Cest::testDeleteMethodWhereOperatorLTE',
+      9 => 'Codeception\\TestCase\\Cest::testDeleteMethodWhereOperatorGreater',
+      10 => 'Codeception\\TestCase\\Cest::testDeleteMethodWhereOperatorGTE',
+      11 => 'Codeception\\TestCase\\Cest::testInsertMethodSuccess',
+      12 => 'Codeception\\TestCase\\Cest::testInsertMethodFailQuery',
+      13 => 'Codeception\\TestCase\\Cest::testUpdateMethodSuccess',
+      14 => 'Codeception\\TestCase\\Cest::testGetCustomMethodSimple',
+      15 => 'Codeception\\TestCase\\Cest::testGetCustomMethodFields',
+      16 => 'Codeception\\TestCase\\Cest::testGetCustomMethodOrder',
+      17 => 'Codeception\\TestCase\\Cest::testFirstMethodNoResults',
+      18 => 'Codeception\\TestCase\\Cest::testFindingUserMethod',
+      19 => 'Codeception\\TestCase\\Cest::testLoginFromClassInstance',
+      20 => 'Codeception\\TestCase\\Cest::testCreatingNewUser',
+      21 => 'Codeception\\TestCase\\Cest::testLoginUserMethodFromExistingData',
+      22 => 'Codeception\\TestCase\\Cest::testLoginUserMethodWithPass',
+      23 => 'Codeception\\TestCase\\Cest::testLogoutMethod',
+      24 => 'Codeception\\TestCase\\Cest::testUpdateMethodLoggedInUser',
+      25 => 'Codeception\\TestCase\\Cest::testUpdateMethodWithId',
     ),
     75 => 
     array (
@@ -549,19 +451,20 @@ $coverage->setData(array (
       11 => 'Codeception\\TestCase\\Cest::testDeleteMethodWhereOperatorGreater',
       12 => 'Codeception\\TestCase\\Cest::testDeleteMethodWhereOperatorGTE',
       13 => 'Codeception\\TestCase\\Cest::testInsertMethodSuccess',
-      14 => 'Codeception\\TestCase\\Cest::testUpdateMethodSuccess',
-      15 => 'Codeception\\TestCase\\Cest::testGetCustomMethodSimple',
-      16 => 'Codeception\\TestCase\\Cest::testGetCustomMethodFields',
-      17 => 'Codeception\\TestCase\\Cest::testGetCustomMethodOrder',
-      18 => 'Codeception\\TestCase\\Cest::testFirstMethodNoResults',
-      19 => 'Codeception\\TestCase\\Cest::testFindingUserMethod',
-      20 => 'Codeception\\TestCase\\Cest::testLoginFromClassInstance',
-      21 => 'Codeception\\TestCase\\Cest::testCreatingNewUser',
-      22 => 'Codeception\\TestCase\\Cest::testLoginUserMethodFromExistingData',
-      23 => 'Codeception\\TestCase\\Cest::testLoginUserMethodWithPass',
-      24 => 'Codeception\\TestCase\\Cest::testLogoutMethod',
-      25 => 'Codeception\\TestCase\\Cest::testUpdateMethodLoggedInUser',
-      26 => 'Codeception\\TestCase\\Cest::testUpdateMethodWithId',
+      14 => 'Codeception\\TestCase\\Cest::testInsertMethodFailQuery',
+      15 => 'Codeception\\TestCase\\Cest::testUpdateMethodSuccess',
+      16 => 'Codeception\\TestCase\\Cest::testGetCustomMethodSimple',
+      17 => 'Codeception\\TestCase\\Cest::testGetCustomMethodFields',
+      18 => 'Codeception\\TestCase\\Cest::testGetCustomMethodOrder',
+      19 => 'Codeception\\TestCase\\Cest::testFirstMethodNoResults',
+      20 => 'Codeception\\TestCase\\Cest::testFindingUserMethod',
+      21 => 'Codeception\\TestCase\\Cest::testLoginFromClassInstance',
+      22 => 'Codeception\\TestCase\\Cest::testCreatingNewUser',
+      23 => 'Codeception\\TestCase\\Cest::testLoginUserMethodFromExistingData',
+      24 => 'Codeception\\TestCase\\Cest::testLoginUserMethodWithPass',
+      25 => 'Codeception\\TestCase\\Cest::testLogoutMethod',
+      26 => 'Codeception\\TestCase\\Cest::testUpdateMethodLoggedInUser',
+      27 => 'Codeception\\TestCase\\Cest::testUpdateMethodWithId',
     ),
     76 => 
     array (
@@ -579,90 +482,151 @@ $coverage->setData(array (
       11 => 'Codeception\\TestCase\\Cest::testDeleteMethodWhereOperatorGreater',
       12 => 'Codeception\\TestCase\\Cest::testDeleteMethodWhereOperatorGTE',
       13 => 'Codeception\\TestCase\\Cest::testInsertMethodSuccess',
-      14 => 'Codeception\\TestCase\\Cest::testUpdateMethodSuccess',
-      15 => 'Codeception\\TestCase\\Cest::testGetCustomMethodSimple',
-      16 => 'Codeception\\TestCase\\Cest::testGetCustomMethodFields',
-      17 => 'Codeception\\TestCase\\Cest::testGetCustomMethodOrder',
-      18 => 'Codeception\\TestCase\\Cest::testFirstMethodNoResults',
-      19 => 'Codeception\\TestCase\\Cest::testFindingUserMethod',
-      20 => 'Codeception\\TestCase\\Cest::testLoginFromClassInstance',
-      21 => 'Codeception\\TestCase\\Cest::testCreatingNewUser',
-      22 => 'Codeception\\TestCase\\Cest::testLoginUserMethodFromExistingData',
-      23 => 'Codeception\\TestCase\\Cest::testLoginUserMethodWithPass',
-      24 => 'Codeception\\TestCase\\Cest::testLogoutMethod',
-      25 => 'Codeception\\TestCase\\Cest::testUpdateMethodLoggedInUser',
-      26 => 'Codeception\\TestCase\\Cest::testUpdateMethodWithId',
-    ),
-    77 => 
-    array (
-      0 => 'Codeception\\TestCase\\Cest::testGetMethodFieldsArgument',
-      1 => 'Codeception\\TestCase\\Cest::testGetMethodWhereOperatorEquals',
-      2 => 'Codeception\\TestCase\\Cest::testGetMethodWhereOperatorLess',
-      3 => 'Codeception\\TestCase\\Cest::testGetMethodWhereOperatorGreater',
-      4 => 'Codeception\\TestCase\\Cest::testGetMethodWhereOperatorGTE',
-      5 => 'Codeception\\TestCase\\Cest::testGetMethodWhereOperatorLTE',
-      6 => 'Codeception\\TestCase\\Cest::testGetMethodWhereOperatorIn',
-      7 => 'Codeception\\TestCase\\Cest::testDeleteMethodWhereOperatorEquals',
-      8 => 'Codeception\\TestCase\\Cest::testDeleteMethodWhereOperatorIn',
-      9 => 'Codeception\\TestCase\\Cest::testDeleteMethodWhereOperatorLess',
-      10 => 'Codeception\\TestCase\\Cest::testDeleteMethodWhereOperatorLTE',
-      11 => 'Codeception\\TestCase\\Cest::testDeleteMethodWhereOperatorGreater',
-      12 => 'Codeception\\TestCase\\Cest::testDeleteMethodWhereOperatorGTE',
-      13 => 'Codeception\\TestCase\\Cest::testInsertMethodSuccess',
-      14 => 'Codeception\\TestCase\\Cest::testUpdateMethodSuccess',
-      15 => 'Codeception\\TestCase\\Cest::testGetCustomMethodSimple',
-      16 => 'Codeception\\TestCase\\Cest::testGetCustomMethodFields',
-      17 => 'Codeception\\TestCase\\Cest::testGetCustomMethodOrder',
-      18 => 'Codeception\\TestCase\\Cest::testFirstMethodNoResults',
-      19 => 'Codeception\\TestCase\\Cest::testFindingUserMethod',
-      20 => 'Codeception\\TestCase\\Cest::testLoginFromClassInstance',
-      21 => 'Codeception\\TestCase\\Cest::testCreatingNewUser',
-      22 => 'Codeception\\TestCase\\Cest::testLoginUserMethodFromExistingData',
-      23 => 'Codeception\\TestCase\\Cest::testLoginUserMethodWithPass',
-      24 => 'Codeception\\TestCase\\Cest::testLogoutMethod',
-      25 => 'Codeception\\TestCase\\Cest::testUpdateMethodLoggedInUser',
-      26 => 'Codeception\\TestCase\\Cest::testUpdateMethodWithId',
+      14 => 'Codeception\\TestCase\\Cest::testInsertMethodFailQuery',
+      15 => 'Codeception\\TestCase\\Cest::testUpdateMethodSuccess',
+      16 => 'Codeception\\TestCase\\Cest::testGetCustomMethodSimple',
+      17 => 'Codeception\\TestCase\\Cest::testGetCustomMethodFields',
+      18 => 'Codeception\\TestCase\\Cest::testGetCustomMethodOrder',
+      19 => 'Codeception\\TestCase\\Cest::testFirstMethodNoResults',
+      20 => 'Codeception\\TestCase\\Cest::testFindingUserMethod',
+      21 => 'Codeception\\TestCase\\Cest::testLoginFromClassInstance',
+      22 => 'Codeception\\TestCase\\Cest::testCreatingNewUser',
+      23 => 'Codeception\\TestCase\\Cest::testLoginUserMethodFromExistingData',
+      24 => 'Codeception\\TestCase\\Cest::testLoginUserMethodWithPass',
+      25 => 'Codeception\\TestCase\\Cest::testLogoutMethod',
+      26 => 'Codeception\\TestCase\\Cest::testUpdateMethodLoggedInUser',
+      27 => 'Codeception\\TestCase\\Cest::testUpdateMethodWithId',
     ),
     78 => 
     array (
-      0 => 'Codeception\\TestCase\\Cest::testInsertMethodFailQuery',
+      0 => 'Codeception\\TestCase\\Cest::testGetMethodFieldsArgument',
+      1 => 'Codeception\\TestCase\\Cest::testGetMethodWhereOperatorEquals',
+      2 => 'Codeception\\TestCase\\Cest::testGetMethodWhereOperatorLess',
+      3 => 'Codeception\\TestCase\\Cest::testGetMethodWhereOperatorGreater',
+      4 => 'Codeception\\TestCase\\Cest::testGetMethodWhereOperatorGTE',
+      5 => 'Codeception\\TestCase\\Cest::testGetMethodWhereOperatorLTE',
+      6 => 'Codeception\\TestCase\\Cest::testGetMethodWhereOperatorIn',
+      7 => 'Codeception\\TestCase\\Cest::testDeleteMethodWhereOperatorEquals',
+      8 => 'Codeception\\TestCase\\Cest::testDeleteMethodWhereOperatorIn',
+      9 => 'Codeception\\TestCase\\Cest::testDeleteMethodWhereOperatorLess',
+      10 => 'Codeception\\TestCase\\Cest::testDeleteMethodWhereOperatorLTE',
+      11 => 'Codeception\\TestCase\\Cest::testDeleteMethodWhereOperatorGreater',
+      12 => 'Codeception\\TestCase\\Cest::testDeleteMethodWhereOperatorGTE',
+      13 => 'Codeception\\TestCase\\Cest::testInsertMethodSuccess',
+      14 => 'Codeception\\TestCase\\Cest::testInsertMethodFailQuery',
+      15 => 'Codeception\\TestCase\\Cest::testUpdateMethodSuccess',
+      16 => 'Codeception\\TestCase\\Cest::testGetCustomMethodSimple',
+      17 => 'Codeception\\TestCase\\Cest::testGetCustomMethodFields',
+      18 => 'Codeception\\TestCase\\Cest::testGetCustomMethodOrder',
+      19 => 'Codeception\\TestCase\\Cest::testFirstMethodNoResults',
+      20 => 'Codeception\\TestCase\\Cest::testFindingUserMethod',
+      21 => 'Codeception\\TestCase\\Cest::testLoginFromClassInstance',
+      22 => 'Codeception\\TestCase\\Cest::testCreatingNewUser',
+      23 => 'Codeception\\TestCase\\Cest::testLoginUserMethodFromExistingData',
+      24 => 'Codeception\\TestCase\\Cest::testLoginUserMethodWithPass',
+      25 => 'Codeception\\TestCase\\Cest::testLogoutMethod',
+      26 => 'Codeception\\TestCase\\Cest::testUpdateMethodLoggedInUser',
+      27 => 'Codeception\\TestCase\\Cest::testUpdateMethodWithId',
     ),
     79 => 
     array (
-      0 => 'Codeception\\TestCase\\Cest::testInsertMethodFailQuery',
+      0 => 'Codeception\\TestCase\\Cest::testGetMethodFieldsArgument',
+      1 => 'Codeception\\TestCase\\Cest::testGetMethodWhereOperatorEquals',
+      2 => 'Codeception\\TestCase\\Cest::testGetMethodWhereOperatorLess',
+      3 => 'Codeception\\TestCase\\Cest::testGetMethodWhereOperatorGreater',
+      4 => 'Codeception\\TestCase\\Cest::testGetMethodWhereOperatorGTE',
+      5 => 'Codeception\\TestCase\\Cest::testGetMethodWhereOperatorLTE',
+      6 => 'Codeception\\TestCase\\Cest::testGetMethodWhereOperatorIn',
+      7 => 'Codeception\\TestCase\\Cest::testDeleteMethodWhereOperatorEquals',
+      8 => 'Codeception\\TestCase\\Cest::testDeleteMethodWhereOperatorIn',
+      9 => 'Codeception\\TestCase\\Cest::testDeleteMethodWhereOperatorLess',
+      10 => 'Codeception\\TestCase\\Cest::testDeleteMethodWhereOperatorLTE',
+      11 => 'Codeception\\TestCase\\Cest::testDeleteMethodWhereOperatorGreater',
+      12 => 'Codeception\\TestCase\\Cest::testDeleteMethodWhereOperatorGTE',
+      13 => 'Codeception\\TestCase\\Cest::testInsertMethodSuccess',
+      14 => 'Codeception\\TestCase\\Cest::testUpdateMethodSuccess',
+      15 => 'Codeception\\TestCase\\Cest::testGetCustomMethodSimple',
+      16 => 'Codeception\\TestCase\\Cest::testGetCustomMethodFields',
+      17 => 'Codeception\\TestCase\\Cest::testGetCustomMethodOrder',
+      18 => 'Codeception\\TestCase\\Cest::testFirstMethodNoResults',
+      19 => 'Codeception\\TestCase\\Cest::testFindingUserMethod',
+      20 => 'Codeception\\TestCase\\Cest::testLoginFromClassInstance',
+      21 => 'Codeception\\TestCase\\Cest::testCreatingNewUser',
+      22 => 'Codeception\\TestCase\\Cest::testLoginUserMethodFromExistingData',
+      23 => 'Codeception\\TestCase\\Cest::testLoginUserMethodWithPass',
+      24 => 'Codeception\\TestCase\\Cest::testLogoutMethod',
+      25 => 'Codeception\\TestCase\\Cest::testUpdateMethodLoggedInUser',
+      26 => 'Codeception\\TestCase\\Cest::testUpdateMethodWithId',
+    ),
+    80 => 
+    array (
+      0 => 'Codeception\\TestCase\\Cest::testGetMethodFieldsArgument',
+      1 => 'Codeception\\TestCase\\Cest::testGetMethodWhereOperatorEquals',
+      2 => 'Codeception\\TestCase\\Cest::testGetMethodWhereOperatorLess',
+      3 => 'Codeception\\TestCase\\Cest::testGetMethodWhereOperatorGreater',
+      4 => 'Codeception\\TestCase\\Cest::testGetMethodWhereOperatorGTE',
+      5 => 'Codeception\\TestCase\\Cest::testGetMethodWhereOperatorLTE',
+      6 => 'Codeception\\TestCase\\Cest::testGetMethodWhereOperatorIn',
+      7 => 'Codeception\\TestCase\\Cest::testDeleteMethodWhereOperatorEquals',
+      8 => 'Codeception\\TestCase\\Cest::testDeleteMethodWhereOperatorIn',
+      9 => 'Codeception\\TestCase\\Cest::testDeleteMethodWhereOperatorLess',
+      10 => 'Codeception\\TestCase\\Cest::testDeleteMethodWhereOperatorLTE',
+      11 => 'Codeception\\TestCase\\Cest::testDeleteMethodWhereOperatorGreater',
+      12 => 'Codeception\\TestCase\\Cest::testDeleteMethodWhereOperatorGTE',
+      13 => 'Codeception\\TestCase\\Cest::testInsertMethodSuccess',
+      14 => 'Codeception\\TestCase\\Cest::testUpdateMethodSuccess',
+      15 => 'Codeception\\TestCase\\Cest::testGetCustomMethodSimple',
+      16 => 'Codeception\\TestCase\\Cest::testGetCustomMethodFields',
+      17 => 'Codeception\\TestCase\\Cest::testGetCustomMethodOrder',
+      18 => 'Codeception\\TestCase\\Cest::testFirstMethodNoResults',
+      19 => 'Codeception\\TestCase\\Cest::testFindingUserMethod',
+      20 => 'Codeception\\TestCase\\Cest::testLoginFromClassInstance',
+      21 => 'Codeception\\TestCase\\Cest::testCreatingNewUser',
+      22 => 'Codeception\\TestCase\\Cest::testLoginUserMethodFromExistingData',
+      23 => 'Codeception\\TestCase\\Cest::testLoginUserMethodWithPass',
+      24 => 'Codeception\\TestCase\\Cest::testLogoutMethod',
+      25 => 'Codeception\\TestCase\\Cest::testUpdateMethodLoggedInUser',
+      26 => 'Codeception\\TestCase\\Cest::testUpdateMethodWithId',
+    ),
+    81 => 
+    array (
+      0 => 'Codeception\\TestCase\\Cest::testGetMethodFieldsArgument',
+      1 => 'Codeception\\TestCase\\Cest::testGetMethodWhereOperatorEquals',
+      2 => 'Codeception\\TestCase\\Cest::testGetMethodWhereOperatorLess',
+      3 => 'Codeception\\TestCase\\Cest::testGetMethodWhereOperatorGreater',
+      4 => 'Codeception\\TestCase\\Cest::testGetMethodWhereOperatorGTE',
+      5 => 'Codeception\\TestCase\\Cest::testGetMethodWhereOperatorLTE',
+      6 => 'Codeception\\TestCase\\Cest::testGetMethodWhereOperatorIn',
+      7 => 'Codeception\\TestCase\\Cest::testDeleteMethodWhereOperatorEquals',
+      8 => 'Codeception\\TestCase\\Cest::testDeleteMethodWhereOperatorIn',
+      9 => 'Codeception\\TestCase\\Cest::testDeleteMethodWhereOperatorLess',
+      10 => 'Codeception\\TestCase\\Cest::testDeleteMethodWhereOperatorLTE',
+      11 => 'Codeception\\TestCase\\Cest::testDeleteMethodWhereOperatorGreater',
+      12 => 'Codeception\\TestCase\\Cest::testDeleteMethodWhereOperatorGTE',
+      13 => 'Codeception\\TestCase\\Cest::testInsertMethodSuccess',
+      14 => 'Codeception\\TestCase\\Cest::testUpdateMethodSuccess',
+      15 => 'Codeception\\TestCase\\Cest::testGetCustomMethodSimple',
+      16 => 'Codeception\\TestCase\\Cest::testGetCustomMethodFields',
+      17 => 'Codeception\\TestCase\\Cest::testGetCustomMethodOrder',
+      18 => 'Codeception\\TestCase\\Cest::testFirstMethodNoResults',
+      19 => 'Codeception\\TestCase\\Cest::testFindingUserMethod',
+      20 => 'Codeception\\TestCase\\Cest::testLoginFromClassInstance',
+      21 => 'Codeception\\TestCase\\Cest::testCreatingNewUser',
+      22 => 'Codeception\\TestCase\\Cest::testLoginUserMethodFromExistingData',
+      23 => 'Codeception\\TestCase\\Cest::testLoginUserMethodWithPass',
+      24 => 'Codeception\\TestCase\\Cest::testLogoutMethod',
+      25 => 'Codeception\\TestCase\\Cest::testUpdateMethodLoggedInUser',
+      26 => 'Codeception\\TestCase\\Cest::testUpdateMethodWithId',
     ),
     82 => 
     array (
-      0 => 'Codeception\\TestCase\\Cest::testGetMethodFieldsArgument',
-      1 => 'Codeception\\TestCase\\Cest::testGetMethodWhereOperatorEquals',
-      2 => 'Codeception\\TestCase\\Cest::testGetMethodWhereOperatorLess',
-      3 => 'Codeception\\TestCase\\Cest::testGetMethodWhereOperatorGreater',
-      4 => 'Codeception\\TestCase\\Cest::testGetMethodWhereOperatorGTE',
-      5 => 'Codeception\\TestCase\\Cest::testGetMethodWhereOperatorLTE',
-      6 => 'Codeception\\TestCase\\Cest::testGetMethodWhereOperatorIn',
-      7 => 'Codeception\\TestCase\\Cest::testDeleteMethodWhereOperatorEquals',
-      8 => 'Codeception\\TestCase\\Cest::testDeleteMethodWhereOperatorIn',
-      9 => 'Codeception\\TestCase\\Cest::testDeleteMethodWhereOperatorLess',
-      10 => 'Codeception\\TestCase\\Cest::testDeleteMethodWhereOperatorLTE',
-      11 => 'Codeception\\TestCase\\Cest::testDeleteMethodWhereOperatorGreater',
-      12 => 'Codeception\\TestCase\\Cest::testDeleteMethodWhereOperatorGTE',
-      13 => 'Codeception\\TestCase\\Cest::testInsertMethodSuccess',
-      14 => 'Codeception\\TestCase\\Cest::testInsertMethodFailQuery',
-      15 => 'Codeception\\TestCase\\Cest::testUpdateMethodSuccess',
-      16 => 'Codeception\\TestCase\\Cest::testGetCustomMethodSimple',
-      17 => 'Codeception\\TestCase\\Cest::testGetCustomMethodFields',
-      18 => 'Codeception\\TestCase\\Cest::testGetCustomMethodOrder',
-      19 => 'Codeception\\TestCase\\Cest::testFirstMethodNoResults',
-      20 => 'Codeception\\TestCase\\Cest::testFindingUserMethod',
-      21 => 'Codeception\\TestCase\\Cest::testLoginFromClassInstance',
-      22 => 'Codeception\\TestCase\\Cest::testCreatingNewUser',
-      23 => 'Codeception\\TestCase\\Cest::testLoginUserMethodFromExistingData',
-      24 => 'Codeception\\TestCase\\Cest::testLoginUserMethodWithPass',
-      25 => 'Codeception\\TestCase\\Cest::testLogoutMethod',
-      26 => 'Codeception\\TestCase\\Cest::testUpdateMethodLoggedInUser',
-      27 => 'Codeception\\TestCase\\Cest::testUpdateMethodWithId',
+      0 => 'Codeception\\TestCase\\Cest::testInsertMethodFailQuery',
     ),
-    84 => 
+    83 => 
+    array (
+      0 => 'Codeception\\TestCase\\Cest::testInsertMethodFailQuery',
+    ),
+    86 => 
     array (
       0 => 'Codeception\\TestCase\\Cest::testGetMethodFieldsArgument',
       1 => 'Codeception\\TestCase\\Cest::testGetMethodWhereOperatorEquals',
@@ -693,8 +657,39 @@ $coverage->setData(array (
       26 => 'Codeception\\TestCase\\Cest::testUpdateMethodLoggedInUser',
       27 => 'Codeception\\TestCase\\Cest::testUpdateMethodWithId',
     ),
-    85 => NULL,
-    100 => 
+    88 => 
+    array (
+      0 => 'Codeception\\TestCase\\Cest::testGetMethodFieldsArgument',
+      1 => 'Codeception\\TestCase\\Cest::testGetMethodWhereOperatorEquals',
+      2 => 'Codeception\\TestCase\\Cest::testGetMethodWhereOperatorLess',
+      3 => 'Codeception\\TestCase\\Cest::testGetMethodWhereOperatorGreater',
+      4 => 'Codeception\\TestCase\\Cest::testGetMethodWhereOperatorGTE',
+      5 => 'Codeception\\TestCase\\Cest::testGetMethodWhereOperatorLTE',
+      6 => 'Codeception\\TestCase\\Cest::testGetMethodWhereOperatorIn',
+      7 => 'Codeception\\TestCase\\Cest::testDeleteMethodWhereOperatorEquals',
+      8 => 'Codeception\\TestCase\\Cest::testDeleteMethodWhereOperatorIn',
+      9 => 'Codeception\\TestCase\\Cest::testDeleteMethodWhereOperatorLess',
+      10 => 'Codeception\\TestCase\\Cest::testDeleteMethodWhereOperatorLTE',
+      11 => 'Codeception\\TestCase\\Cest::testDeleteMethodWhereOperatorGreater',
+      12 => 'Codeception\\TestCase\\Cest::testDeleteMethodWhereOperatorGTE',
+      13 => 'Codeception\\TestCase\\Cest::testInsertMethodSuccess',
+      14 => 'Codeception\\TestCase\\Cest::testInsertMethodFailQuery',
+      15 => 'Codeception\\TestCase\\Cest::testUpdateMethodSuccess',
+      16 => 'Codeception\\TestCase\\Cest::testGetCustomMethodSimple',
+      17 => 'Codeception\\TestCase\\Cest::testGetCustomMethodFields',
+      18 => 'Codeception\\TestCase\\Cest::testGetCustomMethodOrder',
+      19 => 'Codeception\\TestCase\\Cest::testFirstMethodNoResults',
+      20 => 'Codeception\\TestCase\\Cest::testFindingUserMethod',
+      21 => 'Codeception\\TestCase\\Cest::testLoginFromClassInstance',
+      22 => 'Codeception\\TestCase\\Cest::testCreatingNewUser',
+      23 => 'Codeception\\TestCase\\Cest::testLoginUserMethodFromExistingData',
+      24 => 'Codeception\\TestCase\\Cest::testLoginUserMethodWithPass',
+      25 => 'Codeception\\TestCase\\Cest::testLogoutMethod',
+      26 => 'Codeception\\TestCase\\Cest::testUpdateMethodLoggedInUser',
+      27 => 'Codeception\\TestCase\\Cest::testUpdateMethodWithId',
+    ),
+    89 => NULL,
+    104 => 
     array (
       0 => 'Codeception\\TestCase\\Cest::testGetMethodWhereCountException',
       1 => 'Codeception\\TestCase\\Cest::testGetMethodWhereOperatorException',
@@ -719,133 +714,58 @@ $coverage->setData(array (
       20 => 'Codeception\\TestCase\\Cest::testLoginUserMethodWithPass',
       21 => 'Codeception\\TestCase\\Cest::testLogoutMethod',
       22 => 'Codeception\\TestCase\\Cest::testUpdateMethodLoggedInUser',
-    ),
-    102 => 
-    array (
-      0 => 'Codeception\\TestCase\\Cest::testGetMethodWhereCountException',
-      1 => 'Codeception\\TestCase\\Cest::testGetMethodWhereOperatorException',
-      2 => 'Codeception\\TestCase\\Cest::testGetMethodWhereOperatorInValueException',
-      3 => 'Codeception\\TestCase\\Cest::testGetMethodFieldsArgument',
-      4 => 'Codeception\\TestCase\\Cest::testGetMethodWhereOperatorEquals',
-      5 => 'Codeception\\TestCase\\Cest::testGetMethodWhereOperatorLess',
-      6 => 'Codeception\\TestCase\\Cest::testGetMethodWhereOperatorGreater',
-      7 => 'Codeception\\TestCase\\Cest::testGetMethodWhereOperatorGTE',
-      8 => 'Codeception\\TestCase\\Cest::testGetMethodWhereOperatorLTE',
-      9 => 'Codeception\\TestCase\\Cest::testGetMethodWhereOperatorIn',
-      10 => 'Codeception\\TestCase\\Cest::testDeleteMethodWhereOperatorEquals',
-      11 => 'Codeception\\TestCase\\Cest::testDeleteMethodWhereOperatorIn',
-      12 => 'Codeception\\TestCase\\Cest::testDeleteMethodWhereOperatorLess',
-      13 => 'Codeception\\TestCase\\Cest::testDeleteMethodWhereOperatorLTE',
-      14 => 'Codeception\\TestCase\\Cest::testDeleteMethodWhereOperatorGreater',
-      15 => 'Codeception\\TestCase\\Cest::testDeleteMethodWhereOperatorGTE',
-      16 => 'Codeception\\TestCase\\Cest::testFirstMethodNoResults',
-      17 => 'Codeception\\TestCase\\Cest::testFindingUserMethod',
-      18 => 'Codeception\\TestCase\\Cest::testLoginFromClassInstance',
-      19 => 'Codeception\\TestCase\\Cest::testLoginUserMethodFromExistingData',
-      20 => 'Codeception\\TestCase\\Cest::testLoginUserMethodWithPass',
-      21 => 'Codeception\\TestCase\\Cest::testLogoutMethod',
-      22 => 'Codeception\\TestCase\\Cest::testUpdateMethodLoggedInUser',
-    ),
-    103 => 
-    array (
-      0 => 'Codeception\\TestCase\\Cest::testGetMethodWhereCountException',
-      1 => 'Codeception\\TestCase\\Cest::testGetMethodWhereOperatorException',
-      2 => 'Codeception\\TestCase\\Cest::testGetMethodWhereOperatorInValueException',
-      3 => 'Codeception\\TestCase\\Cest::testGetMethodFieldsArgument',
-      4 => 'Codeception\\TestCase\\Cest::testGetMethodWhereOperatorEquals',
-      5 => 'Codeception\\TestCase\\Cest::testGetMethodWhereOperatorLess',
-      6 => 'Codeception\\TestCase\\Cest::testGetMethodWhereOperatorGreater',
-      7 => 'Codeception\\TestCase\\Cest::testGetMethodWhereOperatorGTE',
-      8 => 'Codeception\\TestCase\\Cest::testGetMethodWhereOperatorLTE',
-      9 => 'Codeception\\TestCase\\Cest::testGetMethodWhereOperatorIn',
-      10 => 'Codeception\\TestCase\\Cest::testDeleteMethodWhereOperatorEquals',
-      11 => 'Codeception\\TestCase\\Cest::testDeleteMethodWhereOperatorIn',
-      12 => 'Codeception\\TestCase\\Cest::testDeleteMethodWhereOperatorLess',
-      13 => 'Codeception\\TestCase\\Cest::testDeleteMethodWhereOperatorLTE',
-      14 => 'Codeception\\TestCase\\Cest::testDeleteMethodWhereOperatorGreater',
-      15 => 'Codeception\\TestCase\\Cest::testDeleteMethodWhereOperatorGTE',
-      16 => 'Codeception\\TestCase\\Cest::testFirstMethodNoResults',
-      17 => 'Codeception\\TestCase\\Cest::testFindingUserMethod',
-      18 => 'Codeception\\TestCase\\Cest::testLoginFromClassInstance',
-      19 => 'Codeception\\TestCase\\Cest::testLoginUserMethodFromExistingData',
-      20 => 'Codeception\\TestCase\\Cest::testLoginUserMethodWithPass',
-      21 => 'Codeception\\TestCase\\Cest::testLogoutMethod',
-      22 => 'Codeception\\TestCase\\Cest::testUpdateMethodLoggedInUser',
-    ),
-    105 => 
-    array (
-      0 => 'Codeception\\TestCase\\Cest::testGetMethodWhereOperatorException',
-      1 => 'Codeception\\TestCase\\Cest::testGetMethodWhereOperatorInValueException',
-      2 => 'Codeception\\TestCase\\Cest::testGetMethodFieldsArgument',
-      3 => 'Codeception\\TestCase\\Cest::testGetMethodWhereOperatorEquals',
-      4 => 'Codeception\\TestCase\\Cest::testGetMethodWhereOperatorLess',
-      5 => 'Codeception\\TestCase\\Cest::testGetMethodWhereOperatorGreater',
-      6 => 'Codeception\\TestCase\\Cest::testGetMethodWhereOperatorGTE',
-      7 => 'Codeception\\TestCase\\Cest::testGetMethodWhereOperatorLTE',
-      8 => 'Codeception\\TestCase\\Cest::testGetMethodWhereOperatorIn',
-      9 => 'Codeception\\TestCase\\Cest::testDeleteMethodWhereOperatorEquals',
-      10 => 'Codeception\\TestCase\\Cest::testDeleteMethodWhereOperatorIn',
-      11 => 'Codeception\\TestCase\\Cest::testDeleteMethodWhereOperatorLess',
-      12 => 'Codeception\\TestCase\\Cest::testDeleteMethodWhereOperatorLTE',
-      13 => 'Codeception\\TestCase\\Cest::testDeleteMethodWhereOperatorGreater',
-      14 => 'Codeception\\TestCase\\Cest::testDeleteMethodWhereOperatorGTE',
-      15 => 'Codeception\\TestCase\\Cest::testFirstMethodNoResults',
-      16 => 'Codeception\\TestCase\\Cest::testFindingUserMethod',
-      17 => 'Codeception\\TestCase\\Cest::testLoginFromClassInstance',
-      18 => 'Codeception\\TestCase\\Cest::testLoginUserMethodFromExistingData',
-      19 => 'Codeception\\TestCase\\Cest::testLoginUserMethodWithPass',
-      20 => 'Codeception\\TestCase\\Cest::testLogoutMethod',
-      21 => 'Codeception\\TestCase\\Cest::testUpdateMethodLoggedInUser',
     ),
     106 => 
     array (
-      0 => 'Codeception\\TestCase\\Cest::testGetMethodWhereOperatorException',
-      1 => 'Codeception\\TestCase\\Cest::testGetMethodWhereOperatorInValueException',
-      2 => 'Codeception\\TestCase\\Cest::testGetMethodFieldsArgument',
-      3 => 'Codeception\\TestCase\\Cest::testGetMethodWhereOperatorEquals',
-      4 => 'Codeception\\TestCase\\Cest::testGetMethodWhereOperatorLess',
-      5 => 'Codeception\\TestCase\\Cest::testGetMethodWhereOperatorGreater',
-      6 => 'Codeception\\TestCase\\Cest::testGetMethodWhereOperatorGTE',
-      7 => 'Codeception\\TestCase\\Cest::testGetMethodWhereOperatorLTE',
-      8 => 'Codeception\\TestCase\\Cest::testGetMethodWhereOperatorIn',
-      9 => 'Codeception\\TestCase\\Cest::testDeleteMethodWhereOperatorEquals',
-      10 => 'Codeception\\TestCase\\Cest::testDeleteMethodWhereOperatorIn',
-      11 => 'Codeception\\TestCase\\Cest::testDeleteMethodWhereOperatorLess',
-      12 => 'Codeception\\TestCase\\Cest::testDeleteMethodWhereOperatorLTE',
-      13 => 'Codeception\\TestCase\\Cest::testDeleteMethodWhereOperatorGreater',
-      14 => 'Codeception\\TestCase\\Cest::testDeleteMethodWhereOperatorGTE',
-      15 => 'Codeception\\TestCase\\Cest::testFirstMethodNoResults',
-      16 => 'Codeception\\TestCase\\Cest::testFindingUserMethod',
-      17 => 'Codeception\\TestCase\\Cest::testLoginFromClassInstance',
-      18 => 'Codeception\\TestCase\\Cest::testLoginUserMethodFromExistingData',
-      19 => 'Codeception\\TestCase\\Cest::testLoginUserMethodWithPass',
-      20 => 'Codeception\\TestCase\\Cest::testLogoutMethod',
-      21 => 'Codeception\\TestCase\\Cest::testUpdateMethodLoggedInUser',
+      0 => 'Codeception\\TestCase\\Cest::testGetMethodWhereCountException',
+      1 => 'Codeception\\TestCase\\Cest::testGetMethodWhereOperatorException',
+      2 => 'Codeception\\TestCase\\Cest::testGetMethodWhereOperatorInValueException',
+      3 => 'Codeception\\TestCase\\Cest::testGetMethodFieldsArgument',
+      4 => 'Codeception\\TestCase\\Cest::testGetMethodWhereOperatorEquals',
+      5 => 'Codeception\\TestCase\\Cest::testGetMethodWhereOperatorLess',
+      6 => 'Codeception\\TestCase\\Cest::testGetMethodWhereOperatorGreater',
+      7 => 'Codeception\\TestCase\\Cest::testGetMethodWhereOperatorGTE',
+      8 => 'Codeception\\TestCase\\Cest::testGetMethodWhereOperatorLTE',
+      9 => 'Codeception\\TestCase\\Cest::testGetMethodWhereOperatorIn',
+      10 => 'Codeception\\TestCase\\Cest::testDeleteMethodWhereOperatorEquals',
+      11 => 'Codeception\\TestCase\\Cest::testDeleteMethodWhereOperatorIn',
+      12 => 'Codeception\\TestCase\\Cest::testDeleteMethodWhereOperatorLess',
+      13 => 'Codeception\\TestCase\\Cest::testDeleteMethodWhereOperatorLTE',
+      14 => 'Codeception\\TestCase\\Cest::testDeleteMethodWhereOperatorGreater',
+      15 => 'Codeception\\TestCase\\Cest::testDeleteMethodWhereOperatorGTE',
+      16 => 'Codeception\\TestCase\\Cest::testFirstMethodNoResults',
+      17 => 'Codeception\\TestCase\\Cest::testFindingUserMethod',
+      18 => 'Codeception\\TestCase\\Cest::testLoginFromClassInstance',
+      19 => 'Codeception\\TestCase\\Cest::testLoginUserMethodFromExistingData',
+      20 => 'Codeception\\TestCase\\Cest::testLoginUserMethodWithPass',
+      21 => 'Codeception\\TestCase\\Cest::testLogoutMethod',
+      22 => 'Codeception\\TestCase\\Cest::testUpdateMethodLoggedInUser',
     ),
     107 => 
     array (
-      0 => 'Codeception\\TestCase\\Cest::testGetMethodWhereOperatorException',
-      1 => 'Codeception\\TestCase\\Cest::testGetMethodWhereOperatorInValueException',
-      2 => 'Codeception\\TestCase\\Cest::testGetMethodFieldsArgument',
-      3 => 'Codeception\\TestCase\\Cest::testGetMethodWhereOperatorEquals',
-      4 => 'Codeception\\TestCase\\Cest::testGetMethodWhereOperatorLess',
-      5 => 'Codeception\\TestCase\\Cest::testGetMethodWhereOperatorGreater',
-      6 => 'Codeception\\TestCase\\Cest::testGetMethodWhereOperatorGTE',
-      7 => 'Codeception\\TestCase\\Cest::testGetMethodWhereOperatorLTE',
-      8 => 'Codeception\\TestCase\\Cest::testGetMethodWhereOperatorIn',
-      9 => 'Codeception\\TestCase\\Cest::testDeleteMethodWhereOperatorEquals',
-      10 => 'Codeception\\TestCase\\Cest::testDeleteMethodWhereOperatorIn',
-      11 => 'Codeception\\TestCase\\Cest::testDeleteMethodWhereOperatorLess',
-      12 => 'Codeception\\TestCase\\Cest::testDeleteMethodWhereOperatorLTE',
-      13 => 'Codeception\\TestCase\\Cest::testDeleteMethodWhereOperatorGreater',
-      14 => 'Codeception\\TestCase\\Cest::testDeleteMethodWhereOperatorGTE',
-      15 => 'Codeception\\TestCase\\Cest::testFirstMethodNoResults',
-      16 => 'Codeception\\TestCase\\Cest::testFindingUserMethod',
-      17 => 'Codeception\\TestCase\\Cest::testLoginFromClassInstance',
-      18 => 'Codeception\\TestCase\\Cest::testLoginUserMethodFromExistingData',
-      19 => 'Codeception\\TestCase\\Cest::testLoginUserMethodWithPass',
-      20 => 'Codeception\\TestCase\\Cest::testLogoutMethod',
-      21 => 'Codeception\\TestCase\\Cest::testUpdateMethodLoggedInUser',
+      0 => 'Codeception\\TestCase\\Cest::testGetMethodWhereCountException',
+      1 => 'Codeception\\TestCase\\Cest::testGetMethodWhereOperatorException',
+      2 => 'Codeception\\TestCase\\Cest::testGetMethodWhereOperatorInValueException',
+      3 => 'Codeception\\TestCase\\Cest::testGetMethodFieldsArgument',
+      4 => 'Codeception\\TestCase\\Cest::testGetMethodWhereOperatorEquals',
+      5 => 'Codeception\\TestCase\\Cest::testGetMethodWhereOperatorLess',
+      6 => 'Codeception\\TestCase\\Cest::testGetMethodWhereOperatorGreater',
+      7 => 'Codeception\\TestCase\\Cest::testGetMethodWhereOperatorGTE',
+      8 => 'Codeception\\TestCase\\Cest::testGetMethodWhereOperatorLTE',
+      9 => 'Codeception\\TestCase\\Cest::testGetMethodWhereOperatorIn',
+      10 => 'Codeception\\TestCase\\Cest::testDeleteMethodWhereOperatorEquals',
+      11 => 'Codeception\\TestCase\\Cest::testDeleteMethodWhereOperatorIn',
+      12 => 'Codeception\\TestCase\\Cest::testDeleteMethodWhereOperatorLess',
+      13 => 'Codeception\\TestCase\\Cest::testDeleteMethodWhereOperatorLTE',
+      14 => 'Codeception\\TestCase\\Cest::testDeleteMethodWhereOperatorGreater',
+      15 => 'Codeception\\TestCase\\Cest::testDeleteMethodWhereOperatorGTE',
+      16 => 'Codeception\\TestCase\\Cest::testFirstMethodNoResults',
+      17 => 'Codeception\\TestCase\\Cest::testFindingUserMethod',
+      18 => 'Codeception\\TestCase\\Cest::testLoginFromClassInstance',
+      19 => 'Codeception\\TestCase\\Cest::testLoginUserMethodFromExistingData',
+      20 => 'Codeception\\TestCase\\Cest::testLoginUserMethodWithPass',
+      21 => 'Codeception\\TestCase\\Cest::testLogoutMethod',
+      22 => 'Codeception\\TestCase\\Cest::testUpdateMethodLoggedInUser',
     ),
     109 => 
     array (
@@ -897,32 +817,83 @@ $coverage->setData(array (
       20 => 'Codeception\\TestCase\\Cest::testLogoutMethod',
       21 => 'Codeception\\TestCase\\Cest::testUpdateMethodLoggedInUser',
     ),
-    112 => 
+    111 => 
     array (
-      0 => 'Codeception\\TestCase\\Cest::testGetMethodWhereOperatorInValueException',
-      1 => 'Codeception\\TestCase\\Cest::testGetMethodFieldsArgument',
-      2 => 'Codeception\\TestCase\\Cest::testGetMethodWhereOperatorEquals',
-      3 => 'Codeception\\TestCase\\Cest::testGetMethodWhereOperatorLess',
-      4 => 'Codeception\\TestCase\\Cest::testGetMethodWhereOperatorGreater',
-      5 => 'Codeception\\TestCase\\Cest::testGetMethodWhereOperatorGTE',
-      6 => 'Codeception\\TestCase\\Cest::testGetMethodWhereOperatorLTE',
-      7 => 'Codeception\\TestCase\\Cest::testGetMethodWhereOperatorIn',
-      8 => 'Codeception\\TestCase\\Cest::testDeleteMethodWhereOperatorEquals',
-      9 => 'Codeception\\TestCase\\Cest::testDeleteMethodWhereOperatorIn',
-      10 => 'Codeception\\TestCase\\Cest::testDeleteMethodWhereOperatorLess',
-      11 => 'Codeception\\TestCase\\Cest::testDeleteMethodWhereOperatorLTE',
-      12 => 'Codeception\\TestCase\\Cest::testDeleteMethodWhereOperatorGreater',
-      13 => 'Codeception\\TestCase\\Cest::testDeleteMethodWhereOperatorGTE',
-      14 => 'Codeception\\TestCase\\Cest::testFirstMethodNoResults',
-      15 => 'Codeception\\TestCase\\Cest::testFindingUserMethod',
-      16 => 'Codeception\\TestCase\\Cest::testLoginFromClassInstance',
-      17 => 'Codeception\\TestCase\\Cest::testLoginUserMethodFromExistingData',
-      18 => 'Codeception\\TestCase\\Cest::testLoginUserMethodWithPass',
-      19 => 'Codeception\\TestCase\\Cest::testLogoutMethod',
-      20 => 'Codeception\\TestCase\\Cest::testUpdateMethodLoggedInUser',
+      0 => 'Codeception\\TestCase\\Cest::testGetMethodWhereOperatorException',
+      1 => 'Codeception\\TestCase\\Cest::testGetMethodWhereOperatorInValueException',
+      2 => 'Codeception\\TestCase\\Cest::testGetMethodFieldsArgument',
+      3 => 'Codeception\\TestCase\\Cest::testGetMethodWhereOperatorEquals',
+      4 => 'Codeception\\TestCase\\Cest::testGetMethodWhereOperatorLess',
+      5 => 'Codeception\\TestCase\\Cest::testGetMethodWhereOperatorGreater',
+      6 => 'Codeception\\TestCase\\Cest::testGetMethodWhereOperatorGTE',
+      7 => 'Codeception\\TestCase\\Cest::testGetMethodWhereOperatorLTE',
+      8 => 'Codeception\\TestCase\\Cest::testGetMethodWhereOperatorIn',
+      9 => 'Codeception\\TestCase\\Cest::testDeleteMethodWhereOperatorEquals',
+      10 => 'Codeception\\TestCase\\Cest::testDeleteMethodWhereOperatorIn',
+      11 => 'Codeception\\TestCase\\Cest::testDeleteMethodWhereOperatorLess',
+      12 => 'Codeception\\TestCase\\Cest::testDeleteMethodWhereOperatorLTE',
+      13 => 'Codeception\\TestCase\\Cest::testDeleteMethodWhereOperatorGreater',
+      14 => 'Codeception\\TestCase\\Cest::testDeleteMethodWhereOperatorGTE',
+      15 => 'Codeception\\TestCase\\Cest::testFirstMethodNoResults',
+      16 => 'Codeception\\TestCase\\Cest::testFindingUserMethod',
+      17 => 'Codeception\\TestCase\\Cest::testLoginFromClassInstance',
+      18 => 'Codeception\\TestCase\\Cest::testLoginUserMethodFromExistingData',
+      19 => 'Codeception\\TestCase\\Cest::testLoginUserMethodWithPass',
+      20 => 'Codeception\\TestCase\\Cest::testLogoutMethod',
+      21 => 'Codeception\\TestCase\\Cest::testUpdateMethodLoggedInUser',
     ),
     113 => 
     array (
+      0 => 'Codeception\\TestCase\\Cest::testGetMethodWhereOperatorException',
+      1 => 'Codeception\\TestCase\\Cest::testGetMethodWhereOperatorInValueException',
+      2 => 'Codeception\\TestCase\\Cest::testGetMethodFieldsArgument',
+      3 => 'Codeception\\TestCase\\Cest::testGetMethodWhereOperatorEquals',
+      4 => 'Codeception\\TestCase\\Cest::testGetMethodWhereOperatorLess',
+      5 => 'Codeception\\TestCase\\Cest::testGetMethodWhereOperatorGreater',
+      6 => 'Codeception\\TestCase\\Cest::testGetMethodWhereOperatorGTE',
+      7 => 'Codeception\\TestCase\\Cest::testGetMethodWhereOperatorLTE',
+      8 => 'Codeception\\TestCase\\Cest::testGetMethodWhereOperatorIn',
+      9 => 'Codeception\\TestCase\\Cest::testDeleteMethodWhereOperatorEquals',
+      10 => 'Codeception\\TestCase\\Cest::testDeleteMethodWhereOperatorIn',
+      11 => 'Codeception\\TestCase\\Cest::testDeleteMethodWhereOperatorLess',
+      12 => 'Codeception\\TestCase\\Cest::testDeleteMethodWhereOperatorLTE',
+      13 => 'Codeception\\TestCase\\Cest::testDeleteMethodWhereOperatorGreater',
+      14 => 'Codeception\\TestCase\\Cest::testDeleteMethodWhereOperatorGTE',
+      15 => 'Codeception\\TestCase\\Cest::testFirstMethodNoResults',
+      16 => 'Codeception\\TestCase\\Cest::testFindingUserMethod',
+      17 => 'Codeception\\TestCase\\Cest::testLoginFromClassInstance',
+      18 => 'Codeception\\TestCase\\Cest::testLoginUserMethodFromExistingData',
+      19 => 'Codeception\\TestCase\\Cest::testLoginUserMethodWithPass',
+      20 => 'Codeception\\TestCase\\Cest::testLogoutMethod',
+      21 => 'Codeception\\TestCase\\Cest::testUpdateMethodLoggedInUser',
+    ),
+    114 => 
+    array (
+      0 => 'Codeception\\TestCase\\Cest::testGetMethodWhereOperatorException',
+      1 => 'Codeception\\TestCase\\Cest::testGetMethodWhereOperatorInValueException',
+      2 => 'Codeception\\TestCase\\Cest::testGetMethodFieldsArgument',
+      3 => 'Codeception\\TestCase\\Cest::testGetMethodWhereOperatorEquals',
+      4 => 'Codeception\\TestCase\\Cest::testGetMethodWhereOperatorLess',
+      5 => 'Codeception\\TestCase\\Cest::testGetMethodWhereOperatorGreater',
+      6 => 'Codeception\\TestCase\\Cest::testGetMethodWhereOperatorGTE',
+      7 => 'Codeception\\TestCase\\Cest::testGetMethodWhereOperatorLTE',
+      8 => 'Codeception\\TestCase\\Cest::testGetMethodWhereOperatorIn',
+      9 => 'Codeception\\TestCase\\Cest::testDeleteMethodWhereOperatorEquals',
+      10 => 'Codeception\\TestCase\\Cest::testDeleteMethodWhereOperatorIn',
+      11 => 'Codeception\\TestCase\\Cest::testDeleteMethodWhereOperatorLess',
+      12 => 'Codeception\\TestCase\\Cest::testDeleteMethodWhereOperatorLTE',
+      13 => 'Codeception\\TestCase\\Cest::testDeleteMethodWhereOperatorGreater',
+      14 => 'Codeception\\TestCase\\Cest::testDeleteMethodWhereOperatorGTE',
+      15 => 'Codeception\\TestCase\\Cest::testFirstMethodNoResults',
+      16 => 'Codeception\\TestCase\\Cest::testFindingUserMethod',
+      17 => 'Codeception\\TestCase\\Cest::testLoginFromClassInstance',
+      18 => 'Codeception\\TestCase\\Cest::testLoginUserMethodFromExistingData',
+      19 => 'Codeception\\TestCase\\Cest::testLoginUserMethodWithPass',
+      20 => 'Codeception\\TestCase\\Cest::testLogoutMethod',
+      21 => 'Codeception\\TestCase\\Cest::testUpdateMethodLoggedInUser',
+    ),
+    116 => 
+    array (
       0 => 'Codeception\\TestCase\\Cest::testGetMethodWhereOperatorInValueException',
       1 => 'Codeception\\TestCase\\Cest::testGetMethodFieldsArgument',
       2 => 'Codeception\\TestCase\\Cest::testGetMethodWhereOperatorEquals',
@@ -945,7 +916,31 @@ $coverage->setData(array (
       19 => 'Codeception\\TestCase\\Cest::testLogoutMethod',
       20 => 'Codeception\\TestCase\\Cest::testUpdateMethodLoggedInUser',
     ),
-    115 => 
+    117 => 
+    array (
+      0 => 'Codeception\\TestCase\\Cest::testGetMethodWhereOperatorInValueException',
+      1 => 'Codeception\\TestCase\\Cest::testGetMethodFieldsArgument',
+      2 => 'Codeception\\TestCase\\Cest::testGetMethodWhereOperatorEquals',
+      3 => 'Codeception\\TestCase\\Cest::testGetMethodWhereOperatorLess',
+      4 => 'Codeception\\TestCase\\Cest::testGetMethodWhereOperatorGreater',
+      5 => 'Codeception\\TestCase\\Cest::testGetMethodWhereOperatorGTE',
+      6 => 'Codeception\\TestCase\\Cest::testGetMethodWhereOperatorLTE',
+      7 => 'Codeception\\TestCase\\Cest::testGetMethodWhereOperatorIn',
+      8 => 'Codeception\\TestCase\\Cest::testDeleteMethodWhereOperatorEquals',
+      9 => 'Codeception\\TestCase\\Cest::testDeleteMethodWhereOperatorIn',
+      10 => 'Codeception\\TestCase\\Cest::testDeleteMethodWhereOperatorLess',
+      11 => 'Codeception\\TestCase\\Cest::testDeleteMethodWhereOperatorLTE',
+      12 => 'Codeception\\TestCase\\Cest::testDeleteMethodWhereOperatorGreater',
+      13 => 'Codeception\\TestCase\\Cest::testDeleteMethodWhereOperatorGTE',
+      14 => 'Codeception\\TestCase\\Cest::testFirstMethodNoResults',
+      15 => 'Codeception\\TestCase\\Cest::testFindingUserMethod',
+      16 => 'Codeception\\TestCase\\Cest::testLoginFromClassInstance',
+      17 => 'Codeception\\TestCase\\Cest::testLoginUserMethodFromExistingData',
+      18 => 'Codeception\\TestCase\\Cest::testLoginUserMethodWithPass',
+      19 => 'Codeception\\TestCase\\Cest::testLogoutMethod',
+      20 => 'Codeception\\TestCase\\Cest::testUpdateMethodLoggedInUser',
+    ),
+    119 => 
     array (
       0 => 'Codeception\\TestCase\\Cest::testGetMethodFieldsArgument',
       1 => 'Codeception\\TestCase\\Cest::testGetMethodWhereOperatorEquals',
@@ -968,22 +963,22 @@ $coverage->setData(array (
       18 => 'Codeception\\TestCase\\Cest::testLogoutMethod',
       19 => 'Codeception\\TestCase\\Cest::testUpdateMethodLoggedInUser',
     ),
-    116 => 
-    array (
-      0 => 'Codeception\\TestCase\\Cest::testGetMethodWhereOperatorIn',
-      1 => 'Codeception\\TestCase\\Cest::testDeleteMethodWhereOperatorIn',
-    ),
-    117 => 
-    array (
-      0 => 'Codeception\\TestCase\\Cest::testGetMethodWhereOperatorIn',
-      1 => 'Codeception\\TestCase\\Cest::testDeleteMethodWhereOperatorIn',
-    ),
-    118 => 
-    array (
-      0 => 'Codeception\\TestCase\\Cest::testGetMethodWhereOperatorIn',
-      1 => 'Codeception\\TestCase\\Cest::testDeleteMethodWhereOperatorIn',
-    ),
     120 => 
+    array (
+      0 => 'Codeception\\TestCase\\Cest::testGetMethodWhereOperatorIn',
+      1 => 'Codeception\\TestCase\\Cest::testDeleteMethodWhereOperatorIn',
+    ),
+    121 => 
+    array (
+      0 => 'Codeception\\TestCase\\Cest::testGetMethodWhereOperatorIn',
+      1 => 'Codeception\\TestCase\\Cest::testDeleteMethodWhereOperatorIn',
+    ),
+    122 => 
+    array (
+      0 => 'Codeception\\TestCase\\Cest::testGetMethodWhereOperatorIn',
+      1 => 'Codeception\\TestCase\\Cest::testDeleteMethodWhereOperatorIn',
+    ),
+    124 => 
     array (
       0 => 'Codeception\\TestCase\\Cest::testGetMethodFieldsArgument',
       1 => 'Codeception\\TestCase\\Cest::testGetMethodWhereOperatorEquals',
@@ -1004,7 +999,7 @@ $coverage->setData(array (
       16 => 'Codeception\\TestCase\\Cest::testLogoutMethod',
       17 => 'Codeception\\TestCase\\Cest::testUpdateMethodLoggedInUser',
     ),
-    123 => 
+    127 => 
     array (
       0 => 'Codeception\\TestCase\\Cest::testGetMethodFieldsArgument',
       1 => 'Codeception\\TestCase\\Cest::testGetMethodWhereOperatorEquals',
@@ -1027,7 +1022,7 @@ $coverage->setData(array (
       18 => 'Codeception\\TestCase\\Cest::testLogoutMethod',
       19 => 'Codeception\\TestCase\\Cest::testUpdateMethodLoggedInUser',
     ),
-    125 => 
+    129 => 
     array (
       0 => 'Codeception\\TestCase\\Cest::testGetMethodFieldsArgument',
       1 => 'Codeception\\TestCase\\Cest::testGetMethodWhereOperatorEquals',
@@ -1050,8 +1045,8 @@ $coverage->setData(array (
       18 => 'Codeception\\TestCase\\Cest::testLogoutMethod',
       19 => 'Codeception\\TestCase\\Cest::testUpdateMethodLoggedInUser',
     ),
-    126 => NULL,
-    142 => 
+    130 => NULL,
+    146 => 
     array (
       0 => 'Codeception\\TestCase\\Cest::testGetMethodWhereCountException',
       1 => 'Codeception\\TestCase\\Cest::testGetMethodWhereOperatorException',
@@ -1071,8 +1066,8 @@ $coverage->setData(array (
       15 => 'Codeception\\TestCase\\Cest::testLogoutMethod',
       16 => 'Codeception\\TestCase\\Cest::testUpdateMethodLoggedInUser',
     ),
-    143 => NULL,
-    158 => 
+    147 => NULL,
+    162 => 
     array (
       0 => 'Codeception\\TestCase\\Cest::testDeleteMethodWhereOperatorEquals',
       1 => 'Codeception\\TestCase\\Cest::testDeleteMethodWhereOperatorIn',
@@ -1080,43 +1075,32 @@ $coverage->setData(array (
       3 => 'Codeception\\TestCase\\Cest::testDeleteMethodWhereOperatorLTE',
       4 => 'Codeception\\TestCase\\Cest::testDeleteMethodWhereOperatorGreater',
       5 => 'Codeception\\TestCase\\Cest::testDeleteMethodWhereOperatorGTE',
+      6 => 'Codeception\\TestCase\\Cest::testLoginFromClassInstance',
+      7 => 'Codeception\\TestCase\\Cest::testLoginUserMethodFromExistingData',
+      8 => 'Codeception\\TestCase\\Cest::testLoginUserMethodWithPass',
+      9 => 'Codeception\\TestCase\\Cest::testLogoutMethod',
+      10 => 'Codeception\\TestCase\\Cest::testUpdateMethodLoggedInUser',
     ),
-    159 => NULL,
-    175 => 
-    array (
-      0 => 'Codeception\\TestCase\\Cest::testInsertMethodSuccess',
-      1 => 'Codeception\\TestCase\\Cest::testInsertMethodFailQuery',
-      2 => 'Codeception\\TestCase\\Cest::testInsertMethodFailFields',
-      3 => 'Codeception\\TestCase\\Cest::testCreatingNewUser',
-      4 => 'Codeception\\TestCase\\Cest::testUpdateMethodLoggedInUser',
-      5 => 'Codeception\\TestCase\\Cest::testUpdateMethodWithId',
-    ),
-    176 => 
-    array (
-      0 => 'Codeception\\TestCase\\Cest::testInsertMethodSuccess',
-      1 => 'Codeception\\TestCase\\Cest::testInsertMethodFailQuery',
-      2 => 'Codeception\\TestCase\\Cest::testInsertMethodFailFields',
-      3 => 'Codeception\\TestCase\\Cest::testCreatingNewUser',
-      4 => 'Codeception\\TestCase\\Cest::testUpdateMethodLoggedInUser',
-      5 => 'Codeception\\TestCase\\Cest::testUpdateMethodWithId',
-    ),
-    178 => 
-    array (
-      0 => 'Codeception\\TestCase\\Cest::testInsertMethodSuccess',
-      1 => 'Codeception\\TestCase\\Cest::testInsertMethodFailQuery',
-      2 => 'Codeception\\TestCase\\Cest::testCreatingNewUser',
-      3 => 'Codeception\\TestCase\\Cest::testUpdateMethodLoggedInUser',
-      4 => 'Codeception\\TestCase\\Cest::testUpdateMethodWithId',
-    ),
+    163 => NULL,
     179 => 
     array (
       0 => 'Codeception\\TestCase\\Cest::testInsertMethodSuccess',
       1 => 'Codeception\\TestCase\\Cest::testInsertMethodFailQuery',
-      2 => 'Codeception\\TestCase\\Cest::testCreatingNewUser',
-      3 => 'Codeception\\TestCase\\Cest::testUpdateMethodLoggedInUser',
-      4 => 'Codeception\\TestCase\\Cest::testUpdateMethodWithId',
+      2 => 'Codeception\\TestCase\\Cest::testInsertMethodFailFields',
+      3 => 'Codeception\\TestCase\\Cest::testCreatingNewUser',
+      4 => 'Codeception\\TestCase\\Cest::testUpdateMethodLoggedInUser',
+      5 => 'Codeception\\TestCase\\Cest::testUpdateMethodWithId',
     ),
-    181 => 
+    180 => 
+    array (
+      0 => 'Codeception\\TestCase\\Cest::testInsertMethodSuccess',
+      1 => 'Codeception\\TestCase\\Cest::testInsertMethodFailQuery',
+      2 => 'Codeception\\TestCase\\Cest::testInsertMethodFailFields',
+      3 => 'Codeception\\TestCase\\Cest::testCreatingNewUser',
+      4 => 'Codeception\\TestCase\\Cest::testUpdateMethodLoggedInUser',
+      5 => 'Codeception\\TestCase\\Cest::testUpdateMethodWithId',
+    ),
+    182 => 
     array (
       0 => 'Codeception\\TestCase\\Cest::testInsertMethodSuccess',
       1 => 'Codeception\\TestCase\\Cest::testInsertMethodFailQuery',
@@ -1140,25 +1124,23 @@ $coverage->setData(array (
       3 => 'Codeception\\TestCase\\Cest::testUpdateMethodLoggedInUser',
       4 => 'Codeception\\TestCase\\Cest::testUpdateMethodWithId',
     ),
-    187 => NULL,
-    202 => 
+    187 => 
     array (
-      0 => 'Codeception\\TestCase\\Cest::testUpdateMethodSuccess',
-      1 => 'Codeception\\TestCase\\Cest::testUpdateMethodLoggedInUser',
-      2 => 'Codeception\\TestCase\\Cest::testUpdateMethodWithId',
+      0 => 'Codeception\\TestCase\\Cest::testInsertMethodSuccess',
+      1 => 'Codeception\\TestCase\\Cest::testInsertMethodFailQuery',
+      2 => 'Codeception\\TestCase\\Cest::testCreatingNewUser',
+      3 => 'Codeception\\TestCase\\Cest::testUpdateMethodLoggedInUser',
+      4 => 'Codeception\\TestCase\\Cest::testUpdateMethodWithId',
     ),
-    203 => 
+    189 => 
     array (
-      0 => 'Codeception\\TestCase\\Cest::testUpdateMethodSuccess',
-      1 => 'Codeception\\TestCase\\Cest::testUpdateMethodLoggedInUser',
-      2 => 'Codeception\\TestCase\\Cest::testUpdateMethodWithId',
+      0 => 'Codeception\\TestCase\\Cest::testInsertMethodSuccess',
+      1 => 'Codeception\\TestCase\\Cest::testInsertMethodFailQuery',
+      2 => 'Codeception\\TestCase\\Cest::testCreatingNewUser',
+      3 => 'Codeception\\TestCase\\Cest::testUpdateMethodLoggedInUser',
+      4 => 'Codeception\\TestCase\\Cest::testUpdateMethodWithId',
     ),
-    205 => 
-    array (
-      0 => 'Codeception\\TestCase\\Cest::testUpdateMethodSuccess',
-      1 => 'Codeception\\TestCase\\Cest::testUpdateMethodLoggedInUser',
-      2 => 'Codeception\\TestCase\\Cest::testUpdateMethodWithId',
-    ),
+    191 => NULL,
     206 => 
     array (
       0 => 'Codeception\\TestCase\\Cest::testUpdateMethodSuccess',
@@ -1166,12 +1148,6 @@ $coverage->setData(array (
       2 => 'Codeception\\TestCase\\Cest::testUpdateMethodWithId',
     ),
     207 => 
-    array (
-      0 => 'Codeception\\TestCase\\Cest::testUpdateMethodSuccess',
-      1 => 'Codeception\\TestCase\\Cest::testUpdateMethodLoggedInUser',
-      2 => 'Codeception\\TestCase\\Cest::testUpdateMethodWithId',
-    ),
-    208 => 
     array (
       0 => 'Codeception\\TestCase\\Cest::testUpdateMethodSuccess',
       1 => 'Codeception\\TestCase\\Cest::testUpdateMethodLoggedInUser',
@@ -1195,7 +1171,19 @@ $coverage->setData(array (
       1 => 'Codeception\\TestCase\\Cest::testUpdateMethodLoggedInUser',
       2 => 'Codeception\\TestCase\\Cest::testUpdateMethodWithId',
     ),
+    212 => 
+    array (
+      0 => 'Codeception\\TestCase\\Cest::testUpdateMethodSuccess',
+      1 => 'Codeception\\TestCase\\Cest::testUpdateMethodLoggedInUser',
+      2 => 'Codeception\\TestCase\\Cest::testUpdateMethodWithId',
+    ),
     213 => 
+    array (
+      0 => 'Codeception\\TestCase\\Cest::testUpdateMethodSuccess',
+      1 => 'Codeception\\TestCase\\Cest::testUpdateMethodLoggedInUser',
+      2 => 'Codeception\\TestCase\\Cest::testUpdateMethodWithId',
+    ),
+    214 => 
     array (
       0 => 'Codeception\\TestCase\\Cest::testUpdateMethodSuccess',
       1 => 'Codeception\\TestCase\\Cest::testUpdateMethodLoggedInUser',
@@ -1213,19 +1201,19 @@ $coverage->setData(array (
       1 => 'Codeception\\TestCase\\Cest::testUpdateMethodLoggedInUser',
       2 => 'Codeception\\TestCase\\Cest::testUpdateMethodWithId',
     ),
-    218 => NULL,
-    235 => 
+    219 => 
     array (
-      0 => 'Codeception\\TestCase\\Cest::testGetCustomMethodSimple',
-      1 => 'Codeception\\TestCase\\Cest::testGetCustomMethodFields',
-      2 => 'Codeception\\TestCase\\Cest::testGetCustomMethodOrder',
+      0 => 'Codeception\\TestCase\\Cest::testUpdateMethodSuccess',
+      1 => 'Codeception\\TestCase\\Cest::testUpdateMethodLoggedInUser',
+      2 => 'Codeception\\TestCase\\Cest::testUpdateMethodWithId',
     ),
-    237 => 
+    221 => 
     array (
-      0 => 'Codeception\\TestCase\\Cest::testGetCustomMethodSimple',
-      1 => 'Codeception\\TestCase\\Cest::testGetCustomMethodFields',
-      2 => 'Codeception\\TestCase\\Cest::testGetCustomMethodOrder',
+      0 => 'Codeception\\TestCase\\Cest::testUpdateMethodSuccess',
+      1 => 'Codeception\\TestCase\\Cest::testUpdateMethodLoggedInUser',
+      2 => 'Codeception\\TestCase\\Cest::testUpdateMethodWithId',
     ),
+    222 => NULL,
     239 => 
     array (
       0 => 'Codeception\\TestCase\\Cest::testGetCustomMethodSimple',
@@ -1238,8 +1226,20 @@ $coverage->setData(array (
       1 => 'Codeception\\TestCase\\Cest::testGetCustomMethodFields',
       2 => 'Codeception\\TestCase\\Cest::testGetCustomMethodOrder',
     ),
-    242 => NULL,
-    249 => 
+    243 => 
+    array (
+      0 => 'Codeception\\TestCase\\Cest::testGetCustomMethodSimple',
+      1 => 'Codeception\\TestCase\\Cest::testGetCustomMethodFields',
+      2 => 'Codeception\\TestCase\\Cest::testGetCustomMethodOrder',
+    ),
+    245 => 
+    array (
+      0 => 'Codeception\\TestCase\\Cest::testGetCustomMethodSimple',
+      1 => 'Codeception\\TestCase\\Cest::testGetCustomMethodFields',
+      2 => 'Codeception\\TestCase\\Cest::testGetCustomMethodOrder',
+    ),
+    246 => NULL,
+    253 => 
     array (
       0 => 'Codeception\\TestCase\\Cest::testGetMethodFieldsArgument',
       1 => 'Codeception\\TestCase\\Cest::testGetMethodWhereOperatorEquals',
@@ -1259,51 +1259,9 @@ $coverage->setData(array (
       15 => 'Codeception\\TestCase\\Cest::testLogoutMethod',
       16 => 'Codeception\\TestCase\\Cest::testUpdateMethodLoggedInUser',
     ),
-    250 => NULL,
-    257 => 
-    array (
-      0 => 'Codeception\\TestCase\\Cest::testGetMethodFieldsArgument',
-      1 => 'Codeception\\TestCase\\Cest::testGetMethodWhereOperatorEquals',
-      2 => 'Codeception\\TestCase\\Cest::testGetMethodWhereOperatorLess',
-      3 => 'Codeception\\TestCase\\Cest::testGetMethodWhereOperatorGreater',
-      4 => 'Codeception\\TestCase\\Cest::testGetCustomMethodSimple',
-      5 => 'Codeception\\TestCase\\Cest::testGetCustomMethodFields',
-      6 => 'Codeception\\TestCase\\Cest::testGetCustomMethodOrder',
-      7 => 'Codeception\\TestCase\\Cest::testFirstMethodNoResults',
-      8 => 'Codeception\\TestCase\\Cest::testFindingUserMethod',
-      9 => 'Codeception\\TestCase\\Cest::testLoginFromClassInstance',
-      10 => 'Codeception\\TestCase\\Cest::testLoginUserMethodFromExistingData',
-      11 => 'Codeception\\TestCase\\Cest::testLoginUserMethodWithPass',
-      12 => 'Codeception\\TestCase\\Cest::testLogoutMethod',
-      13 => 'Codeception\\TestCase\\Cest::testUpdateMethodLoggedInUser',
-    ),
-    259 => 
-    array (
-      0 => 'Codeception\\TestCase\\Cest::testGetMethodFieldsArgument',
-      1 => 'Codeception\\TestCase\\Cest::testGetMethodWhereOperatorEquals',
-      2 => 'Codeception\\TestCase\\Cest::testGetMethodWhereOperatorLess',
-      3 => 'Codeception\\TestCase\\Cest::testGetMethodWhereOperatorGreater',
-      4 => 'Codeception\\TestCase\\Cest::testGetCustomMethodSimple',
-      5 => 'Codeception\\TestCase\\Cest::testGetCustomMethodFields',
-      6 => 'Codeception\\TestCase\\Cest::testGetCustomMethodOrder',
-      7 => 'Codeception\\TestCase\\Cest::testFirstMethodNoResults',
-      8 => 'Codeception\\TestCase\\Cest::testFindingUserMethod',
-      9 => 'Codeception\\TestCase\\Cest::testLoginFromClassInstance',
-      10 => 'Codeception\\TestCase\\Cest::testLoginUserMethodFromExistingData',
-      11 => 'Codeception\\TestCase\\Cest::testLoginUserMethodWithPass',
-      12 => 'Codeception\\TestCase\\Cest::testLogoutMethod',
-      13 => 'Codeception\\TestCase\\Cest::testUpdateMethodLoggedInUser',
-    ),
-    260 => 
-    array (
-      0 => 'Codeception\\TestCase\\Cest::testFirstMethodNoResults',
-    ),
+    254 => NULL,
     261 => 
     array (
-      0 => 'Codeception\\TestCase\\Cest::testFirstMethodNoResults',
-    ),
-    262 => 
-    array (
       0 => 'Codeception\\TestCase\\Cest::testGetMethodFieldsArgument',
       1 => 'Codeception\\TestCase\\Cest::testGetMethodWhereOperatorEquals',
       2 => 'Codeception\\TestCase\\Cest::testGetMethodWhereOperatorLess',
@@ -1311,12 +1269,13 @@ $coverage->setData(array (
       4 => 'Codeception\\TestCase\\Cest::testGetCustomMethodSimple',
       5 => 'Codeception\\TestCase\\Cest::testGetCustomMethodFields',
       6 => 'Codeception\\TestCase\\Cest::testGetCustomMethodOrder',
-      7 => 'Codeception\\TestCase\\Cest::testFindingUserMethod',
-      8 => 'Codeception\\TestCase\\Cest::testLoginFromClassInstance',
-      9 => 'Codeception\\TestCase\\Cest::testLoginUserMethodFromExistingData',
-      10 => 'Codeception\\TestCase\\Cest::testLoginUserMethodWithPass',
-      11 => 'Codeception\\TestCase\\Cest::testLogoutMethod',
-      12 => 'Codeception\\TestCase\\Cest::testUpdateMethodLoggedInUser',
+      7 => 'Codeception\\TestCase\\Cest::testFirstMethodNoResults',
+      8 => 'Codeception\\TestCase\\Cest::testFindingUserMethod',
+      9 => 'Codeception\\TestCase\\Cest::testLoginFromClassInstance',
+      10 => 'Codeception\\TestCase\\Cest::testLoginUserMethodFromExistingData',
+      11 => 'Codeception\\TestCase\\Cest::testLoginUserMethodWithPass',
+      12 => 'Codeception\\TestCase\\Cest::testLogoutMethod',
+      13 => 'Codeception\\TestCase\\Cest::testUpdateMethodLoggedInUser',
     ),
     263 => 
     array (
@@ -1327,14 +1286,23 @@ $coverage->setData(array (
       4 => 'Codeception\\TestCase\\Cest::testGetCustomMethodSimple',
       5 => 'Codeception\\TestCase\\Cest::testGetCustomMethodFields',
       6 => 'Codeception\\TestCase\\Cest::testGetCustomMethodOrder',
-      7 => 'Codeception\\TestCase\\Cest::testFindingUserMethod',
-      8 => 'Codeception\\TestCase\\Cest::testLoginFromClassInstance',
-      9 => 'Codeception\\TestCase\\Cest::testLoginUserMethodFromExistingData',
-      10 => 'Codeception\\TestCase\\Cest::testLoginUserMethodWithPass',
-      11 => 'Codeception\\TestCase\\Cest::testLogoutMethod',
-      12 => 'Codeception\\TestCase\\Cest::testUpdateMethodLoggedInUser',
+      7 => 'Codeception\\TestCase\\Cest::testFirstMethodNoResults',
+      8 => 'Codeception\\TestCase\\Cest::testFindingUserMethod',
+      9 => 'Codeception\\TestCase\\Cest::testLoginFromClassInstance',
+      10 => 'Codeception\\TestCase\\Cest::testLoginUserMethodFromExistingData',
+      11 => 'Codeception\\TestCase\\Cest::testLoginUserMethodWithPass',
+      12 => 'Codeception\\TestCase\\Cest::testLogoutMethod',
+      13 => 'Codeception\\TestCase\\Cest::testUpdateMethodLoggedInUser',
     ),
     264 => 
+    array (
+      0 => 'Codeception\\TestCase\\Cest::testFirstMethodNoResults',
+    ),
+    265 => 
+    array (
+      0 => 'Codeception\\TestCase\\Cest::testFirstMethodNoResults',
+    ),
+    266 => 
     array (
       0 => 'Codeception\\TestCase\\Cest::testGetMethodFieldsArgument',
       1 => 'Codeception\\TestCase\\Cest::testGetMethodWhereOperatorEquals',
@@ -1350,16 +1318,48 @@ $coverage->setData(array (
       11 => 'Codeception\\TestCase\\Cest::testLogoutMethod',
       12 => 'Codeception\\TestCase\\Cest::testUpdateMethodLoggedInUser',
     ),
-    265 => 
-    array (
-    ),
-    266 => 
-    array (
-    ),
     267 => 
     array (
+      0 => 'Codeception\\TestCase\\Cest::testGetMethodFieldsArgument',
+      1 => 'Codeception\\TestCase\\Cest::testGetMethodWhereOperatorEquals',
+      2 => 'Codeception\\TestCase\\Cest::testGetMethodWhereOperatorLess',
+      3 => 'Codeception\\TestCase\\Cest::testGetMethodWhereOperatorGreater',
+      4 => 'Codeception\\TestCase\\Cest::testGetCustomMethodSimple',
+      5 => 'Codeception\\TestCase\\Cest::testGetCustomMethodFields',
+      6 => 'Codeception\\TestCase\\Cest::testGetCustomMethodOrder',
+      7 => 'Codeception\\TestCase\\Cest::testFindingUserMethod',
+      8 => 'Codeception\\TestCase\\Cest::testLoginFromClassInstance',
+      9 => 'Codeception\\TestCase\\Cest::testLoginUserMethodFromExistingData',
+      10 => 'Codeception\\TestCase\\Cest::testLoginUserMethodWithPass',
+      11 => 'Codeception\\TestCase\\Cest::testLogoutMethod',
+      12 => 'Codeception\\TestCase\\Cest::testUpdateMethodLoggedInUser',
+    ),
+    268 => 
+    array (
+      0 => 'Codeception\\TestCase\\Cest::testGetMethodFieldsArgument',
+      1 => 'Codeception\\TestCase\\Cest::testGetMethodWhereOperatorEquals',
+      2 => 'Codeception\\TestCase\\Cest::testGetMethodWhereOperatorLess',
+      3 => 'Codeception\\TestCase\\Cest::testGetMethodWhereOperatorGreater',
+      4 => 'Codeception\\TestCase\\Cest::testGetCustomMethodSimple',
+      5 => 'Codeception\\TestCase\\Cest::testGetCustomMethodFields',
+      6 => 'Codeception\\TestCase\\Cest::testGetCustomMethodOrder',
+      7 => 'Codeception\\TestCase\\Cest::testFindingUserMethod',
+      8 => 'Codeception\\TestCase\\Cest::testLoginFromClassInstance',
+      9 => 'Codeception\\TestCase\\Cest::testLoginUserMethodFromExistingData',
+      10 => 'Codeception\\TestCase\\Cest::testLoginUserMethodWithPass',
+      11 => 'Codeception\\TestCase\\Cest::testLogoutMethod',
+      12 => 'Codeception\\TestCase\\Cest::testUpdateMethodLoggedInUser',
     ),
     269 => 
+    array (
+    ),
+    270 => 
+    array (
+    ),
+    271 => 
+    array (
+    ),
+    273 => 
     array (
       0 => 'Codeception\\TestCase\\Cest::testGetMethodFieldsArgument',
       1 => 'Codeception\\TestCase\\Cest::testGetMethodWhereOperatorEquals',
@@ -1376,8 +1376,8 @@ $coverage->setData(array (
       12 => 'Codeception\\TestCase\\Cest::testLogoutMethod',
       13 => 'Codeception\\TestCase\\Cest::testUpdateMethodLoggedInUser',
     ),
-    270 => NULL,
-    277 => 
+    274 => NULL,
+    281 => 
     array (
       0 => 'Codeception\\TestCase\\Cest::testGetMethodFieldsArgument',
       1 => 'Codeception\\TestCase\\Cest::testGetMethodWhereOperatorEquals',
@@ -1396,13 +1396,13 @@ $coverage->setData(array (
       14 => 'Codeception\\TestCase\\Cest::testLogoutMethod',
       15 => 'Codeception\\TestCase\\Cest::testUpdateMethodLoggedInUser',
     ),
-    278 => NULL,
-    285 => 
+    282 => NULL,
+    289 => 
     array (
       0 => 'Codeception\\TestCase\\Cest::testDeleteMethodWhereOperatorEquals',
     ),
-    286 => NULL,
-    293 => 
+    290 => NULL,
+    297 => 
     array (
       0 => 'Codeception\\TestCase\\Cest::testGetMethodWhereOperatorIn',
       1 => 'Codeception\\TestCase\\Cest::testDeleteMethodWhereOperatorEquals',
@@ -1410,8 +1410,8 @@ $coverage->setData(array (
       3 => 'Codeception\\TestCase\\Cest::testGetCustomMethodFields',
       4 => 'Codeception\\TestCase\\Cest::testGetCustomMethodOrder',
     ),
-    294 => NULL,
-    301 => 
+    298 => NULL,
+    305 => 
     array (
       0 => 'Codeception\\TestCase\\Cest::testGetMethodFieldsArgument',
       1 => 'Codeception\\TestCase\\Cest::testGetMethodWhereOperatorEquals',
@@ -1442,170 +1442,125 @@ $coverage->setData(array (
       26 => 'Codeception\\TestCase\\Cest::testUpdateMethodLoggedInUser',
       27 => 'Codeception\\TestCase\\Cest::testUpdateMethodWithId',
     ),
-    302 => NULL,
-    309 => 
+    306 => NULL,
+    313 => 
     array (
       0 => 'Codeception\\TestCase\\Cest::testDeleteMethodWhereOperatorEquals',
     ),
-    310 => NULL,
+    314 => NULL,
   ),
   '/var/www/html/user-management/src/User.php' => 
   array (
-    22 => 
-    array (
-      0 => 'Codeception\\TestCase\\Cest::testUserClass',
-      1 => 'Codeception\\TestCase\\Cest::testNotLoggedIn',
-      2 => 'Codeception\\TestCase\\Cest::testFindingUserMethod',
-      3 => 'Codeception\\TestCase\\Cest::testLoginFromClassInstance',
-      4 => 'Codeception\\TestCase\\Cest::testCreatingNewUser',
-      5 => 'Codeception\\TestCase\\Cest::testLoginUserMethodFromExistingData',
-      6 => 'Codeception\\TestCase\\Cest::testLoginUserMethodWithPass',
-      7 => 'Codeception\\TestCase\\Cest::testLoginException',
-      8 => 'Codeception\\TestCase\\Cest::testLogoutMethod',
-      9 => 'Codeception\\TestCase\\Cest::testUpdateMethodLoggedInUser',
-      10 => 'Codeception\\TestCase\\Cest::testUpdateMethodWithId',
-      11 => 'Codeception\\TestCase\\Cest::testUpdateMethodException',
-      12 => 'Codeception\\TestCase\\Cest::testGetDbInstanceMethod',
-    ),
-    24 => 
-    array (
-      0 => 'Codeception\\TestCase\\Cest::testUserClass',
-      1 => 'Codeception\\TestCase\\Cest::testNotLoggedIn',
-      2 => 'Codeception\\TestCase\\Cest::testFindingUserMethod',
-      3 => 'Codeception\\TestCase\\Cest::testLoginFromClassInstance',
-      4 => 'Codeception\\TestCase\\Cest::testCreatingNewUser',
-      5 => 'Codeception\\TestCase\\Cest::testLoginUserMethodFromExistingData',
-      6 => 'Codeception\\TestCase\\Cest::testLoginUserMethodWithPass',
-      7 => 'Codeception\\TestCase\\Cest::testLoginException',
-      8 => 'Codeception\\TestCase\\Cest::testLogoutMethod',
-      9 => 'Codeception\\TestCase\\Cest::testUpdateMethodLoggedInUser',
-      10 => 'Codeception\\TestCase\\Cest::testUpdateMethodWithId',
-      11 => 'Codeception\\TestCase\\Cest::testUpdateMethodException',
-      12 => 'Codeception\\TestCase\\Cest::testGetDbInstanceMethod',
-    ),
-    27 => 
-    array (
-      0 => 'Codeception\\TestCase\\Cest::testUserClass',
-      1 => 'Codeception\\TestCase\\Cest::testNotLoggedIn',
-      2 => 'Codeception\\TestCase\\Cest::testFindingUserMethod',
-      3 => 'Codeception\\TestCase\\Cest::testLoginFromClassInstance',
-      4 => 'Codeception\\TestCase\\Cest::testCreatingNewUser',
-      5 => 'Codeception\\TestCase\\Cest::testLoginUserMethodFromExistingData',
-      6 => 'Codeception\\TestCase\\Cest::testLoginUserMethodWithPass',
-      7 => 'Codeception\\TestCase\\Cest::testLoginException',
-      8 => 'Codeception\\TestCase\\Cest::testLogoutMethod',
-      9 => 'Codeception\\TestCase\\Cest::testUpdateMethodLoggedInUser',
-      10 => 'Codeception\\TestCase\\Cest::testUpdateMethodWithId',
-      11 => 'Codeception\\TestCase\\Cest::testUpdateMethodException',
-      12 => 'Codeception\\TestCase\\Cest::testGetDbInstanceMethod',
-    ),
-    28 => 
-    array (
-      0 => 'Codeception\\TestCase\\Cest::testLoginFromClassInstance',
-    ),
-    30 => 
-    array (
-      0 => 'Codeception\\TestCase\\Cest::testLoginFromClassInstance',
-    ),
-    31 => 
-    array (
-      0 => 'Codeception\\TestCase\\Cest::testLoginFromClassInstance',
-    ),
-    32 => 
-    array (
-      0 => 'Codeception\\TestCase\\Cest::testLoginFromClassInstance',
-    ),
-    33 => 
-    array (
-      0 => 'Codeception\\TestCase\\Cest::testLoginFromClassInstance',
-    ),
-    35 => 
-    array (
-      0 => 'Codeception\\TestCase\\Cest::testLoginFromClassInstance',
-    ),
-    36 => 
-    array (
-      0 => 'Codeception\\TestCase\\Cest::testUserClass',
-      1 => 'Codeception\\TestCase\\Cest::testNotLoggedIn',
-      2 => 'Codeception\\TestCase\\Cest::testFindingUserMethod',
-      3 => 'Codeception\\TestCase\\Cest::testLoginFromClassInstance',
-      4 => 'Codeception\\TestCase\\Cest::testCreatingNewUser',
-      5 => 'Codeception\\TestCase\\Cest::testLoginUserMethodFromExistingData',
-      6 => 'Codeception\\TestCase\\Cest::testLoginUserMethodWithPass',
-      7 => 'Codeception\\TestCase\\Cest::testLoginException',
-      8 => 'Codeception\\TestCase\\Cest::testLogoutMethod',
-      9 => 'Codeception\\TestCase\\Cest::testUpdateMethodLoggedInUser',
-      10 => 'Codeception\\TestCase\\Cest::testUpdateMethodWithId',
-      11 => 'Codeception\\TestCase\\Cest::testUpdateMethodException',
-      12 => 'Codeception\\TestCase\\Cest::testGetDbInstanceMethod',
-    ),
-    37 => 
-    array (
-      0 => 'Codeception\\TestCase\\Cest::testLoginFromClassInstance',
-    ),
-    39 => 
-    array (
-      0 => 'Codeception\\TestCase\\Cest::testUserClass',
-      1 => 'Codeception\\TestCase\\Cest::testNotLoggedIn',
-      2 => 'Codeception\\TestCase\\Cest::testFindingUserMethod',
-      3 => 'Codeception\\TestCase\\Cest::testLoginFromClassInstance',
-      4 => 'Codeception\\TestCase\\Cest::testCreatingNewUser',
-      5 => 'Codeception\\TestCase\\Cest::testLoginUserMethodFromExistingData',
-      6 => 'Codeception\\TestCase\\Cest::testLoginUserMethodWithPass',
-      7 => 'Codeception\\TestCase\\Cest::testLoginException',
-      8 => 'Codeception\\TestCase\\Cest::testLogoutMethod',
-      9 => 'Codeception\\TestCase\\Cest::testUpdateMethodLoggedInUser',
-      10 => 'Codeception\\TestCase\\Cest::testUpdateMethodWithId',
-      11 => 'Codeception\\TestCase\\Cest::testUpdateMethodException',
-      12 => 'Codeception\\TestCase\\Cest::testGetDbInstanceMethod',
-    ),
-    47 => 
-    array (
-      0 => 'Codeception\\TestCase\\Cest::testFindingUserMethod',
-      1 => 'Codeception\\TestCase\\Cest::testLoginFromClassInstance',
-      2 => 'Codeception\\TestCase\\Cest::testLoginUserMethodFromExistingData',
-      3 => 'Codeception\\TestCase\\Cest::testLoginUserMethodWithPass',
-      4 => 'Codeception\\TestCase\\Cest::testLogoutMethod',
-      5 => 'Codeception\\TestCase\\Cest::testUpdateMethodLoggedInUser',
-    ),
-    48 => 
-    array (
-      0 => 'Codeception\\TestCase\\Cest::testFindingUserMethod',
-      1 => 'Codeception\\TestCase\\Cest::testLoginFromClassInstance',
-      2 => 'Codeception\\TestCase\\Cest::testLoginUserMethodFromExistingData',
-      3 => 'Codeception\\TestCase\\Cest::testLoginUserMethodWithPass',
-      4 => 'Codeception\\TestCase\\Cest::testLogoutMethod',
-      5 => 'Codeception\\TestCase\\Cest::testUpdateMethodLoggedInUser',
-    ),
-    50 => 
-    array (
-      0 => 'Codeception\\TestCase\\Cest::testFindingUserMethod',
-      1 => 'Codeception\\TestCase\\Cest::testLoginFromClassInstance',
-      2 => 'Codeception\\TestCase\\Cest::testLoginUserMethodFromExistingData',
-      3 => 'Codeception\\TestCase\\Cest::testLoginUserMethodWithPass',
-      4 => 'Codeception\\TestCase\\Cest::testLogoutMethod',
-      5 => 'Codeception\\TestCase\\Cest::testUpdateMethodLoggedInUser',
-    ),
-    52 => 
-    array (
-      0 => 'Codeception\\TestCase\\Cest::testFindingUserMethod',
-      1 => 'Codeception\\TestCase\\Cest::testLoginFromClassInstance',
-      2 => 'Codeception\\TestCase\\Cest::testLoginUserMethodFromExistingData',
-      3 => 'Codeception\\TestCase\\Cest::testLoginUserMethodWithPass',
-      4 => 'Codeception\\TestCase\\Cest::testLogoutMethod',
-      5 => 'Codeception\\TestCase\\Cest::testUpdateMethodLoggedInUser',
-    ),
-    53 => 
-    array (
-      0 => 'Codeception\\TestCase\\Cest::testFindingUserMethod',
-      1 => 'Codeception\\TestCase\\Cest::testLoginFromClassInstance',
-      2 => 'Codeception\\TestCase\\Cest::testLoginUserMethodFromExistingData',
-      3 => 'Codeception\\TestCase\\Cest::testLoginUserMethodWithPass',
-      4 => 'Codeception\\TestCase\\Cest::testLogoutMethod',
-      5 => 'Codeception\\TestCase\\Cest::testUpdateMethodLoggedInUser',
-    ),
     54 => 
     array (
+      0 => 'Codeception\\TestCase\\Cest::testUserClass',
+      1 => 'Codeception\\TestCase\\Cest::testNotLoggedIn',
+      2 => 'Codeception\\TestCase\\Cest::testFindingUserMethod',
+      3 => 'Codeception\\TestCase\\Cest::testLoginFromClassInstance',
+      4 => 'Codeception\\TestCase\\Cest::testCreatingNewUser',
+      5 => 'Codeception\\TestCase\\Cest::testLoginUserMethodFromExistingData',
+      6 => 'Codeception\\TestCase\\Cest::testLoginUserMethodWithPass',
+      7 => 'Codeception\\TestCase\\Cest::testLoginException',
+      8 => 'Codeception\\TestCase\\Cest::testLogoutMethod',
+      9 => 'Codeception\\TestCase\\Cest::testUpdateMethodLoggedInUser',
+      10 => 'Codeception\\TestCase\\Cest::testUpdateMethodWithId',
+      11 => 'Codeception\\TestCase\\Cest::testUpdateMethodException',
+      12 => 'Codeception\\TestCase\\Cest::testGetDbInstanceMethod',
+    ),
+    56 => 
+    array (
+      0 => 'Codeception\\TestCase\\Cest::testUserClass',
+      1 => 'Codeception\\TestCase\\Cest::testNotLoggedIn',
+      2 => 'Codeception\\TestCase\\Cest::testFindingUserMethod',
+      3 => 'Codeception\\TestCase\\Cest::testLoginFromClassInstance',
+      4 => 'Codeception\\TestCase\\Cest::testCreatingNewUser',
+      5 => 'Codeception\\TestCase\\Cest::testLoginUserMethodFromExistingData',
+      6 => 'Codeception\\TestCase\\Cest::testLoginUserMethodWithPass',
+      7 => 'Codeception\\TestCase\\Cest::testLoginException',
+      8 => 'Codeception\\TestCase\\Cest::testLogoutMethod',
+      9 => 'Codeception\\TestCase\\Cest::testUpdateMethodLoggedInUser',
+      10 => 'Codeception\\TestCase\\Cest::testUpdateMethodWithId',
+      11 => 'Codeception\\TestCase\\Cest::testUpdateMethodException',
+      12 => 'Codeception\\TestCase\\Cest::testGetDbInstanceMethod',
+    ),
+    59 => 
+    array (
+      0 => 'Codeception\\TestCase\\Cest::testUserClass',
+      1 => 'Codeception\\TestCase\\Cest::testNotLoggedIn',
+      2 => 'Codeception\\TestCase\\Cest::testFindingUserMethod',
+      3 => 'Codeception\\TestCase\\Cest::testLoginFromClassInstance',
+      4 => 'Codeception\\TestCase\\Cest::testCreatingNewUser',
+      5 => 'Codeception\\TestCase\\Cest::testLoginUserMethodFromExistingData',
+      6 => 'Codeception\\TestCase\\Cest::testLoginUserMethodWithPass',
+      7 => 'Codeception\\TestCase\\Cest::testLoginException',
+      8 => 'Codeception\\TestCase\\Cest::testLogoutMethod',
+      9 => 'Codeception\\TestCase\\Cest::testUpdateMethodLoggedInUser',
+      10 => 'Codeception\\TestCase\\Cest::testUpdateMethodWithId',
+      11 => 'Codeception\\TestCase\\Cest::testUpdateMethodException',
+      12 => 'Codeception\\TestCase\\Cest::testGetDbInstanceMethod',
+    ),
+    60 => 
+    array (
+      0 => 'Codeception\\TestCase\\Cest::testLoginFromClassInstance',
+    ),
+    62 => 
+    array (
+      0 => 'Codeception\\TestCase\\Cest::testLoginFromClassInstance',
+    ),
+    63 => 
+    array (
+      0 => 'Codeception\\TestCase\\Cest::testLoginFromClassInstance',
+    ),
+    64 => 
+    array (
+      0 => 'Codeception\\TestCase\\Cest::testLoginFromClassInstance',
+    ),
+    65 => 
+    array (
+      0 => 'Codeception\\TestCase\\Cest::testLoginFromClassInstance',
+    ),
+    67 => 
+    array (
+      0 => 'Codeception\\TestCase\\Cest::testLoginFromClassInstance',
+    ),
+    68 => 
+    array (
+      0 => 'Codeception\\TestCase\\Cest::testUserClass',
+      1 => 'Codeception\\TestCase\\Cest::testNotLoggedIn',
+      2 => 'Codeception\\TestCase\\Cest::testFindingUserMethod',
+      3 => 'Codeception\\TestCase\\Cest::testLoginFromClassInstance',
+      4 => 'Codeception\\TestCase\\Cest::testCreatingNewUser',
+      5 => 'Codeception\\TestCase\\Cest::testLoginUserMethodFromExistingData',
+      6 => 'Codeception\\TestCase\\Cest::testLoginUserMethodWithPass',
+      7 => 'Codeception\\TestCase\\Cest::testLoginException',
+      8 => 'Codeception\\TestCase\\Cest::testLogoutMethod',
+      9 => 'Codeception\\TestCase\\Cest::testUpdateMethodLoggedInUser',
+      10 => 'Codeception\\TestCase\\Cest::testUpdateMethodWithId',
+      11 => 'Codeception\\TestCase\\Cest::testUpdateMethodException',
+      12 => 'Codeception\\TestCase\\Cest::testGetDbInstanceMethod',
+    ),
+    69 => 
+    array (
+      0 => 'Codeception\\TestCase\\Cest::testLoginFromClassInstance',
+    ),
+    71 => 
+    array (
+      0 => 'Codeception\\TestCase\\Cest::testUserClass',
+      1 => 'Codeception\\TestCase\\Cest::testNotLoggedIn',
+      2 => 'Codeception\\TestCase\\Cest::testFindingUserMethod',
+      3 => 'Codeception\\TestCase\\Cest::testLoginFromClassInstance',
+      4 => 'Codeception\\TestCase\\Cest::testCreatingNewUser',
+      5 => 'Codeception\\TestCase\\Cest::testLoginUserMethodFromExistingData',
+      6 => 'Codeception\\TestCase\\Cest::testLoginUserMethodWithPass',
+      7 => 'Codeception\\TestCase\\Cest::testLoginException',
+      8 => 'Codeception\\TestCase\\Cest::testLogoutMethod',
+      9 => 'Codeception\\TestCase\\Cest::testUpdateMethodLoggedInUser',
+      10 => 'Codeception\\TestCase\\Cest::testUpdateMethodWithId',
+      11 => 'Codeception\\TestCase\\Cest::testUpdateMethodException',
+      12 => 'Codeception\\TestCase\\Cest::testGetDbInstanceMethod',
+    ),
+    79 => 
+    array (
       0 => 'Codeception\\TestCase\\Cest::testFindingUserMethod',
       1 => 'Codeception\\TestCase\\Cest::testLoginFromClassInstance',
       2 => 'Codeception\\TestCase\\Cest::testLoginUserMethodFromExistingData',
@@ -1613,34 +1568,79 @@ $coverage->setData(array (
       4 => 'Codeception\\TestCase\\Cest::testLogoutMethod',
       5 => 'Codeception\\TestCase\\Cest::testUpdateMethodLoggedInUser',
     ),
-    55 => NULL,
-    56 => 
+    80 => 
+    array (
+      0 => 'Codeception\\TestCase\\Cest::testFindingUserMethod',
+      1 => 'Codeception\\TestCase\\Cest::testLoginFromClassInstance',
+      2 => 'Codeception\\TestCase\\Cest::testLoginUserMethodFromExistingData',
+      3 => 'Codeception\\TestCase\\Cest::testLoginUserMethodWithPass',
+      4 => 'Codeception\\TestCase\\Cest::testLogoutMethod',
+      5 => 'Codeception\\TestCase\\Cest::testUpdateMethodLoggedInUser',
+    ),
+    82 => 
+    array (
+      0 => 'Codeception\\TestCase\\Cest::testFindingUserMethod',
+      1 => 'Codeception\\TestCase\\Cest::testLoginFromClassInstance',
+      2 => 'Codeception\\TestCase\\Cest::testLoginUserMethodFromExistingData',
+      3 => 'Codeception\\TestCase\\Cest::testLoginUserMethodWithPass',
+      4 => 'Codeception\\TestCase\\Cest::testLogoutMethod',
+      5 => 'Codeception\\TestCase\\Cest::testUpdateMethodLoggedInUser',
+    ),
+    84 => 
+    array (
+      0 => 'Codeception\\TestCase\\Cest::testFindingUserMethod',
+      1 => 'Codeception\\TestCase\\Cest::testLoginFromClassInstance',
+      2 => 'Codeception\\TestCase\\Cest::testLoginUserMethodFromExistingData',
+      3 => 'Codeception\\TestCase\\Cest::testLoginUserMethodWithPass',
+      4 => 'Codeception\\TestCase\\Cest::testLogoutMethod',
+      5 => 'Codeception\\TestCase\\Cest::testUpdateMethodLoggedInUser',
+    ),
+    85 => 
+    array (
+      0 => 'Codeception\\TestCase\\Cest::testFindingUserMethod',
+      1 => 'Codeception\\TestCase\\Cest::testLoginFromClassInstance',
+      2 => 'Codeception\\TestCase\\Cest::testLoginUserMethodFromExistingData',
+      3 => 'Codeception\\TestCase\\Cest::testLoginUserMethodWithPass',
+      4 => 'Codeception\\TestCase\\Cest::testLogoutMethod',
+      5 => 'Codeception\\TestCase\\Cest::testUpdateMethodLoggedInUser',
+    ),
+    86 => 
+    array (
+      0 => 'Codeception\\TestCase\\Cest::testFindingUserMethod',
+      1 => 'Codeception\\TestCase\\Cest::testLoginFromClassInstance',
+      2 => 'Codeception\\TestCase\\Cest::testLoginUserMethodFromExistingData',
+      3 => 'Codeception\\TestCase\\Cest::testLoginUserMethodWithPass',
+      4 => 'Codeception\\TestCase\\Cest::testLogoutMethod',
+      5 => 'Codeception\\TestCase\\Cest::testUpdateMethodLoggedInUser',
+    ),
+    87 => NULL,
+    88 => 
     array (
       0 => 'Codeception\\TestCase\\Cest::testFindingUserMethod',
       1 => 'Codeception\\TestCase\\Cest::testLoginFromClassInstance',
       2 => 'Codeception\\TestCase\\Cest::testLoginUserMethodWithPass',
     ),
-    58 => NULL,
-    71 => 
+    90 => NULL,
+    103 => 
     array (
       0 => 'Codeception\\TestCase\\Cest::testCreatingNewUser',
       1 => 'Codeception\\TestCase\\Cest::testUpdateMethodLoggedInUser',
       2 => 'Codeception\\TestCase\\Cest::testUpdateMethodWithId',
     ),
-    73 => 
+    105 => 
     array (
       0 => 'Codeception\\TestCase\\Cest::testCreatingNewUser',
       1 => 'Codeception\\TestCase\\Cest::testUpdateMethodLoggedInUser',
       2 => 'Codeception\\TestCase\\Cest::testUpdateMethodWithId',
     ),
-    75 => 
+    107 => 
     array (
       0 => 'Codeception\\TestCase\\Cest::testCreatingNewUser',
       1 => 'Codeception\\TestCase\\Cest::testUpdateMethodLoggedInUser',
       2 => 'Codeception\\TestCase\\Cest::testUpdateMethodWithId',
     ),
-    76 => NULL,
-    91 => 
+    108 => NULL,
+    120 => 
     array (
       0 => 'Codeception\\TestCase\\Cest::testLoginUserMethodFromExistingData',
       1 => 'Codeception\\TestCase\\Cest::testLoginUserMethodWithPass',
@@ -1648,182 +1648,281 @@ $coverage->setData(array (
       3 => 'Codeception\\TestCase\\Cest::testLogoutMethod',
       4 => 'Codeception\\TestCase\\Cest::testUpdateMethodLoggedInUser',
     ),
-    94 => 
+    121 => 
+    array (
+      0 => 'Codeception\\TestCase\\Cest::testLoginUserMethodFromExistingData',
+      1 => 'Codeception\\TestCase\\Cest::testLoginUserMethodWithPass',
+      2 => 'Codeception\\TestCase\\Cest::testLoginException',
+      3 => 'Codeception\\TestCase\\Cest::testLogoutMethod',
+      4 => 'Codeception\\TestCase\\Cest::testUpdateMethodLoggedInUser',
+    ),
+    124 => 
+    array (
+      0 => 'Codeception\\TestCase\\Cest::testLoginUserMethodFromExistingData',
+      1 => 'Codeception\\TestCase\\Cest::testLoginUserMethodWithPass',
+      2 => 'Codeception\\TestCase\\Cest::testLoginException',
+      3 => 'Codeception\\TestCase\\Cest::testLogoutMethod',
+      4 => 'Codeception\\TestCase\\Cest::testUpdateMethodLoggedInUser',
+    ),
+    127 => 
     array (
       0 => 'Codeception\\TestCase\\Cest::testLoginUserMethodFromExistingData',
     ),
-    96 => 
+    128 => 
     array (
       0 => 'Codeception\\TestCase\\Cest::testLoginUserMethodFromExistingData',
     ),
-    97 => 
+    129 => NULL,
+    131 => 
     array (
       0 => 'Codeception\\TestCase\\Cest::testLoginUserMethodFromExistingData',
     ),
-    98 => 
+    132 => 
     array (
       0 => 'Codeception\\TestCase\\Cest::testLoginUserMethodFromExistingData',
     ),
-    99 => 
+    133 => 
     array (
       0 => 'Codeception\\TestCase\\Cest::testLoginUserMethodFromExistingData',
     ),
-    101 => NULL,
-    102 => 
+    134 => 
+    array (
+      0 => 'Codeception\\TestCase\\Cest::testLoginUserMethodFromExistingData',
+    ),
+    136 => NULL,
+    137 => 
     array (
       0 => 'Codeception\\TestCase\\Cest::testLoginUserMethodWithPass',
       1 => 'Codeception\\TestCase\\Cest::testLoginException',
       2 => 'Codeception\\TestCase\\Cest::testLogoutMethod',
       3 => 'Codeception\\TestCase\\Cest::testUpdateMethodLoggedInUser',
     ),
-    104 => 
+    139 => 
     array (
       0 => 'Codeception\\TestCase\\Cest::testLoginUserMethodWithPass',
       1 => 'Codeception\\TestCase\\Cest::testLogoutMethod',
       2 => 'Codeception\\TestCase\\Cest::testUpdateMethodLoggedInUser',
     ),
-    106 => 
+    141 => 
     array (
       0 => 'Codeception\\TestCase\\Cest::testLoginUserMethodWithPass',
       1 => 'Codeception\\TestCase\\Cest::testLogoutMethod',
       2 => 'Codeception\\TestCase\\Cest::testUpdateMethodLoggedInUser',
     ),
-    108 => 
+    144 => 
     array (
       0 => 'Codeception\\TestCase\\Cest::testLoginUserMethodWithPass',
       1 => 'Codeception\\TestCase\\Cest::testLogoutMethod',
       2 => 'Codeception\\TestCase\\Cest::testUpdateMethodLoggedInUser',
     ),
-    109 => 
+    146 => 
     array (
       0 => 'Codeception\\TestCase\\Cest::testLoginUserMethodWithPass',
       1 => 'Codeception\\TestCase\\Cest::testLogoutMethod',
       2 => 'Codeception\\TestCase\\Cest::testUpdateMethodLoggedInUser',
     ),
-    112 => 
+    147 => 
+    array (
+    ),
+    150 => 
+    array (
+    ),
+    152 => 
+    array (
+    ),
+    153 => 
+    array (
+    ),
+    154 => 
+    array (
+    ),
+    156 => 
+    array (
+    ),
+    157 => 
+    array (
+    ),
+    158 => NULL,
+    159 => 
+    array (
+    ),
+    160 => 
+    array (
+    ),
+    162 => 
     array (
       0 => 'Codeception\\TestCase\\Cest::testLoginUserMethodWithPass',
       1 => 'Codeception\\TestCase\\Cest::testLogoutMethod',
       2 => 'Codeception\\TestCase\\Cest::testUpdateMethodLoggedInUser',
     ),
-    114 => 
+    163 => 
     array (
       0 => 'Codeception\\TestCase\\Cest::testLoginUserMethodWithPass',
       1 => 'Codeception\\TestCase\\Cest::testLogoutMethod',
       2 => 'Codeception\\TestCase\\Cest::testUpdateMethodLoggedInUser',
     ),
-    115 => 
+    166 => 
     array (
       0 => 'Codeception\\TestCase\\Cest::testLoginUserMethodWithPass',
       1 => 'Codeception\\TestCase\\Cest::testLogoutMethod',
       2 => 'Codeception\\TestCase\\Cest::testUpdateMethodLoggedInUser',
     ),
-    116 => 
+    169 => 
     array (
       0 => 'Codeception\\TestCase\\Cest::testLoginUserMethodWithPass',
       1 => 'Codeception\\TestCase\\Cest::testLogoutMethod',
       2 => 'Codeception\\TestCase\\Cest::testUpdateMethodLoggedInUser',
     ),
-    117 => 
+    171 => 
     array (
       0 => 'Codeception\\TestCase\\Cest::testLoginUserMethodWithPass',
       1 => 'Codeception\\TestCase\\Cest::testLogoutMethod',
       2 => 'Codeception\\TestCase\\Cest::testUpdateMethodLoggedInUser',
     ),
-    118 => NULL,
-    120 => 
+    172 => 
+    array (
+      0 => 'Codeception\\TestCase\\Cest::testLoginUserMethodWithPass',
+      1 => 'Codeception\\TestCase\\Cest::testLogoutMethod',
+      2 => 'Codeception\\TestCase\\Cest::testUpdateMethodLoggedInUser',
+    ),
+    173 => 
+    array (
+      0 => 'Codeception\\TestCase\\Cest::testLoginUserMethodWithPass',
+      1 => 'Codeception\\TestCase\\Cest::testLogoutMethod',
+      2 => 'Codeception\\TestCase\\Cest::testUpdateMethodLoggedInUser',
+    ),
+    174 => 
+    array (
+      0 => 'Codeception\\TestCase\\Cest::testLoginUserMethodWithPass',
+      1 => 'Codeception\\TestCase\\Cest::testLogoutMethod',
+      2 => 'Codeception\\TestCase\\Cest::testUpdateMethodLoggedInUser',
+    ),
+    175 => 
+    array (
+      0 => 'Codeception\\TestCase\\Cest::testLoginUserMethodWithPass',
+      1 => 'Codeception\\TestCase\\Cest::testLogoutMethod',
+      2 => 'Codeception\\TestCase\\Cest::testUpdateMethodLoggedInUser',
+    ),
+    176 => NULL,
+    178 => 
     array (
       0 => 'Codeception\\TestCase\\Cest::testLoginUserMethodWithPass',
     ),
-    121 => 
+    181 => 
     array (
       0 => 'Codeception\\TestCase\\Cest::testLoginUserMethodWithPass',
     ),
-    123 => NULL,
-    125 => 
+    182 => 
     array (
       0 => 'Codeception\\TestCase\\Cest::testLoginUserMethodWithPass',
     ),
-    127 => NULL,
-    129 => 
+    186 => 
+    array (
+      0 => 'Codeception\\TestCase\\Cest::testLoginUserMethodWithPass',
+    ),
+    187 => 
+    array (
+      0 => 'Codeception\\TestCase\\Cest::testLoginUserMethodWithPass',
+    ),
+    189 => NULL,
+    191 => 
+    array (
+      0 => 'Codeception\\TestCase\\Cest::testLoginUserMethodWithPass',
+    ),
+    193 => NULL,
+    195 => 
     array (
       0 => 'Codeception\\TestCase\\Cest::testLoginException',
     ),
-    131 => NULL,
-    138 => 
+    198 => 
+    array (
+      0 => 'Codeception\\TestCase\\Cest::testLoginUserMethodFromExistingData',
+      1 => 'Codeception\\TestCase\\Cest::testLoginUserMethodWithPass',
+      2 => 'Codeception\\TestCase\\Cest::testLogoutMethod',
+      3 => 'Codeception\\TestCase\\Cest::testUpdateMethodLoggedInUser',
+    ),
+    200 => NULL,
+    207 => 
     array (
       0 => 'Codeception\\TestCase\\Cest::testLoginUserMethodFromExistingData',
       1 => 'Codeception\\TestCase\\Cest::testLogoutMethod',
     ),
-    139 => NULL,
-    146 => 
+    208 => NULL,
+    215 => 
     array (
       0 => 'Codeception\\TestCase\\Cest::testLoginFromClassInstance',
       1 => 'Codeception\\TestCase\\Cest::testLoginUserMethodFromExistingData',
       2 => 'Codeception\\TestCase\\Cest::testLoginUserMethodWithPass',
       3 => 'Codeception\\TestCase\\Cest::testLogoutMethod',
     ),
-    147 => 
+    217 => 
     array (
       0 => 'Codeception\\TestCase\\Cest::testLoginFromClassInstance',
       1 => 'Codeception\\TestCase\\Cest::testLoginUserMethodFromExistingData',
       2 => 'Codeception\\TestCase\\Cest::testLoginUserMethodWithPass',
       3 => 'Codeception\\TestCase\\Cest::testLogoutMethod',
     ),
-    148 => 
+    218 => 
     array (
       0 => 'Codeception\\TestCase\\Cest::testLoginFromClassInstance',
       1 => 'Codeception\\TestCase\\Cest::testLoginUserMethodFromExistingData',
       2 => 'Codeception\\TestCase\\Cest::testLoginUserMethodWithPass',
       3 => 'Codeception\\TestCase\\Cest::testLogoutMethod',
     ),
-    149 => 
+    219 => 
     array (
       0 => 'Codeception\\TestCase\\Cest::testLoginFromClassInstance',
       1 => 'Codeception\\TestCase\\Cest::testLoginUserMethodFromExistingData',
       2 => 'Codeception\\TestCase\\Cest::testLoginUserMethodWithPass',
       3 => 'Codeception\\TestCase\\Cest::testLogoutMethod',
     ),
-    159 => 
+    220 => 
+    array (
+      0 => 'Codeception\\TestCase\\Cest::testLoginFromClassInstance',
+      1 => 'Codeception\\TestCase\\Cest::testLoginUserMethodFromExistingData',
+      2 => 'Codeception\\TestCase\\Cest::testLoginUserMethodWithPass',
+      3 => 'Codeception\\TestCase\\Cest::testLogoutMethod',
+    ),
+    230 => 
     array (
       0 => 'Codeception\\TestCase\\Cest::testUpdateMethodLoggedInUser',
       1 => 'Codeception\\TestCase\\Cest::testUpdateMethodWithId',
       2 => 'Codeception\\TestCase\\Cest::testUpdateMethodException',
     ),
-    160 => 
+    231 => 
     array (
       0 => 'Codeception\\TestCase\\Cest::testUpdateMethodLoggedInUser',
     ),
-    161 => 
+    232 => 
     array (
       0 => 'Codeception\\TestCase\\Cest::testUpdateMethodLoggedInUser',
     ),
-    162 => 
+    233 => 
     array (
       0 => 'Codeception\\TestCase\\Cest::testUpdateMethodWithId',
       1 => 'Codeception\\TestCase\\Cest::testUpdateMethodException',
     ),
-    163 => 
+    234 => 
     array (
       0 => 'Codeception\\TestCase\\Cest::testUpdateMethodException',
     ),
-    164 => NULL,
-    167 => 
+    235 => NULL,
+    238 => 
     array (
       0 => 'Codeception\\TestCase\\Cest::testUpdateMethodLoggedInUser',
       1 => 'Codeception\\TestCase\\Cest::testUpdateMethodWithId',
     ),
-    168 => 
+    239 => 
     array (
       0 => 'Codeception\\TestCase\\Cest::testUpdateMethodLoggedInUser',
       1 => 'Codeception\\TestCase\\Cest::testUpdateMethodWithId',
     ),
-    169 => 
+    240 => 
     array (
       0 => 'Codeception\\TestCase\\Cest::testUpdateMethodLoggedInUser',
       1 => 'Codeception\\TestCase\\Cest::testUpdateMethodWithId',
     ),
-    176 => 
+    247 => 
     array (
       0 => 'Codeception\\TestCase\\Cest::testFindingUserMethod',
       1 => 'Codeception\\TestCase\\Cest::testLoginFromClassInstance',
@@ -1833,8 +1932,8 @@ $coverage->setData(array (
       5 => 'Codeception\\TestCase\\Cest::testUpdateMethodLoggedInUser',
       6 => 'Codeception\\TestCase\\Cest::testUpdateMethodException',
     ),
-    177 => NULL,
-    184 => 
+    248 => NULL,
+    255 => 
     array (
       0 => 'Codeception\\TestCase\\Cest::testNotLoggedIn',
       1 => 'Codeception\\TestCase\\Cest::testLoginFromClassInstance',
@@ -1846,12 +1945,187 @@ $coverage->setData(array (
       7 => 'Codeception\\TestCase\\Cest::testUpdateMethodWithId',
       8 => 'Codeception\\TestCase\\Cest::testUpdateMethodException',
     ),
-    185 => NULL,
-    192 => 
+    256 => NULL,
+    263 => 
     array (
       0 => 'Codeception\\TestCase\\Cest::testGetDbInstanceMethod',
     ),
-    193 => NULL,
+    264 => NULL,
+    271 => 
+    array (
+      0 => 'Codeception\\TestCase\\Cest::testLoginUserMethodWithPass',
+      1 => 'Codeception\\TestCase\\Cest::testLogoutMethod',
+      2 => 'Codeception\\TestCase\\Cest::testUpdateMethodLoggedInUser',
+    ),
+    273 => 
+    array (
+    ),
+    275 => 
+    array (
+    ),
+    278 => 
+    array (
+    ),
+    280 => 
+    array (
+    ),
+    281 => 
+    array (
+    ),
+    282 => 
+    array (
+    ),
+    283 => 
+    array (
+    ),
+    284 => 
+    array (
+    ),
+    285 => 
+    array (
+    ),
+    287 => 
+    array (
+    ),
+    288 => 
+    array (
+    ),
+    291 => 
+    array (
+    ),
+    292 => 
+    array (
+    ),
+    293 => 
+    array (
+    ),
+    294 => 
+    array (
+      0 => 'Codeception\\TestCase\\Cest::testLoginUserMethodWithPass',
+      1 => 'Codeception\\TestCase\\Cest::testLogoutMethod',
+      2 => 'Codeception\\TestCase\\Cest::testUpdateMethodLoggedInUser',
+    ),
+    302 => 
+    array (
+    ),
+    304 => 
+    array (
+    ),
+    306 => 
+    array (
+    ),
+    308 => 
+    array (
+    ),
+    310 => 
+    array (
+    ),
+    312 => 
+    array (
+    ),
+    315 => 
+    array (
+    ),
+    316 => 
+    array (
+    ),
+    317 => 
+    array (
+    ),
+    318 => 
+    array (
+    ),
+    319 => NULL,
+    321 => 
+    array (
+    ),
+    322 => 
+    array (
+    ),
+    323 => 
+    array (
+    ),
+    324 => NULL,
+    325 => 
+    array (
+    ),
+    326 => 
+    array (
+    ),
+    327 => NULL,
+    335 => 
+    array (
+    ),
+    336 => 
+    array (
+    ),
+    338 => 
+    array (
+    ),
+    339 => 
+    array (
+    ),
+    341 => 
+    array (
+    ),
+    344 => 
+    array (
+    ),
+    346 => 
+    array (
+    ),
+    347 => 
+    array (
+    ),
+    349 => 
+    array (
+    ),
+    350 => 
+    array (
+    ),
+    352 => 
+    array (
+    ),
+    354 => 
+    array (
+    ),
+    356 => 
+    array (
+    ),
+    358 => NULL,
+    362 => 
+    array (
+    ),
+    363 => 
+    array (
+    ),
+    364 => NULL,
+    366 => 
+    array (
+    ),
+    367 => 
+    array (
+    ),
+    368 => NULL,
+    371 => 
+    array (
+    ),
+    373 => 
+    array (
+    ),
+    374 => 
+    array (
+    ),
+    376 => 
+    array (
+    ),
+    377 => 
+    array (
+    ),
+    379 => 
+    array (
+    ),
+    381 => NULL,
   ),
 ));
 $coverage->setTests(array (
