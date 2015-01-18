@@ -211,11 +211,41 @@ class UserCest
         }
     }
 
+    public function testLoginAttempts(UnitTester $I)
+    {
+        $times = Config::LOGIN_ATTEMPTS;
+
+        $u = new User();
+
+        for ($i = 1; $i <= $times; $i++){
+
+            //Try to login, but fail
+            $login = $u->login($this->_firstDbUsername, 'HackinG');
+            $I->assertFalse($login['status'], 'Login should fail.');
+            $I->assertTrue($login['reason'] == '', 'Reason should be empty.');
+            $I->assertFalse( $u->{$this->_isLoggedInMethod}(), 'User should not be logged in.');
+            $I->assertNull( $u->getData(), 'There should be no user data.');
+
+            $I->seeInDatabase(Config::ATTEMPTS_TABLE, ['user_id' => $this->_firstDbUserId, 'num_attempts' => $i] );
+        }
+
+        //Try to login one last time to get attempts error
+        $login = $u->login($this->_firstDbUsername, 'HackinG');
+        $I->assertFalse($login['status'], 'Login should fail.');
+        $I->assertTrue($login['reason'] == 'login_attempts', 'Reason should be max login attempts reached.');
+        $I->assertFalse( $u->{$this->_isLoggedInMethod}(), 'User should not be logged in.');
+        $I->assertNull( $u->getData(), 'There should be no user data.');
+
+        $I->seeInDatabase(Config::ATTEMPTS_TABLE, ['user_id' => $this->_firstDbUserId, 'num_attempts' => $times] );
+    }
+
     public function testLogoutMethod(UnitTester $I)
     {
+        $_SERVER['HTTP_USER_AGENT'] = '';
+
         //Success login
         $u = new User();
-        $login = $u->login($this->_firstDbUsername, $this->_firstDbPass);
+        $login = $u->login($this->_firstDbUsername, $this->_firstDbPass, TRUE);
         $I->assertTrue($login['status']);
         $I->assertTrue( $u->{$this->_isLoggedInMethod}() );
         $I->assertNotNull( $u->getData() );
@@ -225,8 +255,8 @@ class UserCest
         $I->assertFalse( $u->{$this->_isLoggedInMethod}() );
         $I->assertFalse( $u->exists() );
         $I->assertNull( $u->getData() );
+        $I->dontSeeInDatabase(Config::SESSIONS_TABLE, ['user_id' => $this->_firstDbUserId]);
     }
-
 
     public function testUpdateMethodLoggedInUser(UnitTester $I)
     {
@@ -310,6 +340,131 @@ class UserCest
         $u = new User();
         $db = $u->getDb();
         $I->assertNotNull($db);
+    }
+
+    public function testRememberUserInDbMethod(UnitTester $I)
+    {
+        $I->dontSeeInDatabase(Config::SESSIONS_TABLE, ['user_id' => $this->_firstDbUserId]);
+        $_SERVER['HTTP_USER_AGENT'] = '';
+
+        //Success login with remember
+        $u = new User();
+        $login = $u->login($this->_firstDbUsername, $this->_firstDbPass, TRUE);
+        $I->assertTrue($login['status']);
+        $I->assertTrue( $u->{$this->_isLoggedInMethod}() );
+        $I->assertNotNull( $u->getData() );
+
+        $I->seeInDatabase(Config::SESSIONS_TABLE, ['user_id' => $this->_firstDbUserId]);
+        //$I->seeCookie(Config::COOKIE_SESSION_NAME);
+
+        $two = new User();
+        $login = $two->login($this->_firstDbUsername, $this->_firstDbPass, TRUE);
+        $I->assertTrue($login['status']);
+        $I->assertTrue( $two->{$this->_isLoggedInMethod}() );
+        $I->assertNotNull( $two->getData() );
+
+        $I->seeInDatabase(Config::SESSIONS_TABLE, ['user_id' => $this->_firstDbUserId]);
+        //$I->seeCookie(Config::COOKIE_SESSION_NAME);
+    }
+
+    public function testRecallUserMethod(UnitTester $I)
+    {
+        $_SERVER['HTTP_USER_AGENT'] = 'AirBison';
+        $hash = Hash::unique();
+
+        $u = new User();
+        $loginFromCookie = $u->recallUser();
+        $I->assertFalse($loginFromCookie, 'User should not be logged in because cookie does not exists.');
+
+        $_COOKIE[Config::COOKIE_SESSION_NAME] = $hash;
+
+        $loginFromCookie = $u->recallUser();
+        $I->assertFalse($loginFromCookie, 'User should not be logged in because no rows will be found.');
+
+        $I->haveInDatabase(Config::SESSIONS_TABLE, [
+            'user_id'    => $this->_firstDbUserId,
+            'hash'       => $hash,
+            'user_agent' => 'Panzer'
+        ]);
+
+        $loginFromCookie = $u->recallUser();
+        $I->assertFalse($loginFromCookie, 'User should not be logged in because user agent wont\' match.');
+    }
+
+    public function testIsAllowedToMethodFailNotLoggedIn(UnitTester $I)
+    {
+        $u = new User();
+        try {
+            $u->isAllowedTo('firebend');
+        } catch( BadMethodCallException $e ) {
+            $I->assertEquals("User is not logged in.", $e->getMessage());
+        }
+    }
+
+    public function testIsAllowedToMethodFailUnknownAction(UnitTester $I)
+    {
+        $u = new User();
+        $login = $u->login($this->_firstDbUsername, $this->_firstDbPass);
+        $I->assertTrue($login['status']);
+
+        try {
+            $u->isAllowedTo('firebend');
+        } catch( BadMethodCallException $e ) {
+            $I->assertEquals("Action does not exist.", $e->getMessage());
+        }
+    }
+
+    public function testIsAllowedToMethodSuccess(UnitTester $I)
+    {
+        $u = new User();
+        $login = $u->login($this->_firstDbUsername, $this->_firstDbPass);
+        $I->assertTrue($login['status']);
+
+        $allowed = $u->isAllowedTo(User::ACTION_EDIT_OWN_PROFILE);
+        $I->assertTrue($allowed);
+    }
+
+    public function testIsInGroupMethodFailNotLoggedIn(UnitTester $I)
+    {
+        $u = new User();
+        try {
+            $u->isInGroup('Firebenders');
+        } catch( BadMethodCallException $e ) {
+            $I->assertEquals("User is not logged in.", $e->getMessage());
+        }
+    }
+
+    public function testIsInGroupMethodSuccessNumeric(UnitTester $I)
+    {
+        $u = new User();
+        $login = $u->login($this->_firstDbUsername, $this->_firstDbPass);
+        $I->assertTrue($login['status']);
+
+        $inGroup = $u->isInGroup(2);
+        $I->assertTrue($inGroup);
+    }
+
+    public function testIsInGroupMethodFailUnknownGroup(UnitTester $I)
+    {
+        $u = new User();
+        $login = $u->login($this->_firstDbUsername, $this->_firstDbPass);
+        $I->assertTrue($login['status']);
+
+        try {
+            $u->isInGroup('Firebenders');
+        } catch( InvalidArgumentException $e ) {
+            $I->assertEquals("This group does not exist in the DB.", $e->getMessage());
+        }
+    }
+
+    public function testIsInGroupMethodSuccessNamed(UnitTester $I)
+    {
+        $u = new User();
+        $login = $u->login($this->_firstDbUsername, $this->_firstDbPass);
+        $I->assertTrue($login['status']);
+
+        $inGroup = $u->isInGroup(User::GROUP_USERS);
+        $I->assertTrue($inGroup);
     }
 
 }

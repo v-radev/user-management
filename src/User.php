@@ -14,7 +14,8 @@ class User {
     const ACTION_DELETE_USER          = 'deleteUser';
     const ACTION_MANAGE_GROUPS        = 'manageGroups';
 
-    const ADMIN_GROUP = 'Administrator';
+    const GROUP_ADMINS = 'Administrator';
+    const GROUP_USERS = 'User';
 
     const DEFAULT_GROUP_ID = 2;
 
@@ -154,6 +155,7 @@ class User {
                         $nowTime = new DateTime('now');
                         //If X minutes haven't passed since the last attempt
                         if ( $nowTime < $aTime ){
+                            $this->_data = NULL;
                             $success = FALSE; $reason = 'login_attempts'; goto returnStatement;
                         }
                     }//END max
@@ -180,9 +182,8 @@ class User {
                             VALUES(?)
                             ON DUPLICATE KEY UPDATE num_attempts = num_attempts + 1';
                     $this->_db->query($attemptsQuery, [$this->_data->id]);
-
-                    //TODO
-                    //sleep(4);//Slow brute force
+                    
+                    sleep(4);//Slow brute force
                     $this->_data = NULL;
                     $success = FALSE; goto returnStatement;
                 }
@@ -371,7 +372,7 @@ class User {
         $groupData = $this->_db->get(Config::GROUPS_TABLE, ['name', '=', $group]);
 
         if ( $groupData->fails() || !$groupData->count() )
-            throw new InvalidArgumentException('This group does not exist in the DB');
+            throw new InvalidArgumentException('This group does not exist in the DB.');
 
         $groupData = $groupData->first();
         $groupId = $groupData->id;

@@ -50,11 +50,21 @@ $coverage->setData(array (
       30 => 'Codeception\\TestCase\\Cest::testLoginUserMethodFromExistingData',
       31 => 'Codeception\\TestCase\\Cest::testLoginUserMethodWithPass',
       32 => 'Codeception\\TestCase\\Cest::testLoginException',
-      33 => 'Codeception\\TestCase\\Cest::testLogoutMethod',
-      34 => 'Codeception\\TestCase\\Cest::testUpdateMethodLoggedInUser',
-      35 => 'Codeception\\TestCase\\Cest::testUpdateMethodWithId',
-      36 => 'Codeception\\TestCase\\Cest::testUpdateMethodException',
-      37 => 'Codeception\\TestCase\\Cest::testGetDbInstanceMethod',
+      33 => 'Codeception\\TestCase\\Cest::testLoginAttempts',
+      34 => 'Codeception\\TestCase\\Cest::testLogoutMethod',
+      35 => 'Codeception\\TestCase\\Cest::testUpdateMethodLoggedInUser',
+      36 => 'Codeception\\TestCase\\Cest::testUpdateMethodWithId',
+      37 => 'Codeception\\TestCase\\Cest::testUpdateMethodException',
+      38 => 'Codeception\\TestCase\\Cest::testGetDbInstanceMethod',
+      39 => 'Codeception\\TestCase\\Cest::testRememberUserInDbMethod',
+      40 => 'Codeception\\TestCase\\Cest::testRecallUserMethod',
+      41 => 'Codeception\\TestCase\\Cest::testIsAllowedToMethodFailNotLoggedIn',
+      42 => 'Codeception\\TestCase\\Cest::testIsAllowedToMethodFailUnknownAction',
+      43 => 'Codeception\\TestCase\\Cest::testIsAllowedToMethodSuccess',
+      44 => 'Codeception\\TestCase\\Cest::testIsInGroupMethodFailNotLoggedIn',
+      45 => 'Codeception\\TestCase\\Cest::testIsInGroupMethodSuccessNumeric',
+      46 => 'Codeception\\TestCase\\Cest::testIsInGroupMethodFailUnknownGroup',
+      47 => 'Codeception\\TestCase\\Cest::testIsInGroupMethodSuccessNamed',
     ),
     42 => 
     array (
@@ -97,11 +107,21 @@ $coverage->setData(array (
       30 => 'Codeception\\TestCase\\Cest::testLoginUserMethodFromExistingData',
       31 => 'Codeception\\TestCase\\Cest::testLoginUserMethodWithPass',
       32 => 'Codeception\\TestCase\\Cest::testLoginException',
-      33 => 'Codeception\\TestCase\\Cest::testLogoutMethod',
-      34 => 'Codeception\\TestCase\\Cest::testUpdateMethodLoggedInUser',
-      35 => 'Codeception\\TestCase\\Cest::testUpdateMethodWithId',
-      36 => 'Codeception\\TestCase\\Cest::testUpdateMethodException',
-      37 => 'Codeception\\TestCase\\Cest::testGetDbInstanceMethod',
+      33 => 'Codeception\\TestCase\\Cest::testLoginAttempts',
+      34 => 'Codeception\\TestCase\\Cest::testLogoutMethod',
+      35 => 'Codeception\\TestCase\\Cest::testUpdateMethodLoggedInUser',
+      36 => 'Codeception\\TestCase\\Cest::testUpdateMethodWithId',
+      37 => 'Codeception\\TestCase\\Cest::testUpdateMethodException',
+      38 => 'Codeception\\TestCase\\Cest::testGetDbInstanceMethod',
+      39 => 'Codeception\\TestCase\\Cest::testRememberUserInDbMethod',
+      40 => 'Codeception\\TestCase\\Cest::testRecallUserMethod',
+      41 => 'Codeception\\TestCase\\Cest::testIsAllowedToMethodFailNotLoggedIn',
+      42 => 'Codeception\\TestCase\\Cest::testIsAllowedToMethodFailUnknownAction',
+      43 => 'Codeception\\TestCase\\Cest::testIsAllowedToMethodSuccess',
+      44 => 'Codeception\\TestCase\\Cest::testIsInGroupMethodFailNotLoggedIn',
+      45 => 'Codeception\\TestCase\\Cest::testIsInGroupMethodSuccessNumeric',
+      46 => 'Codeception\\TestCase\\Cest::testIsInGroupMethodFailUnknownGroup',
+      47 => 'Codeception\\TestCase\\Cest::testIsInGroupMethodSuccessNamed',
     ),
     46 => NULL,
     56 => 
@@ -131,9 +151,17 @@ $coverage->setData(array (
       22 => 'Codeception\\TestCase\\Cest::testCreatingNewUser',
       23 => 'Codeception\\TestCase\\Cest::testLoginUserMethodFromExistingData',
       24 => 'Codeception\\TestCase\\Cest::testLoginUserMethodWithPass',
-      25 => 'Codeception\\TestCase\\Cest::testLogoutMethod',
-      26 => 'Codeception\\TestCase\\Cest::testUpdateMethodLoggedInUser',
-      27 => 'Codeception\\TestCase\\Cest::testUpdateMethodWithId',
+      25 => 'Codeception\\TestCase\\Cest::testLoginAttempts',
+      26 => 'Codeception\\TestCase\\Cest::testLogoutMethod',
+      27 => 'Codeception\\TestCase\\Cest::testUpdateMethodLoggedInUser',
+      28 => 'Codeception\\TestCase\\Cest::testUpdateMethodWithId',
+      29 => 'Codeception\\TestCase\\Cest::testRememberUserInDbMethod',
+      30 => 'Codeception\\TestCase\\Cest::testRecallUserMethod',
+      31 => 'Codeception\\TestCase\\Cest::testIsAllowedToMethodFailUnknownAction',
+      32 => 'Codeception\\TestCase\\Cest::testIsAllowedToMethodSuccess',
+      33 => 'Codeception\\TestCase\\Cest::testIsInGroupMethodSuccessNumeric',
+      34 => 'Codeception\\TestCase\\Cest::testIsInGroupMethodFailUnknownGroup',
+      35 => 'Codeception\\TestCase\\Cest::testIsInGroupMethodSuccessNamed',
     ),
     57 => 
     array (
@@ -162,9 +190,17 @@ $coverage->setData(array (
       22 => 'Codeception\\TestCase\\Cest::testCreatingNewUser',
       23 => 'Codeception\\TestCase\\Cest::testLoginUserMethodFromExistingData',
       24 => 'Codeception\\TestCase\\Cest::testLoginUserMethodWithPass',
-      25 => 'Codeception\\TestCase\\Cest::testLogoutMethod',
-      26 => 'Codeception\\TestCase\\Cest::testUpdateMethodLoggedInUser',
-      27 => 'Codeception\\TestCase\\Cest::testUpdateMethodWithId',
+      25 => 'Codeception\\TestCase\\Cest::testLoginAttempts',
+      26 => 'Codeception\\TestCase\\Cest::testLogoutMethod',
+      27 => 'Codeception\\TestCase\\Cest::testUpdateMethodLoggedInUser',
+      28 => 'Codeception\\TestCase\\Cest::testUpdateMethodWithId',
+      29 => 'Codeception\\TestCase\\Cest::testRememberUserInDbMethod',
+      30 => 'Codeception\\TestCase\\Cest::testRecallUserMethod',
+      31 => 'Codeception\\TestCase\\Cest::testIsAllowedToMethodFailUnknownAction',
+      32 => 'Codeception\\TestCase\\Cest::testIsAllowedToMethodSuccess',
+      33 => 'Codeception\\TestCase\\Cest::testIsInGroupMethodSuccessNumeric',
+      34 => 'Codeception\\TestCase\\Cest::testIsInGroupMethodFailUnknownGroup',
+      35 => 'Codeception\\TestCase\\Cest::testIsInGroupMethodSuccessNamed',
     ),
     59 => 
     array (
@@ -193,9 +229,17 @@ $coverage->setData(array (
       22 => 'Codeception\\TestCase\\Cest::testCreatingNewUser',
       23 => 'Codeception\\TestCase\\Cest::testLoginUserMethodFromExistingData',
       24 => 'Codeception\\TestCase\\Cest::testLoginUserMethodWithPass',
-      25 => 'Codeception\\TestCase\\Cest::testLogoutMethod',
-      26 => 'Codeception\\TestCase\\Cest::testUpdateMethodLoggedInUser',
-      27 => 'Codeception\\TestCase\\Cest::testUpdateMethodWithId',
+      25 => 'Codeception\\TestCase\\Cest::testLoginAttempts',
+      26 => 'Codeception\\TestCase\\Cest::testLogoutMethod',
+      27 => 'Codeception\\TestCase\\Cest::testUpdateMethodLoggedInUser',
+      28 => 'Codeception\\TestCase\\Cest::testUpdateMethodWithId',
+      29 => 'Codeception\\TestCase\\Cest::testRememberUserInDbMethod',
+      30 => 'Codeception\\TestCase\\Cest::testRecallUserMethod',
+      31 => 'Codeception\\TestCase\\Cest::testIsAllowedToMethodFailUnknownAction',
+      32 => 'Codeception\\TestCase\\Cest::testIsAllowedToMethodSuccess',
+      33 => 'Codeception\\TestCase\\Cest::testIsInGroupMethodSuccessNumeric',
+      34 => 'Codeception\\TestCase\\Cest::testIsInGroupMethodFailUnknownGroup',
+      35 => 'Codeception\\TestCase\\Cest::testIsInGroupMethodSuccessNamed',
     ),
     61 => 
     array (
@@ -224,9 +268,17 @@ $coverage->setData(array (
       22 => 'Codeception\\TestCase\\Cest::testCreatingNewUser',
       23 => 'Codeception\\TestCase\\Cest::testLoginUserMethodFromExistingData',
       24 => 'Codeception\\TestCase\\Cest::testLoginUserMethodWithPass',
-      25 => 'Codeception\\TestCase\\Cest::testLogoutMethod',
-      26 => 'Codeception\\TestCase\\Cest::testUpdateMethodLoggedInUser',
-      27 => 'Codeception\\TestCase\\Cest::testUpdateMethodWithId',
+      25 => 'Codeception\\TestCase\\Cest::testLoginAttempts',
+      26 => 'Codeception\\TestCase\\Cest::testLogoutMethod',
+      27 => 'Codeception\\TestCase\\Cest::testUpdateMethodLoggedInUser',
+      28 => 'Codeception\\TestCase\\Cest::testUpdateMethodWithId',
+      29 => 'Codeception\\TestCase\\Cest::testRememberUserInDbMethod',
+      30 => 'Codeception\\TestCase\\Cest::testRecallUserMethod',
+      31 => 'Codeception\\TestCase\\Cest::testIsAllowedToMethodFailUnknownAction',
+      32 => 'Codeception\\TestCase\\Cest::testIsAllowedToMethodSuccess',
+      33 => 'Codeception\\TestCase\\Cest::testIsInGroupMethodSuccessNumeric',
+      34 => 'Codeception\\TestCase\\Cest::testIsInGroupMethodFailUnknownGroup',
+      35 => 'Codeception\\TestCase\\Cest::testIsInGroupMethodSuccessNamed',
     ),
     62 => 
     array (
@@ -255,9 +307,17 @@ $coverage->setData(array (
       22 => 'Codeception\\TestCase\\Cest::testCreatingNewUser',
       23 => 'Codeception\\TestCase\\Cest::testLoginUserMethodFromExistingData',
       24 => 'Codeception\\TestCase\\Cest::testLoginUserMethodWithPass',
-      25 => 'Codeception\\TestCase\\Cest::testLogoutMethod',
-      26 => 'Codeception\\TestCase\\Cest::testUpdateMethodLoggedInUser',
-      27 => 'Codeception\\TestCase\\Cest::testUpdateMethodWithId',
+      25 => 'Codeception\\TestCase\\Cest::testLoginAttempts',
+      26 => 'Codeception\\TestCase\\Cest::testLogoutMethod',
+      27 => 'Codeception\\TestCase\\Cest::testUpdateMethodLoggedInUser',
+      28 => 'Codeception\\TestCase\\Cest::testUpdateMethodWithId',
+      29 => 'Codeception\\TestCase\\Cest::testRememberUserInDbMethod',
+      30 => 'Codeception\\TestCase\\Cest::testRecallUserMethod',
+      31 => 'Codeception\\TestCase\\Cest::testIsAllowedToMethodFailUnknownAction',
+      32 => 'Codeception\\TestCase\\Cest::testIsAllowedToMethodSuccess',
+      33 => 'Codeception\\TestCase\\Cest::testIsInGroupMethodSuccessNumeric',
+      34 => 'Codeception\\TestCase\\Cest::testIsInGroupMethodFailUnknownGroup',
+      35 => 'Codeception\\TestCase\\Cest::testIsInGroupMethodSuccessNamed',
     ),
     63 => 
     array (
@@ -286,9 +346,17 @@ $coverage->setData(array (
       22 => 'Codeception\\TestCase\\Cest::testCreatingNewUser',
       23 => 'Codeception\\TestCase\\Cest::testLoginUserMethodFromExistingData',
       24 => 'Codeception\\TestCase\\Cest::testLoginUserMethodWithPass',
-      25 => 'Codeception\\TestCase\\Cest::testLogoutMethod',
-      26 => 'Codeception\\TestCase\\Cest::testUpdateMethodLoggedInUser',
-      27 => 'Codeception\\TestCase\\Cest::testUpdateMethodWithId',
+      25 => 'Codeception\\TestCase\\Cest::testLoginAttempts',
+      26 => 'Codeception\\TestCase\\Cest::testLogoutMethod',
+      27 => 'Codeception\\TestCase\\Cest::testUpdateMethodLoggedInUser',
+      28 => 'Codeception\\TestCase\\Cest::testUpdateMethodWithId',
+      29 => 'Codeception\\TestCase\\Cest::testRememberUserInDbMethod',
+      30 => 'Codeception\\TestCase\\Cest::testRecallUserMethod',
+      31 => 'Codeception\\TestCase\\Cest::testIsAllowedToMethodFailUnknownAction',
+      32 => 'Codeception\\TestCase\\Cest::testIsAllowedToMethodSuccess',
+      33 => 'Codeception\\TestCase\\Cest::testIsInGroupMethodSuccessNumeric',
+      34 => 'Codeception\\TestCase\\Cest::testIsInGroupMethodFailUnknownGroup',
+      35 => 'Codeception\\TestCase\\Cest::testIsInGroupMethodSuccessNamed',
     ),
     64 => 
     array (
@@ -317,9 +385,17 @@ $coverage->setData(array (
       22 => 'Codeception\\TestCase\\Cest::testCreatingNewUser',
       23 => 'Codeception\\TestCase\\Cest::testLoginUserMethodFromExistingData',
       24 => 'Codeception\\TestCase\\Cest::testLoginUserMethodWithPass',
-      25 => 'Codeception\\TestCase\\Cest::testLogoutMethod',
-      26 => 'Codeception\\TestCase\\Cest::testUpdateMethodLoggedInUser',
-      27 => 'Codeception\\TestCase\\Cest::testUpdateMethodWithId',
+      25 => 'Codeception\\TestCase\\Cest::testLoginAttempts',
+      26 => 'Codeception\\TestCase\\Cest::testLogoutMethod',
+      27 => 'Codeception\\TestCase\\Cest::testUpdateMethodLoggedInUser',
+      28 => 'Codeception\\TestCase\\Cest::testUpdateMethodWithId',
+      29 => 'Codeception\\TestCase\\Cest::testRememberUserInDbMethod',
+      30 => 'Codeception\\TestCase\\Cest::testRecallUserMethod',
+      31 => 'Codeception\\TestCase\\Cest::testIsAllowedToMethodFailUnknownAction',
+      32 => 'Codeception\\TestCase\\Cest::testIsAllowedToMethodSuccess',
+      33 => 'Codeception\\TestCase\\Cest::testIsInGroupMethodSuccessNumeric',
+      34 => 'Codeception\\TestCase\\Cest::testIsInGroupMethodFailUnknownGroup',
+      35 => 'Codeception\\TestCase\\Cest::testIsInGroupMethodSuccessNamed',
     ),
     65 => 
     array (
@@ -348,9 +424,17 @@ $coverage->setData(array (
       22 => 'Codeception\\TestCase\\Cest::testCreatingNewUser',
       23 => 'Codeception\\TestCase\\Cest::testLoginUserMethodFromExistingData',
       24 => 'Codeception\\TestCase\\Cest::testLoginUserMethodWithPass',
-      25 => 'Codeception\\TestCase\\Cest::testLogoutMethod',
-      26 => 'Codeception\\TestCase\\Cest::testUpdateMethodLoggedInUser',
-      27 => 'Codeception\\TestCase\\Cest::testUpdateMethodWithId',
+      25 => 'Codeception\\TestCase\\Cest::testLoginAttempts',
+      26 => 'Codeception\\TestCase\\Cest::testLogoutMethod',
+      27 => 'Codeception\\TestCase\\Cest::testUpdateMethodLoggedInUser',
+      28 => 'Codeception\\TestCase\\Cest::testUpdateMethodWithId',
+      29 => 'Codeception\\TestCase\\Cest::testRememberUserInDbMethod',
+      30 => 'Codeception\\TestCase\\Cest::testRecallUserMethod',
+      31 => 'Codeception\\TestCase\\Cest::testIsAllowedToMethodFailUnknownAction',
+      32 => 'Codeception\\TestCase\\Cest::testIsAllowedToMethodSuccess',
+      33 => 'Codeception\\TestCase\\Cest::testIsInGroupMethodSuccessNumeric',
+      34 => 'Codeception\\TestCase\\Cest::testIsInGroupMethodFailUnknownGroup',
+      35 => 'Codeception\\TestCase\\Cest::testIsInGroupMethodSuccessNamed',
     ),
     66 => 
     array (
@@ -402,9 +486,17 @@ $coverage->setData(array (
       20 => 'Codeception\\TestCase\\Cest::testCreatingNewUser',
       21 => 'Codeception\\TestCase\\Cest::testLoginUserMethodFromExistingData',
       22 => 'Codeception\\TestCase\\Cest::testLoginUserMethodWithPass',
-      23 => 'Codeception\\TestCase\\Cest::testLogoutMethod',
-      24 => 'Codeception\\TestCase\\Cest::testUpdateMethodLoggedInUser',
-      25 => 'Codeception\\TestCase\\Cest::testUpdateMethodWithId',
+      23 => 'Codeception\\TestCase\\Cest::testLoginAttempts',
+      24 => 'Codeception\\TestCase\\Cest::testLogoutMethod',
+      25 => 'Codeception\\TestCase\\Cest::testUpdateMethodLoggedInUser',
+      26 => 'Codeception\\TestCase\\Cest::testUpdateMethodWithId',
+      27 => 'Codeception\\TestCase\\Cest::testRememberUserInDbMethod',
+      28 => 'Codeception\\TestCase\\Cest::testRecallUserMethod',
+      29 => 'Codeception\\TestCase\\Cest::testIsAllowedToMethodFailUnknownAction',
+      30 => 'Codeception\\TestCase\\Cest::testIsAllowedToMethodSuccess',
+      31 => 'Codeception\\TestCase\\Cest::testIsInGroupMethodSuccessNumeric',
+      32 => 'Codeception\\TestCase\\Cest::testIsInGroupMethodFailUnknownGroup',
+      33 => 'Codeception\\TestCase\\Cest::testIsInGroupMethodSuccessNamed',
     ),
     73 => 
     array (
@@ -431,9 +523,17 @@ $coverage->setData(array (
       20 => 'Codeception\\TestCase\\Cest::testCreatingNewUser',
       21 => 'Codeception\\TestCase\\Cest::testLoginUserMethodFromExistingData',
       22 => 'Codeception\\TestCase\\Cest::testLoginUserMethodWithPass',
-      23 => 'Codeception\\TestCase\\Cest::testLogoutMethod',
-      24 => 'Codeception\\TestCase\\Cest::testUpdateMethodLoggedInUser',
-      25 => 'Codeception\\TestCase\\Cest::testUpdateMethodWithId',
+      23 => 'Codeception\\TestCase\\Cest::testLoginAttempts',
+      24 => 'Codeception\\TestCase\\Cest::testLogoutMethod',
+      25 => 'Codeception\\TestCase\\Cest::testUpdateMethodLoggedInUser',
+      26 => 'Codeception\\TestCase\\Cest::testUpdateMethodWithId',
+      27 => 'Codeception\\TestCase\\Cest::testRememberUserInDbMethod',
+      28 => 'Codeception\\TestCase\\Cest::testRecallUserMethod',
+      29 => 'Codeception\\TestCase\\Cest::testIsAllowedToMethodFailUnknownAction',
+      30 => 'Codeception\\TestCase\\Cest::testIsAllowedToMethodSuccess',
+      31 => 'Codeception\\TestCase\\Cest::testIsInGroupMethodSuccessNumeric',
+      32 => 'Codeception\\TestCase\\Cest::testIsInGroupMethodFailUnknownGroup',
+      33 => 'Codeception\\TestCase\\Cest::testIsInGroupMethodSuccessNamed',
     ),
     75 => 
     array (
@@ -462,9 +562,17 @@ $coverage->setData(array (
       22 => 'Codeception\\TestCase\\Cest::testCreatingNewUser',
       23 => 'Codeception\\TestCase\\Cest::testLoginUserMethodFromExistingData',
       24 => 'Codeception\\TestCase\\Cest::testLoginUserMethodWithPass',
-      25 => 'Codeception\\TestCase\\Cest::testLogoutMethod',
-      26 => 'Codeception\\TestCase\\Cest::testUpdateMethodLoggedInUser',
-      27 => 'Codeception\\TestCase\\Cest::testUpdateMethodWithId',
+      25 => 'Codeception\\TestCase\\Cest::testLoginAttempts',
+      26 => 'Codeception\\TestCase\\Cest::testLogoutMethod',
+      27 => 'Codeception\\TestCase\\Cest::testUpdateMethodLoggedInUser',
+      28 => 'Codeception\\TestCase\\Cest::testUpdateMethodWithId',
+      29 => 'Codeception\\TestCase\\Cest::testRememberUserInDbMethod',
+      30 => 'Codeception\\TestCase\\Cest::testRecallUserMethod',
+      31 => 'Codeception\\TestCase\\Cest::testIsAllowedToMethodFailUnknownAction',
+      32 => 'Codeception\\TestCase\\Cest::testIsAllowedToMethodSuccess',
+      33 => 'Codeception\\TestCase\\Cest::testIsInGroupMethodSuccessNumeric',
+      34 => 'Codeception\\TestCase\\Cest::testIsInGroupMethodFailUnknownGroup',
+      35 => 'Codeception\\TestCase\\Cest::testIsInGroupMethodSuccessNamed',
     ),
     76 => 
     array (
@@ -493,9 +601,17 @@ $coverage->setData(array (
       22 => 'Codeception\\TestCase\\Cest::testCreatingNewUser',
       23 => 'Codeception\\TestCase\\Cest::testLoginUserMethodFromExistingData',
       24 => 'Codeception\\TestCase\\Cest::testLoginUserMethodWithPass',
-      25 => 'Codeception\\TestCase\\Cest::testLogoutMethod',
-      26 => 'Codeception\\TestCase\\Cest::testUpdateMethodLoggedInUser',
-      27 => 'Codeception\\TestCase\\Cest::testUpdateMethodWithId',
+      25 => 'Codeception\\TestCase\\Cest::testLoginAttempts',
+      26 => 'Codeception\\TestCase\\Cest::testLogoutMethod',
+      27 => 'Codeception\\TestCase\\Cest::testUpdateMethodLoggedInUser',
+      28 => 'Codeception\\TestCase\\Cest::testUpdateMethodWithId',
+      29 => 'Codeception\\TestCase\\Cest::testRememberUserInDbMethod',
+      30 => 'Codeception\\TestCase\\Cest::testRecallUserMethod',
+      31 => 'Codeception\\TestCase\\Cest::testIsAllowedToMethodFailUnknownAction',
+      32 => 'Codeception\\TestCase\\Cest::testIsAllowedToMethodSuccess',
+      33 => 'Codeception\\TestCase\\Cest::testIsInGroupMethodSuccessNumeric',
+      34 => 'Codeception\\TestCase\\Cest::testIsInGroupMethodFailUnknownGroup',
+      35 => 'Codeception\\TestCase\\Cest::testIsInGroupMethodSuccessNamed',
     ),
     78 => 
     array (
@@ -524,9 +640,17 @@ $coverage->setData(array (
       22 => 'Codeception\\TestCase\\Cest::testCreatingNewUser',
       23 => 'Codeception\\TestCase\\Cest::testLoginUserMethodFromExistingData',
       24 => 'Codeception\\TestCase\\Cest::testLoginUserMethodWithPass',
-      25 => 'Codeception\\TestCase\\Cest::testLogoutMethod',
-      26 => 'Codeception\\TestCase\\Cest::testUpdateMethodLoggedInUser',
-      27 => 'Codeception\\TestCase\\Cest::testUpdateMethodWithId',
+      25 => 'Codeception\\TestCase\\Cest::testLoginAttempts',
+      26 => 'Codeception\\TestCase\\Cest::testLogoutMethod',
+      27 => 'Codeception\\TestCase\\Cest::testUpdateMethodLoggedInUser',
+      28 => 'Codeception\\TestCase\\Cest::testUpdateMethodWithId',
+      29 => 'Codeception\\TestCase\\Cest::testRememberUserInDbMethod',
+      30 => 'Codeception\\TestCase\\Cest::testRecallUserMethod',
+      31 => 'Codeception\\TestCase\\Cest::testIsAllowedToMethodFailUnknownAction',
+      32 => 'Codeception\\TestCase\\Cest::testIsAllowedToMethodSuccess',
+      33 => 'Codeception\\TestCase\\Cest::testIsInGroupMethodSuccessNumeric',
+      34 => 'Codeception\\TestCase\\Cest::testIsInGroupMethodFailUnknownGroup',
+      35 => 'Codeception\\TestCase\\Cest::testIsInGroupMethodSuccessNamed',
     ),
     79 => 
     array (
@@ -554,9 +678,17 @@ $coverage->setData(array (
       21 => 'Codeception\\TestCase\\Cest::testCreatingNewUser',
       22 => 'Codeception\\TestCase\\Cest::testLoginUserMethodFromExistingData',
       23 => 'Codeception\\TestCase\\Cest::testLoginUserMethodWithPass',
-      24 => 'Codeception\\TestCase\\Cest::testLogoutMethod',
-      25 => 'Codeception\\TestCase\\Cest::testUpdateMethodLoggedInUser',
-      26 => 'Codeception\\TestCase\\Cest::testUpdateMethodWithId',
+      24 => 'Codeception\\TestCase\\Cest::testLoginAttempts',
+      25 => 'Codeception\\TestCase\\Cest::testLogoutMethod',
+      26 => 'Codeception\\TestCase\\Cest::testUpdateMethodLoggedInUser',
+      27 => 'Codeception\\TestCase\\Cest::testUpdateMethodWithId',
+      28 => 'Codeception\\TestCase\\Cest::testRememberUserInDbMethod',
+      29 => 'Codeception\\TestCase\\Cest::testRecallUserMethod',
+      30 => 'Codeception\\TestCase\\Cest::testIsAllowedToMethodFailUnknownAction',
+      31 => 'Codeception\\TestCase\\Cest::testIsAllowedToMethodSuccess',
+      32 => 'Codeception\\TestCase\\Cest::testIsInGroupMethodSuccessNumeric',
+      33 => 'Codeception\\TestCase\\Cest::testIsInGroupMethodFailUnknownGroup',
+      34 => 'Codeception\\TestCase\\Cest::testIsInGroupMethodSuccessNamed',
     ),
     80 => 
     array (
@@ -584,9 +716,17 @@ $coverage->setData(array (
       21 => 'Codeception\\TestCase\\Cest::testCreatingNewUser',
       22 => 'Codeception\\TestCase\\Cest::testLoginUserMethodFromExistingData',
       23 => 'Codeception\\TestCase\\Cest::testLoginUserMethodWithPass',
-      24 => 'Codeception\\TestCase\\Cest::testLogoutMethod',
-      25 => 'Codeception\\TestCase\\Cest::testUpdateMethodLoggedInUser',
-      26 => 'Codeception\\TestCase\\Cest::testUpdateMethodWithId',
+      24 => 'Codeception\\TestCase\\Cest::testLoginAttempts',
+      25 => 'Codeception\\TestCase\\Cest::testLogoutMethod',
+      26 => 'Codeception\\TestCase\\Cest::testUpdateMethodLoggedInUser',
+      27 => 'Codeception\\TestCase\\Cest::testUpdateMethodWithId',
+      28 => 'Codeception\\TestCase\\Cest::testRememberUserInDbMethod',
+      29 => 'Codeception\\TestCase\\Cest::testRecallUserMethod',
+      30 => 'Codeception\\TestCase\\Cest::testIsAllowedToMethodFailUnknownAction',
+      31 => 'Codeception\\TestCase\\Cest::testIsAllowedToMethodSuccess',
+      32 => 'Codeception\\TestCase\\Cest::testIsInGroupMethodSuccessNumeric',
+      33 => 'Codeception\\TestCase\\Cest::testIsInGroupMethodFailUnknownGroup',
+      34 => 'Codeception\\TestCase\\Cest::testIsInGroupMethodSuccessNamed',
     ),
     81 => 
     array (
@@ -614,9 +754,17 @@ $coverage->setData(array (
       21 => 'Codeception\\TestCase\\Cest::testCreatingNewUser',
       22 => 'Codeception\\TestCase\\Cest::testLoginUserMethodFromExistingData',
       23 => 'Codeception\\TestCase\\Cest::testLoginUserMethodWithPass',
-      24 => 'Codeception\\TestCase\\Cest::testLogoutMethod',
-      25 => 'Codeception\\TestCase\\Cest::testUpdateMethodLoggedInUser',
-      26 => 'Codeception\\TestCase\\Cest::testUpdateMethodWithId',
+      24 => 'Codeception\\TestCase\\Cest::testLoginAttempts',
+      25 => 'Codeception\\TestCase\\Cest::testLogoutMethod',
+      26 => 'Codeception\\TestCase\\Cest::testUpdateMethodLoggedInUser',
+      27 => 'Codeception\\TestCase\\Cest::testUpdateMethodWithId',
+      28 => 'Codeception\\TestCase\\Cest::testRememberUserInDbMethod',
+      29 => 'Codeception\\TestCase\\Cest::testRecallUserMethod',
+      30 => 'Codeception\\TestCase\\Cest::testIsAllowedToMethodFailUnknownAction',
+      31 => 'Codeception\\TestCase\\Cest::testIsAllowedToMethodSuccess',
+      32 => 'Codeception\\TestCase\\Cest::testIsInGroupMethodSuccessNumeric',
+      33 => 'Codeception\\TestCase\\Cest::testIsInGroupMethodFailUnknownGroup',
+      34 => 'Codeception\\TestCase\\Cest::testIsInGroupMethodSuccessNamed',
     ),
     82 => 
     array (
@@ -653,9 +801,17 @@ $coverage->setData(array (
       22 => 'Codeception\\TestCase\\Cest::testCreatingNewUser',
       23 => 'Codeception\\TestCase\\Cest::testLoginUserMethodFromExistingData',
       24 => 'Codeception\\TestCase\\Cest::testLoginUserMethodWithPass',
-      25 => 'Codeception\\TestCase\\Cest::testLogoutMethod',
-      26 => 'Codeception\\TestCase\\Cest::testUpdateMethodLoggedInUser',
-      27 => 'Codeception\\TestCase\\Cest::testUpdateMethodWithId',
+      25 => 'Codeception\\TestCase\\Cest::testLoginAttempts',
+      26 => 'Codeception\\TestCase\\Cest::testLogoutMethod',
+      27 => 'Codeception\\TestCase\\Cest::testUpdateMethodLoggedInUser',
+      28 => 'Codeception\\TestCase\\Cest::testUpdateMethodWithId',
+      29 => 'Codeception\\TestCase\\Cest::testRememberUserInDbMethod',
+      30 => 'Codeception\\TestCase\\Cest::testRecallUserMethod',
+      31 => 'Codeception\\TestCase\\Cest::testIsAllowedToMethodFailUnknownAction',
+      32 => 'Codeception\\TestCase\\Cest::testIsAllowedToMethodSuccess',
+      33 => 'Codeception\\TestCase\\Cest::testIsInGroupMethodSuccessNumeric',
+      34 => 'Codeception\\TestCase\\Cest::testIsInGroupMethodFailUnknownGroup',
+      35 => 'Codeception\\TestCase\\Cest::testIsInGroupMethodSuccessNamed',
     ),
     88 => 
     array (
@@ -684,9 +840,17 @@ $coverage->setData(array (
       22 => 'Codeception\\TestCase\\Cest::testCreatingNewUser',
       23 => 'Codeception\\TestCase\\Cest::testLoginUserMethodFromExistingData',
       24 => 'Codeception\\TestCase\\Cest::testLoginUserMethodWithPass',
-      25 => 'Codeception\\TestCase\\Cest::testLogoutMethod',
-      26 => 'Codeception\\TestCase\\Cest::testUpdateMethodLoggedInUser',
-      27 => 'Codeception\\TestCase\\Cest::testUpdateMethodWithId',
+      25 => 'Codeception\\TestCase\\Cest::testLoginAttempts',
+      26 => 'Codeception\\TestCase\\Cest::testLogoutMethod',
+      27 => 'Codeception\\TestCase\\Cest::testUpdateMethodLoggedInUser',
+      28 => 'Codeception\\TestCase\\Cest::testUpdateMethodWithId',
+      29 => 'Codeception\\TestCase\\Cest::testRememberUserInDbMethod',
+      30 => 'Codeception\\TestCase\\Cest::testRecallUserMethod',
+      31 => 'Codeception\\TestCase\\Cest::testIsAllowedToMethodFailUnknownAction',
+      32 => 'Codeception\\TestCase\\Cest::testIsAllowedToMethodSuccess',
+      33 => 'Codeception\\TestCase\\Cest::testIsInGroupMethodSuccessNumeric',
+      34 => 'Codeception\\TestCase\\Cest::testIsInGroupMethodFailUnknownGroup',
+      35 => 'Codeception\\TestCase\\Cest::testIsInGroupMethodSuccessNamed',
     ),
     89 => NULL,
     104 => 
@@ -712,8 +876,16 @@ $coverage->setData(array (
       18 => 'Codeception\\TestCase\\Cest::testLoginFromClassInstance',
       19 => 'Codeception\\TestCase\\Cest::testLoginUserMethodFromExistingData',
       20 => 'Codeception\\TestCase\\Cest::testLoginUserMethodWithPass',
-      21 => 'Codeception\\TestCase\\Cest::testLogoutMethod',
-      22 => 'Codeception\\TestCase\\Cest::testUpdateMethodLoggedInUser',
+      21 => 'Codeception\\TestCase\\Cest::testLoginAttempts',
+      22 => 'Codeception\\TestCase\\Cest::testLogoutMethod',
+      23 => 'Codeception\\TestCase\\Cest::testUpdateMethodLoggedInUser',
+      24 => 'Codeception\\TestCase\\Cest::testRememberUserInDbMethod',
+      25 => 'Codeception\\TestCase\\Cest::testRecallUserMethod',
+      26 => 'Codeception\\TestCase\\Cest::testIsAllowedToMethodFailUnknownAction',
+      27 => 'Codeception\\TestCase\\Cest::testIsAllowedToMethodSuccess',
+      28 => 'Codeception\\TestCase\\Cest::testIsInGroupMethodSuccessNumeric',
+      29 => 'Codeception\\TestCase\\Cest::testIsInGroupMethodFailUnknownGroup',
+      30 => 'Codeception\\TestCase\\Cest::testIsInGroupMethodSuccessNamed',
     ),
     106 => 
     array (
@@ -738,8 +910,16 @@ $coverage->setData(array (
       18 => 'Codeception\\TestCase\\Cest::testLoginFromClassInstance',
       19 => 'Codeception\\TestCase\\Cest::testLoginUserMethodFromExistingData',
       20 => 'Codeception\\TestCase\\Cest::testLoginUserMethodWithPass',
-      21 => 'Codeception\\TestCase\\Cest::testLogoutMethod',
-      22 => 'Codeception\\TestCase\\Cest::testUpdateMethodLoggedInUser',
+      21 => 'Codeception\\TestCase\\Cest::testLoginAttempts',
+      22 => 'Codeception\\TestCase\\Cest::testLogoutMethod',
+      23 => 'Codeception\\TestCase\\Cest::testUpdateMethodLoggedInUser',
+      24 => 'Codeception\\TestCase\\Cest::testRememberUserInDbMethod',
+      25 => 'Codeception\\TestCase\\Cest::testRecallUserMethod',
+      26 => 'Codeception\\TestCase\\Cest::testIsAllowedToMethodFailUnknownAction',
+      27 => 'Codeception\\TestCase\\Cest::testIsAllowedToMethodSuccess',
+      28 => 'Codeception\\TestCase\\Cest::testIsInGroupMethodSuccessNumeric',
+      29 => 'Codeception\\TestCase\\Cest::testIsInGroupMethodFailUnknownGroup',
+      30 => 'Codeception\\TestCase\\Cest::testIsInGroupMethodSuccessNamed',
     ),
     107 => 
     array (
@@ -764,8 +944,16 @@ $coverage->setData(array (
       18 => 'Codeception\\TestCase\\Cest::testLoginFromClassInstance',
       19 => 'Codeception\\TestCase\\Cest::testLoginUserMethodFromExistingData',
       20 => 'Codeception\\TestCase\\Cest::testLoginUserMethodWithPass',
-      21 => 'Codeception\\TestCase\\Cest::testLogoutMethod',
-      22 => 'Codeception\\TestCase\\Cest::testUpdateMethodLoggedInUser',
+      21 => 'Codeception\\TestCase\\Cest::testLoginAttempts',
+      22 => 'Codeception\\TestCase\\Cest::testLogoutMethod',
+      23 => 'Codeception\\TestCase\\Cest::testUpdateMethodLoggedInUser',
+      24 => 'Codeception\\TestCase\\Cest::testRememberUserInDbMethod',
+      25 => 'Codeception\\TestCase\\Cest::testRecallUserMethod',
+      26 => 'Codeception\\TestCase\\Cest::testIsAllowedToMethodFailUnknownAction',
+      27 => 'Codeception\\TestCase\\Cest::testIsAllowedToMethodSuccess',
+      28 => 'Codeception\\TestCase\\Cest::testIsInGroupMethodSuccessNumeric',
+      29 => 'Codeception\\TestCase\\Cest::testIsInGroupMethodFailUnknownGroup',
+      30 => 'Codeception\\TestCase\\Cest::testIsInGroupMethodSuccessNamed',
     ),
     109 => 
     array (
@@ -789,8 +977,16 @@ $coverage->setData(array (
       17 => 'Codeception\\TestCase\\Cest::testLoginFromClassInstance',
       18 => 'Codeception\\TestCase\\Cest::testLoginUserMethodFromExistingData',
       19 => 'Codeception\\TestCase\\Cest::testLoginUserMethodWithPass',
-      20 => 'Codeception\\TestCase\\Cest::testLogoutMethod',
-      21 => 'Codeception\\TestCase\\Cest::testUpdateMethodLoggedInUser',
+      20 => 'Codeception\\TestCase\\Cest::testLoginAttempts',
+      21 => 'Codeception\\TestCase\\Cest::testLogoutMethod',
+      22 => 'Codeception\\TestCase\\Cest::testUpdateMethodLoggedInUser',
+      23 => 'Codeception\\TestCase\\Cest::testRememberUserInDbMethod',
+      24 => 'Codeception\\TestCase\\Cest::testRecallUserMethod',
+      25 => 'Codeception\\TestCase\\Cest::testIsAllowedToMethodFailUnknownAction',
+      26 => 'Codeception\\TestCase\\Cest::testIsAllowedToMethodSuccess',
+      27 => 'Codeception\\TestCase\\Cest::testIsInGroupMethodSuccessNumeric',
+      28 => 'Codeception\\TestCase\\Cest::testIsInGroupMethodFailUnknownGroup',
+      29 => 'Codeception\\TestCase\\Cest::testIsInGroupMethodSuccessNamed',
     ),
     110 => 
     array (
@@ -814,8 +1010,16 @@ $coverage->setData(array (
       17 => 'Codeception\\TestCase\\Cest::testLoginFromClassInstance',
       18 => 'Codeception\\TestCase\\Cest::testLoginUserMethodFromExistingData',
       19 => 'Codeception\\TestCase\\Cest::testLoginUserMethodWithPass',
-      20 => 'Codeception\\TestCase\\Cest::testLogoutMethod',
-      21 => 'Codeception\\TestCase\\Cest::testUpdateMethodLoggedInUser',
+      20 => 'Codeception\\TestCase\\Cest::testLoginAttempts',
+      21 => 'Codeception\\TestCase\\Cest::testLogoutMethod',
+      22 => 'Codeception\\TestCase\\Cest::testUpdateMethodLoggedInUser',
+      23 => 'Codeception\\TestCase\\Cest::testRememberUserInDbMethod',
+      24 => 'Codeception\\TestCase\\Cest::testRecallUserMethod',
+      25 => 'Codeception\\TestCase\\Cest::testIsAllowedToMethodFailUnknownAction',
+      26 => 'Codeception\\TestCase\\Cest::testIsAllowedToMethodSuccess',
+      27 => 'Codeception\\TestCase\\Cest::testIsInGroupMethodSuccessNumeric',
+      28 => 'Codeception\\TestCase\\Cest::testIsInGroupMethodFailUnknownGroup',
+      29 => 'Codeception\\TestCase\\Cest::testIsInGroupMethodSuccessNamed',
     ),
     111 => 
     array (
@@ -839,8 +1043,16 @@ $coverage->setData(array (
       17 => 'Codeception\\TestCase\\Cest::testLoginFromClassInstance',
       18 => 'Codeception\\TestCase\\Cest::testLoginUserMethodFromExistingData',
       19 => 'Codeception\\TestCase\\Cest::testLoginUserMethodWithPass',
-      20 => 'Codeception\\TestCase\\Cest::testLogoutMethod',
-      21 => 'Codeception\\TestCase\\Cest::testUpdateMethodLoggedInUser',
+      20 => 'Codeception\\TestCase\\Cest::testLoginAttempts',
+      21 => 'Codeception\\TestCase\\Cest::testLogoutMethod',
+      22 => 'Codeception\\TestCase\\Cest::testUpdateMethodLoggedInUser',
+      23 => 'Codeception\\TestCase\\Cest::testRememberUserInDbMethod',
+      24 => 'Codeception\\TestCase\\Cest::testRecallUserMethod',
+      25 => 'Codeception\\TestCase\\Cest::testIsAllowedToMethodFailUnknownAction',
+      26 => 'Codeception\\TestCase\\Cest::testIsAllowedToMethodSuccess',
+      27 => 'Codeception\\TestCase\\Cest::testIsInGroupMethodSuccessNumeric',
+      28 => 'Codeception\\TestCase\\Cest::testIsInGroupMethodFailUnknownGroup',
+      29 => 'Codeception\\TestCase\\Cest::testIsInGroupMethodSuccessNamed',
     ),
     113 => 
     array (
@@ -864,8 +1076,16 @@ $coverage->setData(array (
       17 => 'Codeception\\TestCase\\Cest::testLoginFromClassInstance',
       18 => 'Codeception\\TestCase\\Cest::testLoginUserMethodFromExistingData',
       19 => 'Codeception\\TestCase\\Cest::testLoginUserMethodWithPass',
-      20 => 'Codeception\\TestCase\\Cest::testLogoutMethod',
-      21 => 'Codeception\\TestCase\\Cest::testUpdateMethodLoggedInUser',
+      20 => 'Codeception\\TestCase\\Cest::testLoginAttempts',
+      21 => 'Codeception\\TestCase\\Cest::testLogoutMethod',
+      22 => 'Codeception\\TestCase\\Cest::testUpdateMethodLoggedInUser',
+      23 => 'Codeception\\TestCase\\Cest::testRememberUserInDbMethod',
+      24 => 'Codeception\\TestCase\\Cest::testRecallUserMethod',
+      25 => 'Codeception\\TestCase\\Cest::testIsAllowedToMethodFailUnknownAction',
+      26 => 'Codeception\\TestCase\\Cest::testIsAllowedToMethodSuccess',
+      27 => 'Codeception\\TestCase\\Cest::testIsInGroupMethodSuccessNumeric',
+      28 => 'Codeception\\TestCase\\Cest::testIsInGroupMethodFailUnknownGroup',
+      29 => 'Codeception\\TestCase\\Cest::testIsInGroupMethodSuccessNamed',
     ),
     114 => 
     array (
@@ -889,8 +1109,16 @@ $coverage->setData(array (
       17 => 'Codeception\\TestCase\\Cest::testLoginFromClassInstance',
       18 => 'Codeception\\TestCase\\Cest::testLoginUserMethodFromExistingData',
       19 => 'Codeception\\TestCase\\Cest::testLoginUserMethodWithPass',
-      20 => 'Codeception\\TestCase\\Cest::testLogoutMethod',
-      21 => 'Codeception\\TestCase\\Cest::testUpdateMethodLoggedInUser',
+      20 => 'Codeception\\TestCase\\Cest::testLoginAttempts',
+      21 => 'Codeception\\TestCase\\Cest::testLogoutMethod',
+      22 => 'Codeception\\TestCase\\Cest::testUpdateMethodLoggedInUser',
+      23 => 'Codeception\\TestCase\\Cest::testRememberUserInDbMethod',
+      24 => 'Codeception\\TestCase\\Cest::testRecallUserMethod',
+      25 => 'Codeception\\TestCase\\Cest::testIsAllowedToMethodFailUnknownAction',
+      26 => 'Codeception\\TestCase\\Cest::testIsAllowedToMethodSuccess',
+      27 => 'Codeception\\TestCase\\Cest::testIsInGroupMethodSuccessNumeric',
+      28 => 'Codeception\\TestCase\\Cest::testIsInGroupMethodFailUnknownGroup',
+      29 => 'Codeception\\TestCase\\Cest::testIsInGroupMethodSuccessNamed',
     ),
     116 => 
     array (
@@ -913,8 +1141,16 @@ $coverage->setData(array (
       16 => 'Codeception\\TestCase\\Cest::testLoginFromClassInstance',
       17 => 'Codeception\\TestCase\\Cest::testLoginUserMethodFromExistingData',
       18 => 'Codeception\\TestCase\\Cest::testLoginUserMethodWithPass',
-      19 => 'Codeception\\TestCase\\Cest::testLogoutMethod',
-      20 => 'Codeception\\TestCase\\Cest::testUpdateMethodLoggedInUser',
+      19 => 'Codeception\\TestCase\\Cest::testLoginAttempts',
+      20 => 'Codeception\\TestCase\\Cest::testLogoutMethod',
+      21 => 'Codeception\\TestCase\\Cest::testUpdateMethodLoggedInUser',
+      22 => 'Codeception\\TestCase\\Cest::testRememberUserInDbMethod',
+      23 => 'Codeception\\TestCase\\Cest::testRecallUserMethod',
+      24 => 'Codeception\\TestCase\\Cest::testIsAllowedToMethodFailUnknownAction',
+      25 => 'Codeception\\TestCase\\Cest::testIsAllowedToMethodSuccess',
+      26 => 'Codeception\\TestCase\\Cest::testIsInGroupMethodSuccessNumeric',
+      27 => 'Codeception\\TestCase\\Cest::testIsInGroupMethodFailUnknownGroup',
+      28 => 'Codeception\\TestCase\\Cest::testIsInGroupMethodSuccessNamed',
     ),
     117 => 
     array (
@@ -937,8 +1173,16 @@ $coverage->setData(array (
       16 => 'Codeception\\TestCase\\Cest::testLoginFromClassInstance',
       17 => 'Codeception\\TestCase\\Cest::testLoginUserMethodFromExistingData',
       18 => 'Codeception\\TestCase\\Cest::testLoginUserMethodWithPass',
-      19 => 'Codeception\\TestCase\\Cest::testLogoutMethod',
-      20 => 'Codeception\\TestCase\\Cest::testUpdateMethodLoggedInUser',
+      19 => 'Codeception\\TestCase\\Cest::testLoginAttempts',
+      20 => 'Codeception\\TestCase\\Cest::testLogoutMethod',
+      21 => 'Codeception\\TestCase\\Cest::testUpdateMethodLoggedInUser',
+      22 => 'Codeception\\TestCase\\Cest::testRememberUserInDbMethod',
+      23 => 'Codeception\\TestCase\\Cest::testRecallUserMethod',
+      24 => 'Codeception\\TestCase\\Cest::testIsAllowedToMethodFailUnknownAction',
+      25 => 'Codeception\\TestCase\\Cest::testIsAllowedToMethodSuccess',
+      26 => 'Codeception\\TestCase\\Cest::testIsInGroupMethodSuccessNumeric',
+      27 => 'Codeception\\TestCase\\Cest::testIsInGroupMethodFailUnknownGroup',
+      28 => 'Codeception\\TestCase\\Cest::testIsInGroupMethodSuccessNamed',
     ),
     119 => 
     array (
@@ -960,8 +1204,16 @@ $coverage->setData(array (
       15 => 'Codeception\\TestCase\\Cest::testLoginFromClassInstance',
       16 => 'Codeception\\TestCase\\Cest::testLoginUserMethodFromExistingData',
       17 => 'Codeception\\TestCase\\Cest::testLoginUserMethodWithPass',
-      18 => 'Codeception\\TestCase\\Cest::testLogoutMethod',
-      19 => 'Codeception\\TestCase\\Cest::testUpdateMethodLoggedInUser',
+      18 => 'Codeception\\TestCase\\Cest::testLoginAttempts',
+      19 => 'Codeception\\TestCase\\Cest::testLogoutMethod',
+      20 => 'Codeception\\TestCase\\Cest::testUpdateMethodLoggedInUser',
+      21 => 'Codeception\\TestCase\\Cest::testRememberUserInDbMethod',
+      22 => 'Codeception\\TestCase\\Cest::testRecallUserMethod',
+      23 => 'Codeception\\TestCase\\Cest::testIsAllowedToMethodFailUnknownAction',
+      24 => 'Codeception\\TestCase\\Cest::testIsAllowedToMethodSuccess',
+      25 => 'Codeception\\TestCase\\Cest::testIsInGroupMethodSuccessNumeric',
+      26 => 'Codeception\\TestCase\\Cest::testIsInGroupMethodFailUnknownGroup',
+      27 => 'Codeception\\TestCase\\Cest::testIsInGroupMethodSuccessNamed',
     ),
     120 => 
     array (
@@ -996,8 +1248,16 @@ $coverage->setData(array (
       13 => 'Codeception\\TestCase\\Cest::testLoginFromClassInstance',
       14 => 'Codeception\\TestCase\\Cest::testLoginUserMethodFromExistingData',
       15 => 'Codeception\\TestCase\\Cest::testLoginUserMethodWithPass',
-      16 => 'Codeception\\TestCase\\Cest::testLogoutMethod',
-      17 => 'Codeception\\TestCase\\Cest::testUpdateMethodLoggedInUser',
+      16 => 'Codeception\\TestCase\\Cest::testLoginAttempts',
+      17 => 'Codeception\\TestCase\\Cest::testLogoutMethod',
+      18 => 'Codeception\\TestCase\\Cest::testUpdateMethodLoggedInUser',
+      19 => 'Codeception\\TestCase\\Cest::testRememberUserInDbMethod',
+      20 => 'Codeception\\TestCase\\Cest::testRecallUserMethod',
+      21 => 'Codeception\\TestCase\\Cest::testIsAllowedToMethodFailUnknownAction',
+      22 => 'Codeception\\TestCase\\Cest::testIsAllowedToMethodSuccess',
+      23 => 'Codeception\\TestCase\\Cest::testIsInGroupMethodSuccessNumeric',
+      24 => 'Codeception\\TestCase\\Cest::testIsInGroupMethodFailUnknownGroup',
+      25 => 'Codeception\\TestCase\\Cest::testIsInGroupMethodSuccessNamed',
     ),
     127 => 
     array (
@@ -1019,8 +1279,16 @@ $coverage->setData(array (
       15 => 'Codeception\\TestCase\\Cest::testLoginFromClassInstance',
       16 => 'Codeception\\TestCase\\Cest::testLoginUserMethodFromExistingData',
       17 => 'Codeception\\TestCase\\Cest::testLoginUserMethodWithPass',
-      18 => 'Codeception\\TestCase\\Cest::testLogoutMethod',
-      19 => 'Codeception\\TestCase\\Cest::testUpdateMethodLoggedInUser',
+      18 => 'Codeception\\TestCase\\Cest::testLoginAttempts',
+      19 => 'Codeception\\TestCase\\Cest::testLogoutMethod',
+      20 => 'Codeception\\TestCase\\Cest::testUpdateMethodLoggedInUser',
+      21 => 'Codeception\\TestCase\\Cest::testRememberUserInDbMethod',
+      22 => 'Codeception\\TestCase\\Cest::testRecallUserMethod',
+      23 => 'Codeception\\TestCase\\Cest::testIsAllowedToMethodFailUnknownAction',
+      24 => 'Codeception\\TestCase\\Cest::testIsAllowedToMethodSuccess',
+      25 => 'Codeception\\TestCase\\Cest::testIsInGroupMethodSuccessNumeric',
+      26 => 'Codeception\\TestCase\\Cest::testIsInGroupMethodFailUnknownGroup',
+      27 => 'Codeception\\TestCase\\Cest::testIsInGroupMethodSuccessNamed',
     ),
     129 => 
     array (
@@ -1042,8 +1310,16 @@ $coverage->setData(array (
       15 => 'Codeception\\TestCase\\Cest::testLoginFromClassInstance',
       16 => 'Codeception\\TestCase\\Cest::testLoginUserMethodFromExistingData',
       17 => 'Codeception\\TestCase\\Cest::testLoginUserMethodWithPass',
-      18 => 'Codeception\\TestCase\\Cest::testLogoutMethod',
-      19 => 'Codeception\\TestCase\\Cest::testUpdateMethodLoggedInUser',
+      18 => 'Codeception\\TestCase\\Cest::testLoginAttempts',
+      19 => 'Codeception\\TestCase\\Cest::testLogoutMethod',
+      20 => 'Codeception\\TestCase\\Cest::testUpdateMethodLoggedInUser',
+      21 => 'Codeception\\TestCase\\Cest::testRememberUserInDbMethod',
+      22 => 'Codeception\\TestCase\\Cest::testRecallUserMethod',
+      23 => 'Codeception\\TestCase\\Cest::testIsAllowedToMethodFailUnknownAction',
+      24 => 'Codeception\\TestCase\\Cest::testIsAllowedToMethodSuccess',
+      25 => 'Codeception\\TestCase\\Cest::testIsInGroupMethodSuccessNumeric',
+      26 => 'Codeception\\TestCase\\Cest::testIsInGroupMethodFailUnknownGroup',
+      27 => 'Codeception\\TestCase\\Cest::testIsInGroupMethodSuccessNamed',
     ),
     130 => NULL,
     146 => 
@@ -1063,8 +1339,16 @@ $coverage->setData(array (
       12 => 'Codeception\\TestCase\\Cest::testLoginFromClassInstance',
       13 => 'Codeception\\TestCase\\Cest::testLoginUserMethodFromExistingData',
       14 => 'Codeception\\TestCase\\Cest::testLoginUserMethodWithPass',
-      15 => 'Codeception\\TestCase\\Cest::testLogoutMethod',
-      16 => 'Codeception\\TestCase\\Cest::testUpdateMethodLoggedInUser',
+      15 => 'Codeception\\TestCase\\Cest::testLoginAttempts',
+      16 => 'Codeception\\TestCase\\Cest::testLogoutMethod',
+      17 => 'Codeception\\TestCase\\Cest::testUpdateMethodLoggedInUser',
+      18 => 'Codeception\\TestCase\\Cest::testRememberUserInDbMethod',
+      19 => 'Codeception\\TestCase\\Cest::testRecallUserMethod',
+      20 => 'Codeception\\TestCase\\Cest::testIsAllowedToMethodFailUnknownAction',
+      21 => 'Codeception\\TestCase\\Cest::testIsAllowedToMethodSuccess',
+      22 => 'Codeception\\TestCase\\Cest::testIsInGroupMethodSuccessNumeric',
+      23 => 'Codeception\\TestCase\\Cest::testIsInGroupMethodFailUnknownGroup',
+      24 => 'Codeception\\TestCase\\Cest::testIsInGroupMethodSuccessNamed',
     ),
     147 => NULL,
     162 => 
@@ -1080,6 +1364,13 @@ $coverage->setData(array (
       8 => 'Codeception\\TestCase\\Cest::testLoginUserMethodWithPass',
       9 => 'Codeception\\TestCase\\Cest::testLogoutMethod',
       10 => 'Codeception\\TestCase\\Cest::testUpdateMethodLoggedInUser',
+      11 => 'Codeception\\TestCase\\Cest::testRememberUserInDbMethod',
+      12 => 'Codeception\\TestCase\\Cest::testRecallUserMethod',
+      13 => 'Codeception\\TestCase\\Cest::testIsAllowedToMethodFailUnknownAction',
+      14 => 'Codeception\\TestCase\\Cest::testIsAllowedToMethodSuccess',
+      15 => 'Codeception\\TestCase\\Cest::testIsInGroupMethodSuccessNumeric',
+      16 => 'Codeception\\TestCase\\Cest::testIsInGroupMethodFailUnknownGroup',
+      17 => 'Codeception\\TestCase\\Cest::testIsInGroupMethodSuccessNamed',
     ),
     163 => NULL,
     179 => 
@@ -1088,8 +1379,10 @@ $coverage->setData(array (
       1 => 'Codeception\\TestCase\\Cest::testInsertMethodFailQuery',
       2 => 'Codeception\\TestCase\\Cest::testInsertMethodFailFields',
       3 => 'Codeception\\TestCase\\Cest::testCreatingNewUser',
-      4 => 'Codeception\\TestCase\\Cest::testUpdateMethodLoggedInUser',
-      5 => 'Codeception\\TestCase\\Cest::testUpdateMethodWithId',
+      4 => 'Codeception\\TestCase\\Cest::testLogoutMethod',
+      5 => 'Codeception\\TestCase\\Cest::testUpdateMethodLoggedInUser',
+      6 => 'Codeception\\TestCase\\Cest::testUpdateMethodWithId',
+      7 => 'Codeception\\TestCase\\Cest::testRememberUserInDbMethod',
     ),
     180 => 
     array (
@@ -1097,48 +1390,60 @@ $coverage->setData(array (
       1 => 'Codeception\\TestCase\\Cest::testInsertMethodFailQuery',
       2 => 'Codeception\\TestCase\\Cest::testInsertMethodFailFields',
       3 => 'Codeception\\TestCase\\Cest::testCreatingNewUser',
-      4 => 'Codeception\\TestCase\\Cest::testUpdateMethodLoggedInUser',
-      5 => 'Codeception\\TestCase\\Cest::testUpdateMethodWithId',
+      4 => 'Codeception\\TestCase\\Cest::testLogoutMethod',
+      5 => 'Codeception\\TestCase\\Cest::testUpdateMethodLoggedInUser',
+      6 => 'Codeception\\TestCase\\Cest::testUpdateMethodWithId',
+      7 => 'Codeception\\TestCase\\Cest::testRememberUserInDbMethod',
     ),
     182 => 
     array (
       0 => 'Codeception\\TestCase\\Cest::testInsertMethodSuccess',
       1 => 'Codeception\\TestCase\\Cest::testInsertMethodFailQuery',
       2 => 'Codeception\\TestCase\\Cest::testCreatingNewUser',
-      3 => 'Codeception\\TestCase\\Cest::testUpdateMethodLoggedInUser',
-      4 => 'Codeception\\TestCase\\Cest::testUpdateMethodWithId',
+      3 => 'Codeception\\TestCase\\Cest::testLogoutMethod',
+      4 => 'Codeception\\TestCase\\Cest::testUpdateMethodLoggedInUser',
+      5 => 'Codeception\\TestCase\\Cest::testUpdateMethodWithId',
+      6 => 'Codeception\\TestCase\\Cest::testRememberUserInDbMethod',
     ),
     183 => 
     array (
       0 => 'Codeception\\TestCase\\Cest::testInsertMethodSuccess',
       1 => 'Codeception\\TestCase\\Cest::testInsertMethodFailQuery',
       2 => 'Codeception\\TestCase\\Cest::testCreatingNewUser',
-      3 => 'Codeception\\TestCase\\Cest::testUpdateMethodLoggedInUser',
-      4 => 'Codeception\\TestCase\\Cest::testUpdateMethodWithId',
+      3 => 'Codeception\\TestCase\\Cest::testLogoutMethod',
+      4 => 'Codeception\\TestCase\\Cest::testUpdateMethodLoggedInUser',
+      5 => 'Codeception\\TestCase\\Cest::testUpdateMethodWithId',
+      6 => 'Codeception\\TestCase\\Cest::testRememberUserInDbMethod',
     ),
     185 => 
     array (
       0 => 'Codeception\\TestCase\\Cest::testInsertMethodSuccess',
       1 => 'Codeception\\TestCase\\Cest::testInsertMethodFailQuery',
       2 => 'Codeception\\TestCase\\Cest::testCreatingNewUser',
-      3 => 'Codeception\\TestCase\\Cest::testUpdateMethodLoggedInUser',
-      4 => 'Codeception\\TestCase\\Cest::testUpdateMethodWithId',
+      3 => 'Codeception\\TestCase\\Cest::testLogoutMethod',
+      4 => 'Codeception\\TestCase\\Cest::testUpdateMethodLoggedInUser',
+      5 => 'Codeception\\TestCase\\Cest::testUpdateMethodWithId',
+      6 => 'Codeception\\TestCase\\Cest::testRememberUserInDbMethod',
     ),
     187 => 
     array (
       0 => 'Codeception\\TestCase\\Cest::testInsertMethodSuccess',
       1 => 'Codeception\\TestCase\\Cest::testInsertMethodFailQuery',
       2 => 'Codeception\\TestCase\\Cest::testCreatingNewUser',
-      3 => 'Codeception\\TestCase\\Cest::testUpdateMethodLoggedInUser',
-      4 => 'Codeception\\TestCase\\Cest::testUpdateMethodWithId',
+      3 => 'Codeception\\TestCase\\Cest::testLogoutMethod',
+      4 => 'Codeception\\TestCase\\Cest::testUpdateMethodLoggedInUser',
+      5 => 'Codeception\\TestCase\\Cest::testUpdateMethodWithId',
+      6 => 'Codeception\\TestCase\\Cest::testRememberUserInDbMethod',
     ),
     189 => 
     array (
       0 => 'Codeception\\TestCase\\Cest::testInsertMethodSuccess',
       1 => 'Codeception\\TestCase\\Cest::testInsertMethodFailQuery',
       2 => 'Codeception\\TestCase\\Cest::testCreatingNewUser',
-      3 => 'Codeception\\TestCase\\Cest::testUpdateMethodLoggedInUser',
-      4 => 'Codeception\\TestCase\\Cest::testUpdateMethodWithId',
+      3 => 'Codeception\\TestCase\\Cest::testLogoutMethod',
+      4 => 'Codeception\\TestCase\\Cest::testUpdateMethodLoggedInUser',
+      5 => 'Codeception\\TestCase\\Cest::testUpdateMethodWithId',
+      6 => 'Codeception\\TestCase\\Cest::testRememberUserInDbMethod',
     ),
     191 => NULL,
     206 => 
@@ -1219,24 +1524,28 @@ $coverage->setData(array (
       0 => 'Codeception\\TestCase\\Cest::testGetCustomMethodSimple',
       1 => 'Codeception\\TestCase\\Cest::testGetCustomMethodFields',
       2 => 'Codeception\\TestCase\\Cest::testGetCustomMethodOrder',
+      3 => 'Codeception\\TestCase\\Cest::testIsAllowedToMethodSuccess',
     ),
     241 => 
     array (
       0 => 'Codeception\\TestCase\\Cest::testGetCustomMethodSimple',
       1 => 'Codeception\\TestCase\\Cest::testGetCustomMethodFields',
       2 => 'Codeception\\TestCase\\Cest::testGetCustomMethodOrder',
+      3 => 'Codeception\\TestCase\\Cest::testIsAllowedToMethodSuccess',
     ),
     243 => 
     array (
       0 => 'Codeception\\TestCase\\Cest::testGetCustomMethodSimple',
       1 => 'Codeception\\TestCase\\Cest::testGetCustomMethodFields',
       2 => 'Codeception\\TestCase\\Cest::testGetCustomMethodOrder',
+      3 => 'Codeception\\TestCase\\Cest::testIsAllowedToMethodSuccess',
     ),
     245 => 
     array (
       0 => 'Codeception\\TestCase\\Cest::testGetCustomMethodSimple',
       1 => 'Codeception\\TestCase\\Cest::testGetCustomMethodFields',
       2 => 'Codeception\\TestCase\\Cest::testGetCustomMethodOrder',
+      3 => 'Codeception\\TestCase\\Cest::testIsAllowedToMethodSuccess',
     ),
     246 => NULL,
     253 => 
@@ -1256,8 +1565,16 @@ $coverage->setData(array (
       12 => 'Codeception\\TestCase\\Cest::testLoginFromClassInstance',
       13 => 'Codeception\\TestCase\\Cest::testLoginUserMethodFromExistingData',
       14 => 'Codeception\\TestCase\\Cest::testLoginUserMethodWithPass',
-      15 => 'Codeception\\TestCase\\Cest::testLogoutMethod',
-      16 => 'Codeception\\TestCase\\Cest::testUpdateMethodLoggedInUser',
+      15 => 'Codeception\\TestCase\\Cest::testLoginAttempts',
+      16 => 'Codeception\\TestCase\\Cest::testLogoutMethod',
+      17 => 'Codeception\\TestCase\\Cest::testUpdateMethodLoggedInUser',
+      18 => 'Codeception\\TestCase\\Cest::testRememberUserInDbMethod',
+      19 => 'Codeception\\TestCase\\Cest::testRecallUserMethod',
+      20 => 'Codeception\\TestCase\\Cest::testIsAllowedToMethodFailUnknownAction',
+      21 => 'Codeception\\TestCase\\Cest::testIsAllowedToMethodSuccess',
+      22 => 'Codeception\\TestCase\\Cest::testIsInGroupMethodSuccessNumeric',
+      23 => 'Codeception\\TestCase\\Cest::testIsInGroupMethodFailUnknownGroup',
+      24 => 'Codeception\\TestCase\\Cest::testIsInGroupMethodSuccessNamed',
     ),
     254 => NULL,
     261 => 
@@ -1274,8 +1591,16 @@ $coverage->setData(array (
       9 => 'Codeception\\TestCase\\Cest::testLoginFromClassInstance',
       10 => 'Codeception\\TestCase\\Cest::testLoginUserMethodFromExistingData',
       11 => 'Codeception\\TestCase\\Cest::testLoginUserMethodWithPass',
-      12 => 'Codeception\\TestCase\\Cest::testLogoutMethod',
-      13 => 'Codeception\\TestCase\\Cest::testUpdateMethodLoggedInUser',
+      12 => 'Codeception\\TestCase\\Cest::testLoginAttempts',
+      13 => 'Codeception\\TestCase\\Cest::testLogoutMethod',
+      14 => 'Codeception\\TestCase\\Cest::testUpdateMethodLoggedInUser',
+      15 => 'Codeception\\TestCase\\Cest::testRememberUserInDbMethod',
+      16 => 'Codeception\\TestCase\\Cest::testRecallUserMethod',
+      17 => 'Codeception\\TestCase\\Cest::testIsAllowedToMethodFailUnknownAction',
+      18 => 'Codeception\\TestCase\\Cest::testIsAllowedToMethodSuccess',
+      19 => 'Codeception\\TestCase\\Cest::testIsInGroupMethodSuccessNumeric',
+      20 => 'Codeception\\TestCase\\Cest::testIsInGroupMethodFailUnknownGroup',
+      21 => 'Codeception\\TestCase\\Cest::testIsInGroupMethodSuccessNamed',
     ),
     263 => 
     array (
@@ -1291,8 +1616,16 @@ $coverage->setData(array (
       9 => 'Codeception\\TestCase\\Cest::testLoginFromClassInstance',
       10 => 'Codeception\\TestCase\\Cest::testLoginUserMethodFromExistingData',
       11 => 'Codeception\\TestCase\\Cest::testLoginUserMethodWithPass',
-      12 => 'Codeception\\TestCase\\Cest::testLogoutMethod',
-      13 => 'Codeception\\TestCase\\Cest::testUpdateMethodLoggedInUser',
+      12 => 'Codeception\\TestCase\\Cest::testLoginAttempts',
+      13 => 'Codeception\\TestCase\\Cest::testLogoutMethod',
+      14 => 'Codeception\\TestCase\\Cest::testUpdateMethodLoggedInUser',
+      15 => 'Codeception\\TestCase\\Cest::testRememberUserInDbMethod',
+      16 => 'Codeception\\TestCase\\Cest::testRecallUserMethod',
+      17 => 'Codeception\\TestCase\\Cest::testIsAllowedToMethodFailUnknownAction',
+      18 => 'Codeception\\TestCase\\Cest::testIsAllowedToMethodSuccess',
+      19 => 'Codeception\\TestCase\\Cest::testIsInGroupMethodSuccessNumeric',
+      20 => 'Codeception\\TestCase\\Cest::testIsInGroupMethodFailUnknownGroup',
+      21 => 'Codeception\\TestCase\\Cest::testIsInGroupMethodSuccessNamed',
     ),
     264 => 
     array (
@@ -1315,8 +1648,16 @@ $coverage->setData(array (
       8 => 'Codeception\\TestCase\\Cest::testLoginFromClassInstance',
       9 => 'Codeception\\TestCase\\Cest::testLoginUserMethodFromExistingData',
       10 => 'Codeception\\TestCase\\Cest::testLoginUserMethodWithPass',
-      11 => 'Codeception\\TestCase\\Cest::testLogoutMethod',
-      12 => 'Codeception\\TestCase\\Cest::testUpdateMethodLoggedInUser',
+      11 => 'Codeception\\TestCase\\Cest::testLoginAttempts',
+      12 => 'Codeception\\TestCase\\Cest::testLogoutMethod',
+      13 => 'Codeception\\TestCase\\Cest::testUpdateMethodLoggedInUser',
+      14 => 'Codeception\\TestCase\\Cest::testRememberUserInDbMethod',
+      15 => 'Codeception\\TestCase\\Cest::testRecallUserMethod',
+      16 => 'Codeception\\TestCase\\Cest::testIsAllowedToMethodFailUnknownAction',
+      17 => 'Codeception\\TestCase\\Cest::testIsAllowedToMethodSuccess',
+      18 => 'Codeception\\TestCase\\Cest::testIsInGroupMethodSuccessNumeric',
+      19 => 'Codeception\\TestCase\\Cest::testIsInGroupMethodFailUnknownGroup',
+      20 => 'Codeception\\TestCase\\Cest::testIsInGroupMethodSuccessNamed',
     ),
     267 => 
     array (
@@ -1331,8 +1672,16 @@ $coverage->setData(array (
       8 => 'Codeception\\TestCase\\Cest::testLoginFromClassInstance',
       9 => 'Codeception\\TestCase\\Cest::testLoginUserMethodFromExistingData',
       10 => 'Codeception\\TestCase\\Cest::testLoginUserMethodWithPass',
-      11 => 'Codeception\\TestCase\\Cest::testLogoutMethod',
-      12 => 'Codeception\\TestCase\\Cest::testUpdateMethodLoggedInUser',
+      11 => 'Codeception\\TestCase\\Cest::testLoginAttempts',
+      12 => 'Codeception\\TestCase\\Cest::testLogoutMethod',
+      13 => 'Codeception\\TestCase\\Cest::testUpdateMethodLoggedInUser',
+      14 => 'Codeception\\TestCase\\Cest::testRememberUserInDbMethod',
+      15 => 'Codeception\\TestCase\\Cest::testRecallUserMethod',
+      16 => 'Codeception\\TestCase\\Cest::testIsAllowedToMethodFailUnknownAction',
+      17 => 'Codeception\\TestCase\\Cest::testIsAllowedToMethodSuccess',
+      18 => 'Codeception\\TestCase\\Cest::testIsInGroupMethodSuccessNumeric',
+      19 => 'Codeception\\TestCase\\Cest::testIsInGroupMethodFailUnknownGroup',
+      20 => 'Codeception\\TestCase\\Cest::testIsInGroupMethodSuccessNamed',
     ),
     268 => 
     array (
@@ -1347,8 +1696,16 @@ $coverage->setData(array (
       8 => 'Codeception\\TestCase\\Cest::testLoginFromClassInstance',
       9 => 'Codeception\\TestCase\\Cest::testLoginUserMethodFromExistingData',
       10 => 'Codeception\\TestCase\\Cest::testLoginUserMethodWithPass',
-      11 => 'Codeception\\TestCase\\Cest::testLogoutMethod',
-      12 => 'Codeception\\TestCase\\Cest::testUpdateMethodLoggedInUser',
+      11 => 'Codeception\\TestCase\\Cest::testLoginAttempts',
+      12 => 'Codeception\\TestCase\\Cest::testLogoutMethod',
+      13 => 'Codeception\\TestCase\\Cest::testUpdateMethodLoggedInUser',
+      14 => 'Codeception\\TestCase\\Cest::testRememberUserInDbMethod',
+      15 => 'Codeception\\TestCase\\Cest::testRecallUserMethod',
+      16 => 'Codeception\\TestCase\\Cest::testIsAllowedToMethodFailUnknownAction',
+      17 => 'Codeception\\TestCase\\Cest::testIsAllowedToMethodSuccess',
+      18 => 'Codeception\\TestCase\\Cest::testIsInGroupMethodSuccessNumeric',
+      19 => 'Codeception\\TestCase\\Cest::testIsInGroupMethodFailUnknownGroup',
+      20 => 'Codeception\\TestCase\\Cest::testIsInGroupMethodSuccessNamed',
     ),
     269 => 
     array (
@@ -1373,8 +1730,16 @@ $coverage->setData(array (
       9 => 'Codeception\\TestCase\\Cest::testLoginFromClassInstance',
       10 => 'Codeception\\TestCase\\Cest::testLoginUserMethodFromExistingData',
       11 => 'Codeception\\TestCase\\Cest::testLoginUserMethodWithPass',
-      12 => 'Codeception\\TestCase\\Cest::testLogoutMethod',
-      13 => 'Codeception\\TestCase\\Cest::testUpdateMethodLoggedInUser',
+      12 => 'Codeception\\TestCase\\Cest::testLoginAttempts',
+      13 => 'Codeception\\TestCase\\Cest::testLogoutMethod',
+      14 => 'Codeception\\TestCase\\Cest::testUpdateMethodLoggedInUser',
+      15 => 'Codeception\\TestCase\\Cest::testRememberUserInDbMethod',
+      16 => 'Codeception\\TestCase\\Cest::testRecallUserMethod',
+      17 => 'Codeception\\TestCase\\Cest::testIsAllowedToMethodFailUnknownAction',
+      18 => 'Codeception\\TestCase\\Cest::testIsAllowedToMethodSuccess',
+      19 => 'Codeception\\TestCase\\Cest::testIsInGroupMethodSuccessNumeric',
+      20 => 'Codeception\\TestCase\\Cest::testIsInGroupMethodFailUnknownGroup',
+      21 => 'Codeception\\TestCase\\Cest::testIsInGroupMethodSuccessNamed',
     ),
     274 => NULL,
     281 => 
@@ -1393,8 +1758,16 @@ $coverage->setData(array (
       11 => 'Codeception\\TestCase\\Cest::testLoginFromClassInstance',
       12 => 'Codeception\\TestCase\\Cest::testLoginUserMethodFromExistingData',
       13 => 'Codeception\\TestCase\\Cest::testLoginUserMethodWithPass',
-      14 => 'Codeception\\TestCase\\Cest::testLogoutMethod',
-      15 => 'Codeception\\TestCase\\Cest::testUpdateMethodLoggedInUser',
+      14 => 'Codeception\\TestCase\\Cest::testLoginAttempts',
+      15 => 'Codeception\\TestCase\\Cest::testLogoutMethod',
+      16 => 'Codeception\\TestCase\\Cest::testUpdateMethodLoggedInUser',
+      17 => 'Codeception\\TestCase\\Cest::testRememberUserInDbMethod',
+      18 => 'Codeception\\TestCase\\Cest::testRecallUserMethod',
+      19 => 'Codeception\\TestCase\\Cest::testIsAllowedToMethodFailUnknownAction',
+      20 => 'Codeception\\TestCase\\Cest::testIsAllowedToMethodSuccess',
+      21 => 'Codeception\\TestCase\\Cest::testIsInGroupMethodSuccessNumeric',
+      22 => 'Codeception\\TestCase\\Cest::testIsInGroupMethodFailUnknownGroup',
+      23 => 'Codeception\\TestCase\\Cest::testIsInGroupMethodSuccessNamed',
     ),
     282 => NULL,
     289 => 
@@ -1409,6 +1782,12 @@ $coverage->setData(array (
       2 => 'Codeception\\TestCase\\Cest::testGetCustomMethodSimple',
       3 => 'Codeception\\TestCase\\Cest::testGetCustomMethodFields',
       4 => 'Codeception\\TestCase\\Cest::testGetCustomMethodOrder',
+      5 => 'Codeception\\TestCase\\Cest::testLogoutMethod',
+      6 => 'Codeception\\TestCase\\Cest::testRememberUserInDbMethod',
+      7 => 'Codeception\\TestCase\\Cest::testRecallUserMethod',
+      8 => 'Codeception\\TestCase\\Cest::testIsAllowedToMethodSuccess',
+      9 => 'Codeception\\TestCase\\Cest::testIsInGroupMethodFailUnknownGroup',
+      10 => 'Codeception\\TestCase\\Cest::testIsInGroupMethodSuccessNamed',
     ),
     298 => NULL,
     305 => 
@@ -1438,9 +1817,16 @@ $coverage->setData(array (
       22 => 'Codeception\\TestCase\\Cest::testCreatingNewUser',
       23 => 'Codeception\\TestCase\\Cest::testLoginUserMethodFromExistingData',
       24 => 'Codeception\\TestCase\\Cest::testLoginUserMethodWithPass',
-      25 => 'Codeception\\TestCase\\Cest::testLogoutMethod',
-      26 => 'Codeception\\TestCase\\Cest::testUpdateMethodLoggedInUser',
-      27 => 'Codeception\\TestCase\\Cest::testUpdateMethodWithId',
+      25 => 'Codeception\\TestCase\\Cest::testLoginAttempts',
+      26 => 'Codeception\\TestCase\\Cest::testLogoutMethod',
+      27 => 'Codeception\\TestCase\\Cest::testUpdateMethodLoggedInUser',
+      28 => 'Codeception\\TestCase\\Cest::testUpdateMethodWithId',
+      29 => 'Codeception\\TestCase\\Cest::testRememberUserInDbMethod',
+      30 => 'Codeception\\TestCase\\Cest::testIsAllowedToMethodFailUnknownAction',
+      31 => 'Codeception\\TestCase\\Cest::testIsAllowedToMethodSuccess',
+      32 => 'Codeception\\TestCase\\Cest::testIsInGroupMethodSuccessNumeric',
+      33 => 'Codeception\\TestCase\\Cest::testIsInGroupMethodFailUnknownGroup',
+      34 => 'Codeception\\TestCase\\Cest::testIsInGroupMethodSuccessNamed',
     ),
     306 => NULL,
     313 => 
@@ -1451,7 +1837,7 @@ $coverage->setData(array (
   ),
   '/var/www/html/user-management/src/User.php' => 
   array (
-    54 => 
+    55 => 
     array (
       0 => 'Codeception\\TestCase\\Cest::testUserClass',
       1 => 'Codeception\\TestCase\\Cest::testNotLoggedIn',
@@ -1461,13 +1847,23 @@ $coverage->setData(array (
       5 => 'Codeception\\TestCase\\Cest::testLoginUserMethodFromExistingData',
       6 => 'Codeception\\TestCase\\Cest::testLoginUserMethodWithPass',
       7 => 'Codeception\\TestCase\\Cest::testLoginException',
-      8 => 'Codeception\\TestCase\\Cest::testLogoutMethod',
-      9 => 'Codeception\\TestCase\\Cest::testUpdateMethodLoggedInUser',
-      10 => 'Codeception\\TestCase\\Cest::testUpdateMethodWithId',
-      11 => 'Codeception\\TestCase\\Cest::testUpdateMethodException',
-      12 => 'Codeception\\TestCase\\Cest::testGetDbInstanceMethod',
+      8 => 'Codeception\\TestCase\\Cest::testLoginAttempts',
+      9 => 'Codeception\\TestCase\\Cest::testLogoutMethod',
+      10 => 'Codeception\\TestCase\\Cest::testUpdateMethodLoggedInUser',
+      11 => 'Codeception\\TestCase\\Cest::testUpdateMethodWithId',
+      12 => 'Codeception\\TestCase\\Cest::testUpdateMethodException',
+      13 => 'Codeception\\TestCase\\Cest::testGetDbInstanceMethod',
+      14 => 'Codeception\\TestCase\\Cest::testRememberUserInDbMethod',
+      15 => 'Codeception\\TestCase\\Cest::testRecallUserMethod',
+      16 => 'Codeception\\TestCase\\Cest::testIsAllowedToMethodFailNotLoggedIn',
+      17 => 'Codeception\\TestCase\\Cest::testIsAllowedToMethodFailUnknownAction',
+      18 => 'Codeception\\TestCase\\Cest::testIsAllowedToMethodSuccess',
+      19 => 'Codeception\\TestCase\\Cest::testIsInGroupMethodFailNotLoggedIn',
+      20 => 'Codeception\\TestCase\\Cest::testIsInGroupMethodSuccessNumeric',
+      21 => 'Codeception\\TestCase\\Cest::testIsInGroupMethodFailUnknownGroup',
+      22 => 'Codeception\\TestCase\\Cest::testIsInGroupMethodSuccessNamed',
     ),
-    56 => 
+    57 => 
     array (
       0 => 'Codeception\\TestCase\\Cest::testUserClass',
       1 => 'Codeception\\TestCase\\Cest::testNotLoggedIn',
@@ -1477,73 +1873,108 @@ $coverage->setData(array (
       5 => 'Codeception\\TestCase\\Cest::testLoginUserMethodFromExistingData',
       6 => 'Codeception\\TestCase\\Cest::testLoginUserMethodWithPass',
       7 => 'Codeception\\TestCase\\Cest::testLoginException',
-      8 => 'Codeception\\TestCase\\Cest::testLogoutMethod',
-      9 => 'Codeception\\TestCase\\Cest::testUpdateMethodLoggedInUser',
-      10 => 'Codeception\\TestCase\\Cest::testUpdateMethodWithId',
-      11 => 'Codeception\\TestCase\\Cest::testUpdateMethodException',
-      12 => 'Codeception\\TestCase\\Cest::testGetDbInstanceMethod',
-    ),
-    59 => 
-    array (
-      0 => 'Codeception\\TestCase\\Cest::testUserClass',
-      1 => 'Codeception\\TestCase\\Cest::testNotLoggedIn',
-      2 => 'Codeception\\TestCase\\Cest::testFindingUserMethod',
-      3 => 'Codeception\\TestCase\\Cest::testLoginFromClassInstance',
-      4 => 'Codeception\\TestCase\\Cest::testCreatingNewUser',
-      5 => 'Codeception\\TestCase\\Cest::testLoginUserMethodFromExistingData',
-      6 => 'Codeception\\TestCase\\Cest::testLoginUserMethodWithPass',
-      7 => 'Codeception\\TestCase\\Cest::testLoginException',
-      8 => 'Codeception\\TestCase\\Cest::testLogoutMethod',
-      9 => 'Codeception\\TestCase\\Cest::testUpdateMethodLoggedInUser',
-      10 => 'Codeception\\TestCase\\Cest::testUpdateMethodWithId',
-      11 => 'Codeception\\TestCase\\Cest::testUpdateMethodException',
-      12 => 'Codeception\\TestCase\\Cest::testGetDbInstanceMethod',
+      8 => 'Codeception\\TestCase\\Cest::testLoginAttempts',
+      9 => 'Codeception\\TestCase\\Cest::testLogoutMethod',
+      10 => 'Codeception\\TestCase\\Cest::testUpdateMethodLoggedInUser',
+      11 => 'Codeception\\TestCase\\Cest::testUpdateMethodWithId',
+      12 => 'Codeception\\TestCase\\Cest::testUpdateMethodException',
+      13 => 'Codeception\\TestCase\\Cest::testGetDbInstanceMethod',
+      14 => 'Codeception\\TestCase\\Cest::testRememberUserInDbMethod',
+      15 => 'Codeception\\TestCase\\Cest::testRecallUserMethod',
+      16 => 'Codeception\\TestCase\\Cest::testIsAllowedToMethodFailNotLoggedIn',
+      17 => 'Codeception\\TestCase\\Cest::testIsAllowedToMethodFailUnknownAction',
+      18 => 'Codeception\\TestCase\\Cest::testIsAllowedToMethodSuccess',
+      19 => 'Codeception\\TestCase\\Cest::testIsInGroupMethodFailNotLoggedIn',
+      20 => 'Codeception\\TestCase\\Cest::testIsInGroupMethodSuccessNumeric',
+      21 => 'Codeception\\TestCase\\Cest::testIsInGroupMethodFailUnknownGroup',
+      22 => 'Codeception\\TestCase\\Cest::testIsInGroupMethodSuccessNamed',
     ),
     60 => 
     array (
-      0 => 'Codeception\\TestCase\\Cest::testLoginFromClassInstance',
+      0 => 'Codeception\\TestCase\\Cest::testUserClass',
+      1 => 'Codeception\\TestCase\\Cest::testNotLoggedIn',
+      2 => 'Codeception\\TestCase\\Cest::testFindingUserMethod',
+      3 => 'Codeception\\TestCase\\Cest::testLoginFromClassInstance',
+      4 => 'Codeception\\TestCase\\Cest::testCreatingNewUser',
+      5 => 'Codeception\\TestCase\\Cest::testLoginUserMethodFromExistingData',
+      6 => 'Codeception\\TestCase\\Cest::testLoginUserMethodWithPass',
+      7 => 'Codeception\\TestCase\\Cest::testLoginException',
+      8 => 'Codeception\\TestCase\\Cest::testLoginAttempts',
+      9 => 'Codeception\\TestCase\\Cest::testLogoutMethod',
+      10 => 'Codeception\\TestCase\\Cest::testUpdateMethodLoggedInUser',
+      11 => 'Codeception\\TestCase\\Cest::testUpdateMethodWithId',
+      12 => 'Codeception\\TestCase\\Cest::testUpdateMethodException',
+      13 => 'Codeception\\TestCase\\Cest::testGetDbInstanceMethod',
+      14 => 'Codeception\\TestCase\\Cest::testRememberUserInDbMethod',
+      15 => 'Codeception\\TestCase\\Cest::testRecallUserMethod',
+      16 => 'Codeception\\TestCase\\Cest::testIsAllowedToMethodFailNotLoggedIn',
+      17 => 'Codeception\\TestCase\\Cest::testIsAllowedToMethodFailUnknownAction',
+      18 => 'Codeception\\TestCase\\Cest::testIsAllowedToMethodSuccess',
+      19 => 'Codeception\\TestCase\\Cest::testIsInGroupMethodFailNotLoggedIn',
+      20 => 'Codeception\\TestCase\\Cest::testIsInGroupMethodSuccessNumeric',
+      21 => 'Codeception\\TestCase\\Cest::testIsInGroupMethodFailUnknownGroup',
+      22 => 'Codeception\\TestCase\\Cest::testIsInGroupMethodSuccessNamed',
     ),
-    62 => 
+    61 => 
     array (
       0 => 'Codeception\\TestCase\\Cest::testLoginFromClassInstance',
+      1 => 'Codeception\\TestCase\\Cest::testRememberUserInDbMethod',
     ),
     63 => 
     array (
       0 => 'Codeception\\TestCase\\Cest::testLoginFromClassInstance',
+      1 => 'Codeception\\TestCase\\Cest::testRememberUserInDbMethod',
     ),
     64 => 
     array (
       0 => 'Codeception\\TestCase\\Cest::testLoginFromClassInstance',
+      1 => 'Codeception\\TestCase\\Cest::testRememberUserInDbMethod',
     ),
     65 => 
     array (
       0 => 'Codeception\\TestCase\\Cest::testLoginFromClassInstance',
+      1 => 'Codeception\\TestCase\\Cest::testRememberUserInDbMethod',
     ),
-    67 => 
+    66 => 
     array (
       0 => 'Codeception\\TestCase\\Cest::testLoginFromClassInstance',
     ),
     68 => 
     array (
-      0 => 'Codeception\\TestCase\\Cest::testUserClass',
-      1 => 'Codeception\\TestCase\\Cest::testNotLoggedIn',
-      2 => 'Codeception\\TestCase\\Cest::testFindingUserMethod',
-      3 => 'Codeception\\TestCase\\Cest::testLoginFromClassInstance',
-      4 => 'Codeception\\TestCase\\Cest::testCreatingNewUser',
-      5 => 'Codeception\\TestCase\\Cest::testLoginUserMethodFromExistingData',
-      6 => 'Codeception\\TestCase\\Cest::testLoginUserMethodWithPass',
-      7 => 'Codeception\\TestCase\\Cest::testLoginException',
-      8 => 'Codeception\\TestCase\\Cest::testLogoutMethod',
-      9 => 'Codeception\\TestCase\\Cest::testUpdateMethodLoggedInUser',
-      10 => 'Codeception\\TestCase\\Cest::testUpdateMethodWithId',
-      11 => 'Codeception\\TestCase\\Cest::testUpdateMethodException',
-      12 => 'Codeception\\TestCase\\Cest::testGetDbInstanceMethod',
+      0 => 'Codeception\\TestCase\\Cest::testLoginFromClassInstance',
+      1 => 'Codeception\\TestCase\\Cest::testRememberUserInDbMethod',
     ),
     69 => 
     array (
+      0 => 'Codeception\\TestCase\\Cest::testUserClass',
+      1 => 'Codeception\\TestCase\\Cest::testNotLoggedIn',
+      2 => 'Codeception\\TestCase\\Cest::testFindingUserMethod',
+      3 => 'Codeception\\TestCase\\Cest::testLoginFromClassInstance',
+      4 => 'Codeception\\TestCase\\Cest::testCreatingNewUser',
+      5 => 'Codeception\\TestCase\\Cest::testLoginUserMethodFromExistingData',
+      6 => 'Codeception\\TestCase\\Cest::testLoginUserMethodWithPass',
+      7 => 'Codeception\\TestCase\\Cest::testLoginException',
+      8 => 'Codeception\\TestCase\\Cest::testLoginAttempts',
+      9 => 'Codeception\\TestCase\\Cest::testLogoutMethod',
+      10 => 'Codeception\\TestCase\\Cest::testUpdateMethodLoggedInUser',
+      11 => 'Codeception\\TestCase\\Cest::testUpdateMethodWithId',
+      12 => 'Codeception\\TestCase\\Cest::testUpdateMethodException',
+      13 => 'Codeception\\TestCase\\Cest::testGetDbInstanceMethod',
+      14 => 'Codeception\\TestCase\\Cest::testRememberUserInDbMethod',
+      15 => 'Codeception\\TestCase\\Cest::testRecallUserMethod',
+      16 => 'Codeception\\TestCase\\Cest::testIsAllowedToMethodFailNotLoggedIn',
+      17 => 'Codeception\\TestCase\\Cest::testIsAllowedToMethodFailUnknownAction',
+      18 => 'Codeception\\TestCase\\Cest::testIsAllowedToMethodSuccess',
+      19 => 'Codeception\\TestCase\\Cest::testIsInGroupMethodFailNotLoggedIn',
+      20 => 'Codeception\\TestCase\\Cest::testIsInGroupMethodSuccessNumeric',
+      21 => 'Codeception\\TestCase\\Cest::testIsInGroupMethodFailUnknownGroup',
+      22 => 'Codeception\\TestCase\\Cest::testIsInGroupMethodSuccessNamed',
+    ),
+    70 => 
+    array (
       0 => 'Codeception\\TestCase\\Cest::testLoginFromClassInstance',
     ),
-    71 => 
+    72 => 
     array (
       0 => 'Codeception\\TestCase\\Cest::testUserClass',
       1 => 'Codeception\\TestCase\\Cest::testNotLoggedIn',
@@ -1553,20 +1984,21 @@ $coverage->setData(array (
       5 => 'Codeception\\TestCase\\Cest::testLoginUserMethodFromExistingData',
       6 => 'Codeception\\TestCase\\Cest::testLoginUserMethodWithPass',
       7 => 'Codeception\\TestCase\\Cest::testLoginException',
-      8 => 'Codeception\\TestCase\\Cest::testLogoutMethod',
-      9 => 'Codeception\\TestCase\\Cest::testUpdateMethodLoggedInUser',
-      10 => 'Codeception\\TestCase\\Cest::testUpdateMethodWithId',
-      11 => 'Codeception\\TestCase\\Cest::testUpdateMethodException',
-      12 => 'Codeception\\TestCase\\Cest::testGetDbInstanceMethod',
-    ),
-    79 => 
-    array (
-      0 => 'Codeception\\TestCase\\Cest::testFindingUserMethod',
-      1 => 'Codeception\\TestCase\\Cest::testLoginFromClassInstance',
-      2 => 'Codeception\\TestCase\\Cest::testLoginUserMethodFromExistingData',
-      3 => 'Codeception\\TestCase\\Cest::testLoginUserMethodWithPass',
-      4 => 'Codeception\\TestCase\\Cest::testLogoutMethod',
-      5 => 'Codeception\\TestCase\\Cest::testUpdateMethodLoggedInUser',
+      8 => 'Codeception\\TestCase\\Cest::testLoginAttempts',
+      9 => 'Codeception\\TestCase\\Cest::testLogoutMethod',
+      10 => 'Codeception\\TestCase\\Cest::testUpdateMethodLoggedInUser',
+      11 => 'Codeception\\TestCase\\Cest::testUpdateMethodWithId',
+      12 => 'Codeception\\TestCase\\Cest::testUpdateMethodException',
+      13 => 'Codeception\\TestCase\\Cest::testGetDbInstanceMethod',
+      14 => 'Codeception\\TestCase\\Cest::testRememberUserInDbMethod',
+      15 => 'Codeception\\TestCase\\Cest::testRecallUserMethod',
+      16 => 'Codeception\\TestCase\\Cest::testIsAllowedToMethodFailNotLoggedIn',
+      17 => 'Codeception\\TestCase\\Cest::testIsAllowedToMethodFailUnknownAction',
+      18 => 'Codeception\\TestCase\\Cest::testIsAllowedToMethodSuccess',
+      19 => 'Codeception\\TestCase\\Cest::testIsInGroupMethodFailNotLoggedIn',
+      20 => 'Codeception\\TestCase\\Cest::testIsInGroupMethodSuccessNumeric',
+      21 => 'Codeception\\TestCase\\Cest::testIsInGroupMethodFailUnknownGroup',
+      22 => 'Codeception\\TestCase\\Cest::testIsInGroupMethodSuccessNamed',
     ),
     80 => 
     array (
@@ -1574,26 +2006,47 @@ $coverage->setData(array (
       1 => 'Codeception\\TestCase\\Cest::testLoginFromClassInstance',
       2 => 'Codeception\\TestCase\\Cest::testLoginUserMethodFromExistingData',
       3 => 'Codeception\\TestCase\\Cest::testLoginUserMethodWithPass',
-      4 => 'Codeception\\TestCase\\Cest::testLogoutMethod',
-      5 => 'Codeception\\TestCase\\Cest::testUpdateMethodLoggedInUser',
+      4 => 'Codeception\\TestCase\\Cest::testLoginAttempts',
+      5 => 'Codeception\\TestCase\\Cest::testLogoutMethod',
+      6 => 'Codeception\\TestCase\\Cest::testUpdateMethodLoggedInUser',
+      7 => 'Codeception\\TestCase\\Cest::testRememberUserInDbMethod',
+      8 => 'Codeception\\TestCase\\Cest::testIsAllowedToMethodFailUnknownAction',
+      9 => 'Codeception\\TestCase\\Cest::testIsAllowedToMethodSuccess',
+      10 => 'Codeception\\TestCase\\Cest::testIsInGroupMethodSuccessNumeric',
+      11 => 'Codeception\\TestCase\\Cest::testIsInGroupMethodFailUnknownGroup',
+      12 => 'Codeception\\TestCase\\Cest::testIsInGroupMethodSuccessNamed',
     ),
-    82 => 
+    81 => 
     array (
       0 => 'Codeception\\TestCase\\Cest::testFindingUserMethod',
       1 => 'Codeception\\TestCase\\Cest::testLoginFromClassInstance',
       2 => 'Codeception\\TestCase\\Cest::testLoginUserMethodFromExistingData',
       3 => 'Codeception\\TestCase\\Cest::testLoginUserMethodWithPass',
-      4 => 'Codeception\\TestCase\\Cest::testLogoutMethod',
-      5 => 'Codeception\\TestCase\\Cest::testUpdateMethodLoggedInUser',
+      4 => 'Codeception\\TestCase\\Cest::testLoginAttempts',
+      5 => 'Codeception\\TestCase\\Cest::testLogoutMethod',
+      6 => 'Codeception\\TestCase\\Cest::testUpdateMethodLoggedInUser',
+      7 => 'Codeception\\TestCase\\Cest::testRememberUserInDbMethod',
+      8 => 'Codeception\\TestCase\\Cest::testIsAllowedToMethodFailUnknownAction',
+      9 => 'Codeception\\TestCase\\Cest::testIsAllowedToMethodSuccess',
+      10 => 'Codeception\\TestCase\\Cest::testIsInGroupMethodSuccessNumeric',
+      11 => 'Codeception\\TestCase\\Cest::testIsInGroupMethodFailUnknownGroup',
+      12 => 'Codeception\\TestCase\\Cest::testIsInGroupMethodSuccessNamed',
     ),
-    84 => 
+    83 => 
     array (
       0 => 'Codeception\\TestCase\\Cest::testFindingUserMethod',
       1 => 'Codeception\\TestCase\\Cest::testLoginFromClassInstance',
       2 => 'Codeception\\TestCase\\Cest::testLoginUserMethodFromExistingData',
       3 => 'Codeception\\TestCase\\Cest::testLoginUserMethodWithPass',
-      4 => 'Codeception\\TestCase\\Cest::testLogoutMethod',
-      5 => 'Codeception\\TestCase\\Cest::testUpdateMethodLoggedInUser',
+      4 => 'Codeception\\TestCase\\Cest::testLoginAttempts',
+      5 => 'Codeception\\TestCase\\Cest::testLogoutMethod',
+      6 => 'Codeception\\TestCase\\Cest::testUpdateMethodLoggedInUser',
+      7 => 'Codeception\\TestCase\\Cest::testRememberUserInDbMethod',
+      8 => 'Codeception\\TestCase\\Cest::testIsAllowedToMethodFailUnknownAction',
+      9 => 'Codeception\\TestCase\\Cest::testIsAllowedToMethodSuccess',
+      10 => 'Codeception\\TestCase\\Cest::testIsInGroupMethodSuccessNumeric',
+      11 => 'Codeception\\TestCase\\Cest::testIsInGroupMethodFailUnknownGroup',
+      12 => 'Codeception\\TestCase\\Cest::testIsInGroupMethodSuccessNamed',
     ),
     85 => 
     array (
@@ -1601,8 +2054,15 @@ $coverage->setData(array (
       1 => 'Codeception\\TestCase\\Cest::testLoginFromClassInstance',
       2 => 'Codeception\\TestCase\\Cest::testLoginUserMethodFromExistingData',
       3 => 'Codeception\\TestCase\\Cest::testLoginUserMethodWithPass',
-      4 => 'Codeception\\TestCase\\Cest::testLogoutMethod',
-      5 => 'Codeception\\TestCase\\Cest::testUpdateMethodLoggedInUser',
+      4 => 'Codeception\\TestCase\\Cest::testLoginAttempts',
+      5 => 'Codeception\\TestCase\\Cest::testLogoutMethod',
+      6 => 'Codeception\\TestCase\\Cest::testUpdateMethodLoggedInUser',
+      7 => 'Codeception\\TestCase\\Cest::testRememberUserInDbMethod',
+      8 => 'Codeception\\TestCase\\Cest::testIsAllowedToMethodFailUnknownAction',
+      9 => 'Codeception\\TestCase\\Cest::testIsAllowedToMethodSuccess',
+      10 => 'Codeception\\TestCase\\Cest::testIsInGroupMethodSuccessNumeric',
+      11 => 'Codeception\\TestCase\\Cest::testIsInGroupMethodFailUnknownGroup',
+      12 => 'Codeception\\TestCase\\Cest::testIsInGroupMethodSuccessNamed',
     ),
     86 => 
     array (
@@ -1610,73 +2070,113 @@ $coverage->setData(array (
       1 => 'Codeception\\TestCase\\Cest::testLoginFromClassInstance',
       2 => 'Codeception\\TestCase\\Cest::testLoginUserMethodFromExistingData',
       3 => 'Codeception\\TestCase\\Cest::testLoginUserMethodWithPass',
-      4 => 'Codeception\\TestCase\\Cest::testLogoutMethod',
-      5 => 'Codeception\\TestCase\\Cest::testUpdateMethodLoggedInUser',
+      4 => 'Codeception\\TestCase\\Cest::testLoginAttempts',
+      5 => 'Codeception\\TestCase\\Cest::testLogoutMethod',
+      6 => 'Codeception\\TestCase\\Cest::testUpdateMethodLoggedInUser',
+      7 => 'Codeception\\TestCase\\Cest::testRememberUserInDbMethod',
+      8 => 'Codeception\\TestCase\\Cest::testIsAllowedToMethodFailUnknownAction',
+      9 => 'Codeception\\TestCase\\Cest::testIsAllowedToMethodSuccess',
+      10 => 'Codeception\\TestCase\\Cest::testIsInGroupMethodSuccessNumeric',
+      11 => 'Codeception\\TestCase\\Cest::testIsInGroupMethodFailUnknownGroup',
+      12 => 'Codeception\\TestCase\\Cest::testIsInGroupMethodSuccessNamed',
     ),
-    87 => NULL,
-    88 => 
+    87 => 
+    array (
+      0 => 'Codeception\\TestCase\\Cest::testFindingUserMethod',
+      1 => 'Codeception\\TestCase\\Cest::testLoginFromClassInstance',
+      2 => 'Codeception\\TestCase\\Cest::testLoginUserMethodFromExistingData',
+      3 => 'Codeception\\TestCase\\Cest::testLoginUserMethodWithPass',
+      4 => 'Codeception\\TestCase\\Cest::testLoginAttempts',
+      5 => 'Codeception\\TestCase\\Cest::testLogoutMethod',
+      6 => 'Codeception\\TestCase\\Cest::testUpdateMethodLoggedInUser',
+      7 => 'Codeception\\TestCase\\Cest::testRememberUserInDbMethod',
+      8 => 'Codeception\\TestCase\\Cest::testIsAllowedToMethodFailUnknownAction',
+      9 => 'Codeception\\TestCase\\Cest::testIsAllowedToMethodSuccess',
+      10 => 'Codeception\\TestCase\\Cest::testIsInGroupMethodSuccessNumeric',
+      11 => 'Codeception\\TestCase\\Cest::testIsInGroupMethodFailUnknownGroup',
+      12 => 'Codeception\\TestCase\\Cest::testIsInGroupMethodSuccessNamed',
+    ),
+    88 => NULL,
+    89 => 
     array (
       0 => 'Codeception\\TestCase\\Cest::testFindingUserMethod',
       1 => 'Codeception\\TestCase\\Cest::testLoginFromClassInstance',
       2 => 'Codeception\\TestCase\\Cest::testLoginUserMethodWithPass',
     ),
-    90 => NULL,
-    103 => 
+    91 => NULL,
+    104 => 
     array (
       0 => 'Codeception\\TestCase\\Cest::testCreatingNewUser',
       1 => 'Codeception\\TestCase\\Cest::testUpdateMethodLoggedInUser',
       2 => 'Codeception\\TestCase\\Cest::testUpdateMethodWithId',
     ),
-    105 => 
+    106 => 
     array (
       0 => 'Codeception\\TestCase\\Cest::testCreatingNewUser',
       1 => 'Codeception\\TestCase\\Cest::testUpdateMethodLoggedInUser',
       2 => 'Codeception\\TestCase\\Cest::testUpdateMethodWithId',
     ),
-    107 => 
+    108 => 
     array (
       0 => 'Codeception\\TestCase\\Cest::testCreatingNewUser',
       1 => 'Codeception\\TestCase\\Cest::testUpdateMethodLoggedInUser',
       2 => 'Codeception\\TestCase\\Cest::testUpdateMethodWithId',
     ),
-    108 => NULL,
-    120 => 
-    array (
-      0 => 'Codeception\\TestCase\\Cest::testLoginUserMethodFromExistingData',
-      1 => 'Codeception\\TestCase\\Cest::testLoginUserMethodWithPass',
-      2 => 'Codeception\\TestCase\\Cest::testLoginException',
-      3 => 'Codeception\\TestCase\\Cest::testLogoutMethod',
-      4 => 'Codeception\\TestCase\\Cest::testUpdateMethodLoggedInUser',
-    ),
+    109 => NULL,
     121 => 
     array (
       0 => 'Codeception\\TestCase\\Cest::testLoginUserMethodFromExistingData',
       1 => 'Codeception\\TestCase\\Cest::testLoginUserMethodWithPass',
       2 => 'Codeception\\TestCase\\Cest::testLoginException',
-      3 => 'Codeception\\TestCase\\Cest::testLogoutMethod',
-      4 => 'Codeception\\TestCase\\Cest::testUpdateMethodLoggedInUser',
+      3 => 'Codeception\\TestCase\\Cest::testLoginAttempts',
+      4 => 'Codeception\\TestCase\\Cest::testLogoutMethod',
+      5 => 'Codeception\\TestCase\\Cest::testUpdateMethodLoggedInUser',
+      6 => 'Codeception\\TestCase\\Cest::testRememberUserInDbMethod',
+      7 => 'Codeception\\TestCase\\Cest::testIsAllowedToMethodFailUnknownAction',
+      8 => 'Codeception\\TestCase\\Cest::testIsAllowedToMethodSuccess',
+      9 => 'Codeception\\TestCase\\Cest::testIsInGroupMethodSuccessNumeric',
+      10 => 'Codeception\\TestCase\\Cest::testIsInGroupMethodFailUnknownGroup',
+      11 => 'Codeception\\TestCase\\Cest::testIsInGroupMethodSuccessNamed',
     ),
-    124 => 
+    122 => 
     array (
       0 => 'Codeception\\TestCase\\Cest::testLoginUserMethodFromExistingData',
       1 => 'Codeception\\TestCase\\Cest::testLoginUserMethodWithPass',
       2 => 'Codeception\\TestCase\\Cest::testLoginException',
-      3 => 'Codeception\\TestCase\\Cest::testLogoutMethod',
-      4 => 'Codeception\\TestCase\\Cest::testUpdateMethodLoggedInUser',
+      3 => 'Codeception\\TestCase\\Cest::testLoginAttempts',
+      4 => 'Codeception\\TestCase\\Cest::testLogoutMethod',
+      5 => 'Codeception\\TestCase\\Cest::testUpdateMethodLoggedInUser',
+      6 => 'Codeception\\TestCase\\Cest::testRememberUserInDbMethod',
+      7 => 'Codeception\\TestCase\\Cest::testIsAllowedToMethodFailUnknownAction',
+      8 => 'Codeception\\TestCase\\Cest::testIsAllowedToMethodSuccess',
+      9 => 'Codeception\\TestCase\\Cest::testIsInGroupMethodSuccessNumeric',
+      10 => 'Codeception\\TestCase\\Cest::testIsInGroupMethodFailUnknownGroup',
+      11 => 'Codeception\\TestCase\\Cest::testIsInGroupMethodSuccessNamed',
     ),
-    127 => 
+    125 => 
     array (
       0 => 'Codeception\\TestCase\\Cest::testLoginUserMethodFromExistingData',
+      1 => 'Codeception\\TestCase\\Cest::testLoginUserMethodWithPass',
+      2 => 'Codeception\\TestCase\\Cest::testLoginException',
+      3 => 'Codeception\\TestCase\\Cest::testLoginAttempts',
+      4 => 'Codeception\\TestCase\\Cest::testLogoutMethod',
+      5 => 'Codeception\\TestCase\\Cest::testUpdateMethodLoggedInUser',
+      6 => 'Codeception\\TestCase\\Cest::testRememberUserInDbMethod',
+      7 => 'Codeception\\TestCase\\Cest::testIsAllowedToMethodFailUnknownAction',
+      8 => 'Codeception\\TestCase\\Cest::testIsAllowedToMethodSuccess',
+      9 => 'Codeception\\TestCase\\Cest::testIsInGroupMethodSuccessNumeric',
+      10 => 'Codeception\\TestCase\\Cest::testIsInGroupMethodFailUnknownGroup',
+      11 => 'Codeception\\TestCase\\Cest::testIsInGroupMethodSuccessNamed',
     ),
     128 => 
     array (
       0 => 'Codeception\\TestCase\\Cest::testLoginUserMethodFromExistingData',
     ),
-    129 => NULL,
-    131 => 
+    129 => 
     array (
       0 => 'Codeception\\TestCase\\Cest::testLoginUserMethodFromExistingData',
     ),
+    130 => NULL,
     132 => 
     array (
       0 => 'Codeception\\TestCase\\Cest::testLoginUserMethodFromExistingData',
@@ -1689,180 +2189,286 @@ $coverage->setData(array (
     array (
       0 => 'Codeception\\TestCase\\Cest::testLoginUserMethodFromExistingData',
     ),
-    136 => NULL,
-    137 => 
+    135 => 
+    array (
+      0 => 'Codeception\\TestCase\\Cest::testLoginUserMethodFromExistingData',
+    ),
+    137 => NULL,
+    138 => 
     array (
       0 => 'Codeception\\TestCase\\Cest::testLoginUserMethodWithPass',
       1 => 'Codeception\\TestCase\\Cest::testLoginException',
+      2 => 'Codeception\\TestCase\\Cest::testLoginAttempts',
+      3 => 'Codeception\\TestCase\\Cest::testLogoutMethod',
+      4 => 'Codeception\\TestCase\\Cest::testUpdateMethodLoggedInUser',
+      5 => 'Codeception\\TestCase\\Cest::testRememberUserInDbMethod',
+      6 => 'Codeception\\TestCase\\Cest::testIsAllowedToMethodFailUnknownAction',
+      7 => 'Codeception\\TestCase\\Cest::testIsAllowedToMethodSuccess',
+      8 => 'Codeception\\TestCase\\Cest::testIsInGroupMethodSuccessNumeric',
+      9 => 'Codeception\\TestCase\\Cest::testIsInGroupMethodFailUnknownGroup',
+      10 => 'Codeception\\TestCase\\Cest::testIsInGroupMethodSuccessNamed',
+    ),
+    140 => 
+    array (
+      0 => 'Codeception\\TestCase\\Cest::testLoginUserMethodWithPass',
+      1 => 'Codeception\\TestCase\\Cest::testLoginAttempts',
       2 => 'Codeception\\TestCase\\Cest::testLogoutMethod',
       3 => 'Codeception\\TestCase\\Cest::testUpdateMethodLoggedInUser',
+      4 => 'Codeception\\TestCase\\Cest::testRememberUserInDbMethod',
+      5 => 'Codeception\\TestCase\\Cest::testIsAllowedToMethodFailUnknownAction',
+      6 => 'Codeception\\TestCase\\Cest::testIsAllowedToMethodSuccess',
+      7 => 'Codeception\\TestCase\\Cest::testIsInGroupMethodSuccessNumeric',
+      8 => 'Codeception\\TestCase\\Cest::testIsInGroupMethodFailUnknownGroup',
+      9 => 'Codeception\\TestCase\\Cest::testIsInGroupMethodSuccessNamed',
     ),
-    139 => 
+    142 => 
     array (
       0 => 'Codeception\\TestCase\\Cest::testLoginUserMethodWithPass',
-      1 => 'Codeception\\TestCase\\Cest::testLogoutMethod',
-      2 => 'Codeception\\TestCase\\Cest::testUpdateMethodLoggedInUser',
+      1 => 'Codeception\\TestCase\\Cest::testLoginAttempts',
+      2 => 'Codeception\\TestCase\\Cest::testLogoutMethod',
+      3 => 'Codeception\\TestCase\\Cest::testUpdateMethodLoggedInUser',
+      4 => 'Codeception\\TestCase\\Cest::testRememberUserInDbMethod',
+      5 => 'Codeception\\TestCase\\Cest::testIsAllowedToMethodFailUnknownAction',
+      6 => 'Codeception\\TestCase\\Cest::testIsAllowedToMethodSuccess',
+      7 => 'Codeception\\TestCase\\Cest::testIsInGroupMethodSuccessNumeric',
+      8 => 'Codeception\\TestCase\\Cest::testIsInGroupMethodFailUnknownGroup',
+      9 => 'Codeception\\TestCase\\Cest::testIsInGroupMethodSuccessNamed',
     ),
-    141 => 
+    145 => 
     array (
       0 => 'Codeception\\TestCase\\Cest::testLoginUserMethodWithPass',
-      1 => 'Codeception\\TestCase\\Cest::testLogoutMethod',
-      2 => 'Codeception\\TestCase\\Cest::testUpdateMethodLoggedInUser',
-    ),
-    144 => 
-    array (
-      0 => 'Codeception\\TestCase\\Cest::testLoginUserMethodWithPass',
-      1 => 'Codeception\\TestCase\\Cest::testLogoutMethod',
-      2 => 'Codeception\\TestCase\\Cest::testUpdateMethodLoggedInUser',
-    ),
-    146 => 
-    array (
-      0 => 'Codeception\\TestCase\\Cest::testLoginUserMethodWithPass',
-      1 => 'Codeception\\TestCase\\Cest::testLogoutMethod',
-      2 => 'Codeception\\TestCase\\Cest::testUpdateMethodLoggedInUser',
+      1 => 'Codeception\\TestCase\\Cest::testLoginAttempts',
+      2 => 'Codeception\\TestCase\\Cest::testLogoutMethod',
+      3 => 'Codeception\\TestCase\\Cest::testUpdateMethodLoggedInUser',
+      4 => 'Codeception\\TestCase\\Cest::testRememberUserInDbMethod',
+      5 => 'Codeception\\TestCase\\Cest::testIsAllowedToMethodFailUnknownAction',
+      6 => 'Codeception\\TestCase\\Cest::testIsAllowedToMethodSuccess',
+      7 => 'Codeception\\TestCase\\Cest::testIsInGroupMethodSuccessNumeric',
+      8 => 'Codeception\\TestCase\\Cest::testIsInGroupMethodFailUnknownGroup',
+      9 => 'Codeception\\TestCase\\Cest::testIsInGroupMethodSuccessNamed',
     ),
     147 => 
     array (
+      0 => 'Codeception\\TestCase\\Cest::testLoginUserMethodWithPass',
+      1 => 'Codeception\\TestCase\\Cest::testLoginAttempts',
+      2 => 'Codeception\\TestCase\\Cest::testLogoutMethod',
+      3 => 'Codeception\\TestCase\\Cest::testUpdateMethodLoggedInUser',
+      4 => 'Codeception\\TestCase\\Cest::testRememberUserInDbMethod',
+      5 => 'Codeception\\TestCase\\Cest::testIsAllowedToMethodFailUnknownAction',
+      6 => 'Codeception\\TestCase\\Cest::testIsAllowedToMethodSuccess',
+      7 => 'Codeception\\TestCase\\Cest::testIsInGroupMethodSuccessNumeric',
+      8 => 'Codeception\\TestCase\\Cest::testIsInGroupMethodFailUnknownGroup',
+      9 => 'Codeception\\TestCase\\Cest::testIsInGroupMethodSuccessNamed',
     ),
-    150 => 
+    148 => 
     array (
+      0 => 'Codeception\\TestCase\\Cest::testLoginAttempts',
     ),
-    152 => 
+    151 => 
     array (
+      0 => 'Codeception\\TestCase\\Cest::testLoginAttempts',
     ),
     153 => 
     array (
+      0 => 'Codeception\\TestCase\\Cest::testLoginAttempts',
     ),
     154 => 
     array (
+      0 => 'Codeception\\TestCase\\Cest::testLoginAttempts',
     ),
-    156 => 
+    155 => 
     array (
+      0 => 'Codeception\\TestCase\\Cest::testLoginAttempts',
     ),
     157 => 
     array (
+      0 => 'Codeception\\TestCase\\Cest::testLoginAttempts',
     ),
-    158 => NULL,
+    158 => 
+    array (
+      0 => 'Codeception\\TestCase\\Cest::testLoginAttempts',
+    ),
     159 => 
     array (
+      0 => 'Codeception\\TestCase\\Cest::testLoginAttempts',
     ),
-    160 => 
+    160 => NULL,
+    161 => 
     array (
     ),
     162 => 
     array (
-      0 => 'Codeception\\TestCase\\Cest::testLoginUserMethodWithPass',
-      1 => 'Codeception\\TestCase\\Cest::testLogoutMethod',
-      2 => 'Codeception\\TestCase\\Cest::testUpdateMethodLoggedInUser',
+      0 => 'Codeception\\TestCase\\Cest::testLoginAttempts',
     ),
-    163 => 
+    164 => 
     array (
       0 => 'Codeception\\TestCase\\Cest::testLoginUserMethodWithPass',
-      1 => 'Codeception\\TestCase\\Cest::testLogoutMethod',
-      2 => 'Codeception\\TestCase\\Cest::testUpdateMethodLoggedInUser',
+      1 => 'Codeception\\TestCase\\Cest::testLoginAttempts',
+      2 => 'Codeception\\TestCase\\Cest::testLogoutMethod',
+      3 => 'Codeception\\TestCase\\Cest::testUpdateMethodLoggedInUser',
+      4 => 'Codeception\\TestCase\\Cest::testRememberUserInDbMethod',
+      5 => 'Codeception\\TestCase\\Cest::testIsAllowedToMethodFailUnknownAction',
+      6 => 'Codeception\\TestCase\\Cest::testIsAllowedToMethodSuccess',
+      7 => 'Codeception\\TestCase\\Cest::testIsInGroupMethodSuccessNumeric',
+      8 => 'Codeception\\TestCase\\Cest::testIsInGroupMethodFailUnknownGroup',
+      9 => 'Codeception\\TestCase\\Cest::testIsInGroupMethodSuccessNamed',
     ),
-    166 => 
+    165 => 
     array (
       0 => 'Codeception\\TestCase\\Cest::testLoginUserMethodWithPass',
-      1 => 'Codeception\\TestCase\\Cest::testLogoutMethod',
-      2 => 'Codeception\\TestCase\\Cest::testUpdateMethodLoggedInUser',
+      1 => 'Codeception\\TestCase\\Cest::testLoginAttempts',
+      2 => 'Codeception\\TestCase\\Cest::testLogoutMethod',
+      3 => 'Codeception\\TestCase\\Cest::testUpdateMethodLoggedInUser',
+      4 => 'Codeception\\TestCase\\Cest::testRememberUserInDbMethod',
+      5 => 'Codeception\\TestCase\\Cest::testIsAllowedToMethodFailUnknownAction',
+      6 => 'Codeception\\TestCase\\Cest::testIsAllowedToMethodSuccess',
+      7 => 'Codeception\\TestCase\\Cest::testIsInGroupMethodSuccessNumeric',
+      8 => 'Codeception\\TestCase\\Cest::testIsInGroupMethodFailUnknownGroup',
+      9 => 'Codeception\\TestCase\\Cest::testIsInGroupMethodSuccessNamed',
     ),
-    169 => 
+    168 => 
     array (
       0 => 'Codeception\\TestCase\\Cest::testLoginUserMethodWithPass',
-      1 => 'Codeception\\TestCase\\Cest::testLogoutMethod',
-      2 => 'Codeception\\TestCase\\Cest::testUpdateMethodLoggedInUser',
+      1 => 'Codeception\\TestCase\\Cest::testLoginAttempts',
+      2 => 'Codeception\\TestCase\\Cest::testLogoutMethod',
+      3 => 'Codeception\\TestCase\\Cest::testUpdateMethodLoggedInUser',
+      4 => 'Codeception\\TestCase\\Cest::testRememberUserInDbMethod',
+      5 => 'Codeception\\TestCase\\Cest::testIsAllowedToMethodFailUnknownAction',
+      6 => 'Codeception\\TestCase\\Cest::testIsAllowedToMethodSuccess',
+      7 => 'Codeception\\TestCase\\Cest::testIsInGroupMethodSuccessNumeric',
+      8 => 'Codeception\\TestCase\\Cest::testIsInGroupMethodFailUnknownGroup',
+      9 => 'Codeception\\TestCase\\Cest::testIsInGroupMethodSuccessNamed',
     ),
     171 => 
     array (
       0 => 'Codeception\\TestCase\\Cest::testLoginUserMethodWithPass',
       1 => 'Codeception\\TestCase\\Cest::testLogoutMethod',
       2 => 'Codeception\\TestCase\\Cest::testUpdateMethodLoggedInUser',
-    ),
-    172 => 
-    array (
-      0 => 'Codeception\\TestCase\\Cest::testLoginUserMethodWithPass',
-      1 => 'Codeception\\TestCase\\Cest::testLogoutMethod',
-      2 => 'Codeception\\TestCase\\Cest::testUpdateMethodLoggedInUser',
+      3 => 'Codeception\\TestCase\\Cest::testRememberUserInDbMethod',
+      4 => 'Codeception\\TestCase\\Cest::testIsAllowedToMethodFailUnknownAction',
+      5 => 'Codeception\\TestCase\\Cest::testIsAllowedToMethodSuccess',
+      6 => 'Codeception\\TestCase\\Cest::testIsInGroupMethodSuccessNumeric',
+      7 => 'Codeception\\TestCase\\Cest::testIsInGroupMethodFailUnknownGroup',
+      8 => 'Codeception\\TestCase\\Cest::testIsInGroupMethodSuccessNamed',
     ),
     173 => 
     array (
       0 => 'Codeception\\TestCase\\Cest::testLoginUserMethodWithPass',
       1 => 'Codeception\\TestCase\\Cest::testLogoutMethod',
       2 => 'Codeception\\TestCase\\Cest::testUpdateMethodLoggedInUser',
+      3 => 'Codeception\\TestCase\\Cest::testRememberUserInDbMethod',
+      4 => 'Codeception\\TestCase\\Cest::testIsAllowedToMethodFailUnknownAction',
+      5 => 'Codeception\\TestCase\\Cest::testIsAllowedToMethodSuccess',
+      6 => 'Codeception\\TestCase\\Cest::testIsInGroupMethodSuccessNumeric',
+      7 => 'Codeception\\TestCase\\Cest::testIsInGroupMethodFailUnknownGroup',
+      8 => 'Codeception\\TestCase\\Cest::testIsInGroupMethodSuccessNamed',
     ),
     174 => 
     array (
       0 => 'Codeception\\TestCase\\Cest::testLoginUserMethodWithPass',
       1 => 'Codeception\\TestCase\\Cest::testLogoutMethod',
       2 => 'Codeception\\TestCase\\Cest::testUpdateMethodLoggedInUser',
+      3 => 'Codeception\\TestCase\\Cest::testRememberUserInDbMethod',
+      4 => 'Codeception\\TestCase\\Cest::testIsAllowedToMethodFailUnknownAction',
+      5 => 'Codeception\\TestCase\\Cest::testIsAllowedToMethodSuccess',
+      6 => 'Codeception\\TestCase\\Cest::testIsInGroupMethodSuccessNumeric',
+      7 => 'Codeception\\TestCase\\Cest::testIsInGroupMethodFailUnknownGroup',
+      8 => 'Codeception\\TestCase\\Cest::testIsInGroupMethodSuccessNamed',
     ),
     175 => 
     array (
       0 => 'Codeception\\TestCase\\Cest::testLoginUserMethodWithPass',
       1 => 'Codeception\\TestCase\\Cest::testLogoutMethod',
       2 => 'Codeception\\TestCase\\Cest::testUpdateMethodLoggedInUser',
+      3 => 'Codeception\\TestCase\\Cest::testRememberUserInDbMethod',
+      4 => 'Codeception\\TestCase\\Cest::testIsAllowedToMethodFailUnknownAction',
+      5 => 'Codeception\\TestCase\\Cest::testIsAllowedToMethodSuccess',
+      6 => 'Codeception\\TestCase\\Cest::testIsInGroupMethodSuccessNumeric',
+      7 => 'Codeception\\TestCase\\Cest::testIsInGroupMethodFailUnknownGroup',
+      8 => 'Codeception\\TestCase\\Cest::testIsInGroupMethodSuccessNamed',
     ),
-    176 => NULL,
-    178 => 
+    176 => 
+    array (
+      0 => 'Codeception\\TestCase\\Cest::testLoginUserMethodWithPass',
+      1 => 'Codeception\\TestCase\\Cest::testLogoutMethod',
+      2 => 'Codeception\\TestCase\\Cest::testUpdateMethodLoggedInUser',
+      3 => 'Codeception\\TestCase\\Cest::testRememberUserInDbMethod',
+      4 => 'Codeception\\TestCase\\Cest::testIsAllowedToMethodFailUnknownAction',
+      5 => 'Codeception\\TestCase\\Cest::testIsAllowedToMethodSuccess',
+      6 => 'Codeception\\TestCase\\Cest::testIsInGroupMethodSuccessNumeric',
+      7 => 'Codeception\\TestCase\\Cest::testIsInGroupMethodFailUnknownGroup',
+      8 => 'Codeception\\TestCase\\Cest::testIsInGroupMethodSuccessNamed',
+    ),
+    177 => 
+    array (
+      0 => 'Codeception\\TestCase\\Cest::testLoginUserMethodWithPass',
+      1 => 'Codeception\\TestCase\\Cest::testLogoutMethod',
+      2 => 'Codeception\\TestCase\\Cest::testUpdateMethodLoggedInUser',
+      3 => 'Codeception\\TestCase\\Cest::testRememberUserInDbMethod',
+      4 => 'Codeception\\TestCase\\Cest::testIsAllowedToMethodFailUnknownAction',
+      5 => 'Codeception\\TestCase\\Cest::testIsAllowedToMethodSuccess',
+      6 => 'Codeception\\TestCase\\Cest::testIsInGroupMethodSuccessNumeric',
+      7 => 'Codeception\\TestCase\\Cest::testIsInGroupMethodFailUnknownGroup',
+      8 => 'Codeception\\TestCase\\Cest::testIsInGroupMethodSuccessNamed',
+    ),
+    178 => NULL,
+    180 => 
+    array (
+      0 => 'Codeception\\TestCase\\Cest::testLoginUserMethodWithPass',
+      1 => 'Codeception\\TestCase\\Cest::testLoginAttempts',
+    ),
+    183 => 
+    array (
+      0 => 'Codeception\\TestCase\\Cest::testLoginUserMethodWithPass',
+      1 => 'Codeception\\TestCase\\Cest::testLoginAttempts',
+    ),
+    184 => 
+    array (
+      0 => 'Codeception\\TestCase\\Cest::testLoginUserMethodWithPass',
+      1 => 'Codeception\\TestCase\\Cest::testLoginAttempts',
+    ),
+    188 => 
+    array (
+      0 => 'Codeception\\TestCase\\Cest::testLoginUserMethodWithPass',
+      1 => 'Codeception\\TestCase\\Cest::testLoginAttempts',
+    ),
+    189 => 
+    array (
+      0 => 'Codeception\\TestCase\\Cest::testLoginUserMethodWithPass',
+      1 => 'Codeception\\TestCase\\Cest::testLoginAttempts',
+    ),
+    191 => NULL,
+    193 => 
     array (
       0 => 'Codeception\\TestCase\\Cest::testLoginUserMethodWithPass',
     ),
-    181 => 
-    array (
-      0 => 'Codeception\\TestCase\\Cest::testLoginUserMethodWithPass',
-    ),
-    182 => 
-    array (
-      0 => 'Codeception\\TestCase\\Cest::testLoginUserMethodWithPass',
-    ),
-    186 => 
-    array (
-      0 => 'Codeception\\TestCase\\Cest::testLoginUserMethodWithPass',
-    ),
-    187 => 
-    array (
-      0 => 'Codeception\\TestCase\\Cest::testLoginUserMethodWithPass',
-    ),
-    189 => NULL,
-    191 => 
-    array (
-      0 => 'Codeception\\TestCase\\Cest::testLoginUserMethodWithPass',
-    ),
-    193 => NULL,
-    195 => 
+    195 => NULL,
+    197 => 
     array (
       0 => 'Codeception\\TestCase\\Cest::testLoginException',
     ),
-    198 => 
+    200 => 
     array (
       0 => 'Codeception\\TestCase\\Cest::testLoginUserMethodFromExistingData',
       1 => 'Codeception\\TestCase\\Cest::testLoginUserMethodWithPass',
-      2 => 'Codeception\\TestCase\\Cest::testLogoutMethod',
-      3 => 'Codeception\\TestCase\\Cest::testUpdateMethodLoggedInUser',
+      2 => 'Codeception\\TestCase\\Cest::testLoginAttempts',
+      3 => 'Codeception\\TestCase\\Cest::testLogoutMethod',
+      4 => 'Codeception\\TestCase\\Cest::testUpdateMethodLoggedInUser',
+      5 => 'Codeception\\TestCase\\Cest::testRememberUserInDbMethod',
+      6 => 'Codeception\\TestCase\\Cest::testIsAllowedToMethodFailUnknownAction',
+      7 => 'Codeception\\TestCase\\Cest::testIsAllowedToMethodSuccess',
+      8 => 'Codeception\\TestCase\\Cest::testIsInGroupMethodSuccessNumeric',
+      9 => 'Codeception\\TestCase\\Cest::testIsInGroupMethodFailUnknownGroup',
+      10 => 'Codeception\\TestCase\\Cest::testIsInGroupMethodSuccessNamed',
     ),
-    200 => NULL,
-    207 => 
+    202 => NULL,
+    209 => 
     array (
       0 => 'Codeception\\TestCase\\Cest::testLoginUserMethodFromExistingData',
       1 => 'Codeception\\TestCase\\Cest::testLogoutMethod',
     ),
-    208 => NULL,
-    215 => 
-    array (
-      0 => 'Codeception\\TestCase\\Cest::testLoginFromClassInstance',
-      1 => 'Codeception\\TestCase\\Cest::testLoginUserMethodFromExistingData',
-      2 => 'Codeception\\TestCase\\Cest::testLoginUserMethodWithPass',
-      3 => 'Codeception\\TestCase\\Cest::testLogoutMethod',
-    ),
+    210 => NULL,
     217 => 
-    array (
-      0 => 'Codeception\\TestCase\\Cest::testLoginFromClassInstance',
-      1 => 'Codeception\\TestCase\\Cest::testLoginUserMethodFromExistingData',
-      2 => 'Codeception\\TestCase\\Cest::testLoginUserMethodWithPass',
-      3 => 'Codeception\\TestCase\\Cest::testLogoutMethod',
-    ),
-    218 => 
     array (
       0 => 'Codeception\\TestCase\\Cest::testLoginFromClassInstance',
       1 => 'Codeception\\TestCase\\Cest::testLoginUserMethodFromExistingData',
@@ -1883,249 +2489,367 @@ $coverage->setData(array (
       2 => 'Codeception\\TestCase\\Cest::testLoginUserMethodWithPass',
       3 => 'Codeception\\TestCase\\Cest::testLogoutMethod',
     ),
-    230 => 
+    221 => 
+    array (
+      0 => 'Codeception\\TestCase\\Cest::testLoginFromClassInstance',
+      1 => 'Codeception\\TestCase\\Cest::testLoginUserMethodFromExistingData',
+      2 => 'Codeception\\TestCase\\Cest::testLoginUserMethodWithPass',
+      3 => 'Codeception\\TestCase\\Cest::testLogoutMethod',
+    ),
+    222 => 
+    array (
+      0 => 'Codeception\\TestCase\\Cest::testLoginFromClassInstance',
+      1 => 'Codeception\\TestCase\\Cest::testLoginUserMethodFromExistingData',
+      2 => 'Codeception\\TestCase\\Cest::testLoginUserMethodWithPass',
+      3 => 'Codeception\\TestCase\\Cest::testLogoutMethod',
+    ),
+    232 => 
     array (
       0 => 'Codeception\\TestCase\\Cest::testUpdateMethodLoggedInUser',
       1 => 'Codeception\\TestCase\\Cest::testUpdateMethodWithId',
       2 => 'Codeception\\TestCase\\Cest::testUpdateMethodException',
     ),
-    231 => 
-    array (
-      0 => 'Codeception\\TestCase\\Cest::testUpdateMethodLoggedInUser',
-    ),
-    232 => 
-    array (
-      0 => 'Codeception\\TestCase\\Cest::testUpdateMethodLoggedInUser',
-    ),
     233 => 
+    array (
+      0 => 'Codeception\\TestCase\\Cest::testUpdateMethodLoggedInUser',
+    ),
+    234 => 
+    array (
+      0 => 'Codeception\\TestCase\\Cest::testUpdateMethodLoggedInUser',
+    ),
+    235 => 
     array (
       0 => 'Codeception\\TestCase\\Cest::testUpdateMethodWithId',
       1 => 'Codeception\\TestCase\\Cest::testUpdateMethodException',
     ),
-    234 => 
+    236 => 
     array (
       0 => 'Codeception\\TestCase\\Cest::testUpdateMethodException',
     ),
-    235 => NULL,
-    238 => 
-    array (
-      0 => 'Codeception\\TestCase\\Cest::testUpdateMethodLoggedInUser',
-      1 => 'Codeception\\TestCase\\Cest::testUpdateMethodWithId',
-    ),
-    239 => 
-    array (
-      0 => 'Codeception\\TestCase\\Cest::testUpdateMethodLoggedInUser',
-      1 => 'Codeception\\TestCase\\Cest::testUpdateMethodWithId',
-    ),
+    237 => NULL,
     240 => 
     array (
       0 => 'Codeception\\TestCase\\Cest::testUpdateMethodLoggedInUser',
       1 => 'Codeception\\TestCase\\Cest::testUpdateMethodWithId',
     ),
-    247 => 
+    241 => 
+    array (
+      0 => 'Codeception\\TestCase\\Cest::testUpdateMethodLoggedInUser',
+      1 => 'Codeception\\TestCase\\Cest::testUpdateMethodWithId',
+    ),
+    242 => 
+    array (
+      0 => 'Codeception\\TestCase\\Cest::testUpdateMethodLoggedInUser',
+      1 => 'Codeception\\TestCase\\Cest::testUpdateMethodWithId',
+    ),
+    249 => 
     array (
       0 => 'Codeception\\TestCase\\Cest::testFindingUserMethod',
       1 => 'Codeception\\TestCase\\Cest::testLoginFromClassInstance',
       2 => 'Codeception\\TestCase\\Cest::testLoginUserMethodFromExistingData',
       3 => 'Codeception\\TestCase\\Cest::testLoginUserMethodWithPass',
-      4 => 'Codeception\\TestCase\\Cest::testLogoutMethod',
-      5 => 'Codeception\\TestCase\\Cest::testUpdateMethodLoggedInUser',
-      6 => 'Codeception\\TestCase\\Cest::testUpdateMethodException',
+      4 => 'Codeception\\TestCase\\Cest::testLoginAttempts',
+      5 => 'Codeception\\TestCase\\Cest::testLogoutMethod',
+      6 => 'Codeception\\TestCase\\Cest::testUpdateMethodLoggedInUser',
+      7 => 'Codeception\\TestCase\\Cest::testUpdateMethodException',
+      8 => 'Codeception\\TestCase\\Cest::testRememberUserInDbMethod',
+      9 => 'Codeception\\TestCase\\Cest::testIsAllowedToMethodFailUnknownAction',
+      10 => 'Codeception\\TestCase\\Cest::testIsAllowedToMethodSuccess',
+      11 => 'Codeception\\TestCase\\Cest::testIsInGroupMethodSuccessNumeric',
+      12 => 'Codeception\\TestCase\\Cest::testIsInGroupMethodFailUnknownGroup',
+      13 => 'Codeception\\TestCase\\Cest::testIsInGroupMethodSuccessNamed',
     ),
-    248 => NULL,
-    255 => 
+    250 => NULL,
+    257 => 
     array (
       0 => 'Codeception\\TestCase\\Cest::testNotLoggedIn',
       1 => 'Codeception\\TestCase\\Cest::testLoginFromClassInstance',
       2 => 'Codeception\\TestCase\\Cest::testCreatingNewUser',
       3 => 'Codeception\\TestCase\\Cest::testLoginUserMethodFromExistingData',
       4 => 'Codeception\\TestCase\\Cest::testLoginUserMethodWithPass',
-      5 => 'Codeception\\TestCase\\Cest::testLogoutMethod',
-      6 => 'Codeception\\TestCase\\Cest::testUpdateMethodLoggedInUser',
-      7 => 'Codeception\\TestCase\\Cest::testUpdateMethodWithId',
-      8 => 'Codeception\\TestCase\\Cest::testUpdateMethodException',
+      5 => 'Codeception\\TestCase\\Cest::testLoginAttempts',
+      6 => 'Codeception\\TestCase\\Cest::testLogoutMethod',
+      7 => 'Codeception\\TestCase\\Cest::testUpdateMethodLoggedInUser',
+      8 => 'Codeception\\TestCase\\Cest::testUpdateMethodWithId',
+      9 => 'Codeception\\TestCase\\Cest::testUpdateMethodException',
+      10 => 'Codeception\\TestCase\\Cest::testRememberUserInDbMethod',
+      11 => 'Codeception\\TestCase\\Cest::testIsAllowedToMethodFailNotLoggedIn',
+      12 => 'Codeception\\TestCase\\Cest::testIsAllowedToMethodFailUnknownAction',
+      13 => 'Codeception\\TestCase\\Cest::testIsAllowedToMethodSuccess',
+      14 => 'Codeception\\TestCase\\Cest::testIsInGroupMethodFailNotLoggedIn',
+      15 => 'Codeception\\TestCase\\Cest::testIsInGroupMethodSuccessNumeric',
+      16 => 'Codeception\\TestCase\\Cest::testIsInGroupMethodFailUnknownGroup',
+      17 => 'Codeception\\TestCase\\Cest::testIsInGroupMethodSuccessNamed',
     ),
-    256 => NULL,
-    263 => 
+    258 => NULL,
+    265 => 
     array (
       0 => 'Codeception\\TestCase\\Cest::testGetDbInstanceMethod',
     ),
-    264 => NULL,
-    271 => 
+    266 => NULL,
+    273 => 
     array (
       0 => 'Codeception\\TestCase\\Cest::testLoginUserMethodWithPass',
       1 => 'Codeception\\TestCase\\Cest::testLogoutMethod',
       2 => 'Codeception\\TestCase\\Cest::testUpdateMethodLoggedInUser',
-    ),
-    273 => 
-    array (
+      3 => 'Codeception\\TestCase\\Cest::testRememberUserInDbMethod',
+      4 => 'Codeception\\TestCase\\Cest::testIsAllowedToMethodFailUnknownAction',
+      5 => 'Codeception\\TestCase\\Cest::testIsAllowedToMethodSuccess',
+      6 => 'Codeception\\TestCase\\Cest::testIsInGroupMethodSuccessNumeric',
+      7 => 'Codeception\\TestCase\\Cest::testIsInGroupMethodFailUnknownGroup',
+      8 => 'Codeception\\TestCase\\Cest::testIsInGroupMethodSuccessNamed',
     ),
     275 => 
     array (
+      0 => 'Codeception\\TestCase\\Cest::testLogoutMethod',
+      1 => 'Codeception\\TestCase\\Cest::testRememberUserInDbMethod',
     ),
-    278 => 
+    277 => 
     array (
+      0 => 'Codeception\\TestCase\\Cest::testLogoutMethod',
+      1 => 'Codeception\\TestCase\\Cest::testRememberUserInDbMethod',
     ),
     280 => 
     array (
-    ),
-    281 => 
-    array (
+      0 => 'Codeception\\TestCase\\Cest::testLogoutMethod',
+      1 => 'Codeception\\TestCase\\Cest::testRememberUserInDbMethod',
     ),
     282 => 
     array (
+      0 => 'Codeception\\TestCase\\Cest::testLogoutMethod',
+      1 => 'Codeception\\TestCase\\Cest::testRememberUserInDbMethod',
     ),
     283 => 
     array (
+      0 => 'Codeception\\TestCase\\Cest::testLogoutMethod',
+      1 => 'Codeception\\TestCase\\Cest::testRememberUserInDbMethod',
     ),
     284 => 
     array (
+      0 => 'Codeception\\TestCase\\Cest::testLogoutMethod',
+      1 => 'Codeception\\TestCase\\Cest::testRememberUserInDbMethod',
     ),
     285 => 
     array (
+      0 => 'Codeception\\TestCase\\Cest::testLogoutMethod',
+      1 => 'Codeception\\TestCase\\Cest::testRememberUserInDbMethod',
+    ),
+    286 => 
+    array (
+      0 => 'Codeception\\TestCase\\Cest::testLogoutMethod',
+      1 => 'Codeception\\TestCase\\Cest::testRememberUserInDbMethod',
     ),
     287 => 
     array (
+      0 => 'Codeception\\TestCase\\Cest::testLogoutMethod',
+      1 => 'Codeception\\TestCase\\Cest::testRememberUserInDbMethod',
     ),
-    288 => 
+    289 => 
     array (
+      0 => 'Codeception\\TestCase\\Cest::testLogoutMethod',
+      1 => 'Codeception\\TestCase\\Cest::testRememberUserInDbMethod',
     ),
-    291 => 
+    290 => 
     array (
-    ),
-    292 => 
-    array (
+      0 => 'Codeception\\TestCase\\Cest::testRememberUserInDbMethod',
     ),
     293 => 
     array (
+      0 => 'Codeception\\TestCase\\Cest::testLogoutMethod',
+      1 => 'Codeception\\TestCase\\Cest::testRememberUserInDbMethod',
     ),
     294 => 
+    array (
+      0 => 'Codeception\\TestCase\\Cest::testLogoutMethod',
+      1 => 'Codeception\\TestCase\\Cest::testRememberUserInDbMethod',
+    ),
+    295 => 
+    array (
+      0 => 'Codeception\\TestCase\\Cest::testLogoutMethod',
+      1 => 'Codeception\\TestCase\\Cest::testRememberUserInDbMethod',
+    ),
+    296 => 
     array (
       0 => 'Codeception\\TestCase\\Cest::testLoginUserMethodWithPass',
       1 => 'Codeception\\TestCase\\Cest::testLogoutMethod',
       2 => 'Codeception\\TestCase\\Cest::testUpdateMethodLoggedInUser',
-    ),
-    302 => 
-    array (
+      3 => 'Codeception\\TestCase\\Cest::testRememberUserInDbMethod',
+      4 => 'Codeception\\TestCase\\Cest::testIsAllowedToMethodFailUnknownAction',
+      5 => 'Codeception\\TestCase\\Cest::testIsAllowedToMethodSuccess',
+      6 => 'Codeception\\TestCase\\Cest::testIsInGroupMethodSuccessNumeric',
+      7 => 'Codeception\\TestCase\\Cest::testIsInGroupMethodFailUnknownGroup',
+      8 => 'Codeception\\TestCase\\Cest::testIsInGroupMethodSuccessNamed',
     ),
     304 => 
     array (
+      0 => 'Codeception\\TestCase\\Cest::testRecallUserMethod',
     ),
     306 => 
     array (
+      0 => 'Codeception\\TestCase\\Cest::testRecallUserMethod',
     ),
     308 => 
     array (
+      0 => 'Codeception\\TestCase\\Cest::testRecallUserMethod',
     ),
     310 => 
     array (
+      0 => 'Codeception\\TestCase\\Cest::testRecallUserMethod',
     ),
     312 => 
     array (
+      0 => 'Codeception\\TestCase\\Cest::testRecallUserMethod',
     ),
-    315 => 
+    314 => 
     array (
-    ),
-    316 => 
-    array (
+      0 => 'Codeception\\TestCase\\Cest::testRecallUserMethod',
     ),
     317 => 
     array (
+      0 => 'Codeception\\TestCase\\Cest::testRecallUserMethod',
     ),
     318 => 
     array (
+      0 => 'Codeception\\TestCase\\Cest::testRecallUserMethod',
     ),
-    319 => NULL,
-    321 => 
+    319 => 
     array (
+      0 => 'Codeception\\TestCase\\Cest::testRecallUserMethod',
     ),
-    322 => 
+    320 => 
     array (
+      0 => 'Codeception\\TestCase\\Cest::testRecallUserMethod',
     ),
+    321 => NULL,
     323 => 
     array (
     ),
-    324 => NULL,
+    324 => 
+    array (
+    ),
     325 => 
     array (
     ),
-    326 => 
+    326 => NULL,
+    327 => 
     array (
+      0 => 'Codeception\\TestCase\\Cest::testRecallUserMethod',
     ),
-    327 => NULL,
-    335 => 
+    328 => 
     array (
+      0 => 'Codeception\\TestCase\\Cest::testRecallUserMethod',
     ),
-    336 => 
+    329 => NULL,
+    337 => 
     array (
+      0 => 'Codeception\\TestCase\\Cest::testIsAllowedToMethodFailNotLoggedIn',
+      1 => 'Codeception\\TestCase\\Cest::testIsAllowedToMethodFailUnknownAction',
+      2 => 'Codeception\\TestCase\\Cest::testIsAllowedToMethodSuccess',
     ),
     338 => 
     array (
+      0 => 'Codeception\\TestCase\\Cest::testIsAllowedToMethodFailNotLoggedIn',
+      1 => 'Codeception\\TestCase\\Cest::testIsAllowedToMethodFailUnknownAction',
+      2 => 'Codeception\\TestCase\\Cest::testIsAllowedToMethodSuccess',
     ),
-    339 => 
+    340 => 
     array (
+      0 => 'Codeception\\TestCase\\Cest::testIsAllowedToMethodFailUnknownAction',
+      1 => 'Codeception\\TestCase\\Cest::testIsAllowedToMethodSuccess',
     ),
     341 => 
     array (
+      0 => 'Codeception\\TestCase\\Cest::testIsAllowedToMethodFailUnknownAction',
+      1 => 'Codeception\\TestCase\\Cest::testIsAllowedToMethodSuccess',
     ),
-    344 => 
+    343 => 
     array (
+      0 => 'Codeception\\TestCase\\Cest::testIsAllowedToMethodSuccess',
     ),
     346 => 
     array (
+      0 => 'Codeception\\TestCase\\Cest::testIsAllowedToMethodSuccess',
     ),
-    347 => 
+    348 => 
     array (
+      0 => 'Codeception\\TestCase\\Cest::testIsAllowedToMethodSuccess',
     ),
     349 => 
     array (
+      0 => 'Codeception\\TestCase\\Cest::testIsAllowedToMethodSuccess',
     ),
-    350 => 
+    351 => 
     array (
+      0 => 'Codeception\\TestCase\\Cest::testIsAllowedToMethodSuccess',
     ),
     352 => 
     array (
+      0 => 'Codeception\\TestCase\\Cest::testIsAllowedToMethodSuccess',
     ),
     354 => 
     array (
+      0 => 'Codeception\\TestCase\\Cest::testIsAllowedToMethodSuccess',
     ),
     356 => 
     array (
+      0 => 'Codeception\\TestCase\\Cest::testIsAllowedToMethodSuccess',
     ),
-    358 => NULL,
-    362 => 
+    358 => 
     array (
+      0 => 'Codeception\\TestCase\\Cest::testIsAllowedToMethodSuccess',
     ),
-    363 => 
+    360 => NULL,
+    364 => 
     array (
+      0 => 'Codeception\\TestCase\\Cest::testIsInGroupMethodFailNotLoggedIn',
+      1 => 'Codeception\\TestCase\\Cest::testIsInGroupMethodSuccessNumeric',
+      2 => 'Codeception\\TestCase\\Cest::testIsInGroupMethodFailUnknownGroup',
+      3 => 'Codeception\\TestCase\\Cest::testIsInGroupMethodSuccessNamed',
     ),
-    364 => NULL,
-    366 => 
+    365 => 
     array (
+      0 => 'Codeception\\TestCase\\Cest::testIsInGroupMethodFailNotLoggedIn',
     ),
-    367 => 
+    366 => NULL,
+    368 => 
     array (
+      0 => 'Codeception\\TestCase\\Cest::testIsInGroupMethodSuccessNumeric',
+      1 => 'Codeception\\TestCase\\Cest::testIsInGroupMethodFailUnknownGroup',
+      2 => 'Codeception\\TestCase\\Cest::testIsInGroupMethodSuccessNamed',
     ),
-    368 => NULL,
-    371 => 
+    369 => 
     array (
+      0 => 'Codeception\\TestCase\\Cest::testIsInGroupMethodSuccessNumeric',
     ),
+    370 => NULL,
     373 => 
     array (
+      0 => 'Codeception\\TestCase\\Cest::testIsInGroupMethodFailUnknownGroup',
+      1 => 'Codeception\\TestCase\\Cest::testIsInGroupMethodSuccessNamed',
     ),
-    374 => 
+    375 => 
     array (
+      0 => 'Codeception\\TestCase\\Cest::testIsInGroupMethodFailUnknownGroup',
+      1 => 'Codeception\\TestCase\\Cest::testIsInGroupMethodSuccessNamed',
     ),
     376 => 
     array (
+      0 => 'Codeception\\TestCase\\Cest::testIsInGroupMethodFailUnknownGroup',
+      1 => 'Codeception\\TestCase\\Cest::testIsInGroupMethodSuccessNamed',
     ),
-    377 => 
+    378 => 
     array (
+      0 => 'Codeception\\TestCase\\Cest::testIsInGroupMethodSuccessNamed',
     ),
     379 => 
     array (
+      0 => 'Codeception\\TestCase\\Cest::testIsInGroupMethodSuccessNamed',
     ),
-    381 => NULL,
+    381 => 
+    array (
+      0 => 'Codeception\\TestCase\\Cest::testIsInGroupMethodSuccessNamed',
+    ),
+    383 => NULL,
   ),
 ));
 $coverage->setTests(array (
@@ -2162,11 +2886,21 @@ $coverage->setTests(array (
   'Codeception\\TestCase\\Cest::testLoginUserMethodFromExistingData' => 0,
   'Codeception\\TestCase\\Cest::testLoginUserMethodWithPass' => 0,
   'Codeception\\TestCase\\Cest::testLoginException' => 0,
+  'Codeception\\TestCase\\Cest::testLoginAttempts' => 0,
   'Codeception\\TestCase\\Cest::testLogoutMethod' => 0,
   'Codeception\\TestCase\\Cest::testUpdateMethodLoggedInUser' => 0,
   'Codeception\\TestCase\\Cest::testUpdateMethodWithId' => 0,
   'Codeception\\TestCase\\Cest::testUpdateMethodException' => 0,
   'Codeception\\TestCase\\Cest::testGetDbInstanceMethod' => 0,
+  'Codeception\\TestCase\\Cest::testRememberUserInDbMethod' => 0,
+  'Codeception\\TestCase\\Cest::testRecallUserMethod' => 0,
+  'Codeception\\TestCase\\Cest::testIsAllowedToMethodFailNotLoggedIn' => 0,
+  'Codeception\\TestCase\\Cest::testIsAllowedToMethodFailUnknownAction' => 0,
+  'Codeception\\TestCase\\Cest::testIsAllowedToMethodSuccess' => 0,
+  'Codeception\\TestCase\\Cest::testIsInGroupMethodFailNotLoggedIn' => 0,
+  'Codeception\\TestCase\\Cest::testIsInGroupMethodSuccessNumeric' => 0,
+  'Codeception\\TestCase\\Cest::testIsInGroupMethodFailUnknownGroup' => 0,
+  'Codeception\\TestCase\\Cest::testIsInGroupMethodSuccessNamed' => 0,
 ));
 
 $filter = $coverage->filter();

@@ -9,6 +9,6 @@ if ( !$user->isLoggedIn() ){
     redirectHome();
 }
 
-if ( !$user->isInGroup( User::ADMIN_GROUP ) ){
+if ( !$user->isInGroup( User::GROUP_ADMINS ) ){
     die("You are not allowed to visit this page.");
 } 
